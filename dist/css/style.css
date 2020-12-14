@@ -56,13 +56,15 @@ h1, h2, h3 {
 
 /* /reset */
 /* settings */
-html.lock {
-  overflow: hidden; }
+html {
+  height: 100%; }
+  html.lock {
+    overflow: hidden; }
 
 a {
-  -webkit-transition: .1s;
-  -o-transition: .1s;
-  transition: .1s;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
   text-decoration: none; }
 
 button,
@@ -72,6 +74,7 @@ textarea {
   font-size: 16px; }
 
 body {
+  height: 100%;
   background-color: #fff;
   font-family: Arial;
   font-size: 16px; }
@@ -130,7 +133,7 @@ body {
     .wrapper {
       padding-right: 15px; } }
 
-*:-webkit-autofill {
+input:-webkit-autofill {
   -webkit-box-shadow: inset 0 0 0 50px #fff !important; }
 
 *::-webkit-input-placeholder {
@@ -152,5 +155,20 @@ body {
 *::placeholder {
   color: #a9a9a9;
   opacity: 1; }
+
+.page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100%; }
+
+.content {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1; }
 
 /* /settings */
