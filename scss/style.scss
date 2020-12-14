@@ -1,0 +1,105 @@
+@import 'mixins';
+
+@include reset(); // Сброс стилей
+
+@import 'mixingrid';
+
+// Переменные для кастомизации Mixingrid
+$columns: 12; // Колличество колонок
+$max-width: 1200px; // Максимальная ширина контейнера
+$gutter: 15px; // Расстояние между колонками
+$offset: 30px; // Поля контейнера
+$offset-sm: 15px; // Поля контейнера на мобилке
+// Брэйкпоинты
+$break_xl: 1400px;
+$break_lg: 1200px;
+$break_md: 1050px;
+$break_sm: 769px;
+$break_xs: 500px;
+
+// Переменные для кастомизации Bootstrap 4
+// $grid-gutter-width: 15px; // Отступы между колонками
+// $grid-columns: 12; // Колличество колонок
+// $grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1410px); // Брэйкпоинты
+// $container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1400px); // Максимальная ширина контейнера
+// $gutter: $grid-gutter-width; // Переменная для задания отступов равных междуколоночным
+
+// Шрифты
+// @include font-face("EastAP", "../fonts/EastAP/EastAP", bold, italic);
+
+// Цвета
+// $black: #000;
+
+// Подключение файлов
+// @import 'blocks/menu';
+// @import 'blocks/mmenu';
+// @import 'blocks/modal';
+// @import 'blocks/tooltipster-noir';
+
+/* settings */
+html {
+  &.lock {
+    overflow: hidden;
+  }
+}
+a {
+  transition: .1s;
+  text-decoration: none;
+}
+button,
+input,
+textarea {
+  font-family: Arial;
+  font-size: 16px;
+}
+body {
+  background-color: #fff;
+  font-family: Arial;
+  font-size: 16px;
+}
+.mobile-hide {
+  @media (max-width: $break_sm) {
+    display: none !important;
+  }
+}
+.mobile-visible {
+  @media (min-width: $break_sm + 1) {
+    display: none !important;
+  }
+}
+.img-responsive {
+  position: relative;
+  overflow: hidden;
+  img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  svg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &:after {
+    content: '';
+    display: block;
+    padding-top: 56.25%;
+  }
+}
+.row {
+  @include row-flex();
+}
+.wrapper {
+  @include wrapper();
+}
+*:-webkit-autofill {
+  -webkit-box-shadow: inset 0 0 0 50px #fff !important;
+}
+*::placeholder {
+  color: #a9a9a9;
+  opacity: 1;
+}
+/* /settings */
