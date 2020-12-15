@@ -229,7 +229,33 @@
       }
     }
   }
+  @media (max-width: $break_md) {
+    .wrapper {
+      &:after {
+        width: 100%;
+      }
+    }
+  }
   @media (max-width: $break_sm) {
     margin-bottom: 30px;
+    &__btns {
+      margin-bottom: 0;
+      margin-right: -8px;
+    }
+    &__btn {
+      margin-right: 8px;
+      padding: 8px 18px;
+      font-size: 10px;
+    }
+    &__item {
+      font-size: 8px;
+    }
+    &__iconItem {
+      margin-left: 0;
+      margin-right: 10px;
+    }
+    &__name {
+      margin-right: 8px;
+    }
   }
 }

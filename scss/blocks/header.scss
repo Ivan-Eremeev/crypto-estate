@@ -30,6 +30,19 @@
       }
     }
   }
+  @media (max-width: $break_md) {
+    &__col {
+      &--logo {
+        width: auto;
+      }
+    }
+  }
+  @media (max-width: $break_sm) {
+    .wrapper {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
 }
 
 .logo {
@@ -58,5 +71,11 @@
   @media (max-width: $break_xl) {
     font-size: 12px;
     margin-left: 35px;
+  }
+  @media (max-width: $break_md) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
   }
 }

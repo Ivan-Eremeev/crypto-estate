@@ -160,22 +160,6 @@
       padding: 10px 20px;
     }
   }
-
-  .scrollbar-inner>.scroll-element.scroll-y {
-    width: 4px;
-  }
-  .scrollbar-inner>.scroll-element .scroll-element_outer,
-  .scrollbar-inner>.scroll-element .scroll-element_track,
-  .scrollbar-inner>.scroll-element .scroll-bar {
-    border-radius: 0;
-    opacity: 1;
-  }
-  .scrollbar-inner>.scroll-element .scroll-element_track {
-    background-color: #2a2b34;
-  }
-  .scrollbar-inner>.scroll-element .scroll-bar {
-    background-color: $mainColor;
-  }
   @media (max-width: $break_xl) {
     &__head {
       font-size: 15px;
@@ -196,6 +180,10 @@
           width: 32px;
           height: 32px;
         }
+        svg {
+          width: 12px;
+          height: 12px;
+        }
       }
     }
     &__contentInner {
@@ -211,6 +199,97 @@
     }
     &__content {
       max-height: 245px;
+    }
+    &__rate {
+      svg {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+  @media (max-width: $break_sm) {
+    &__head {
+      font-size: 13px;
+    }
+    &__item {
+      font-size: 10px;
+      padding: 12px 50px 12px 10px;
+      position: relative;
+    }
+    &__icon {
+      width: 24px;
+      height: 24px;
+      img {
+        width: 22px;
+        height: 22px;
+      }
+      &--plus {
+        &:after {
+          width: 22px;
+          height: 22px;
+        }
+        svg {
+          width: 8px;
+          height: 8px;
+        }
+      }
+    }
+    &__rate {
+      svg {
+        display: none;
+      }
+    }
+    &__col {
+      &--1 {
+        width: 36%;
+      }
+      &--2 {
+        // width: 41%;
+        width: 120px;
+      }
+      &--3 {
+        width: 23%;
+        border: none;
+      }
+      &--4 {
+        width: 0;
+        padding: 0;
+      }
+    }
+    &__contentWrap {
+      &:after {
+        height: 7px;
+      }
+
+      &:before {
+        height: 7px;
+      }
+    }
+    &__contentInner {
+      padding: 7px 12px 7px 7px;
+    }
+    &__blockB {
+      display: flex;
+      align-items: flex-end;
+      font-size: 11px;
+    }
+    &__content {
+      max-height: 220px;
+    }
+    .btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 50px;
+      svg {
+        width: 17px;
+        height: 17px;
+      }
     }
   }
 }

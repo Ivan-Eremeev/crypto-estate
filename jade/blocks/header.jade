@@ -5,16 +5,25 @@ header.header#header
 
 			.header__col.header__col--logo
 				// logo
-				a(href="#").logo
+				a(href="#").logo.md-hide
 					img(src="img/logo.png", alt="")
 				// /logo
+
+				// userIconMob
+				a(href="#").userIconMob.md-visible
+					img(src="img/user_1.jpg", alt="")
+				//	/userIconMob
+
+			.header__col.mobile-visible
+				img(src="img/slogan_mob.png", alt="")
 
 			.header__col
 				// menu
 				//- .menu--left .menu--right .menu--top .menu--bottom .menu--drop
-				.js-menu.menu.menu--right
+				#menu.menu.menu--right
 					#menu-btn.menu__btn
-					nav#mmenu.menu__nav
+						.menu__btnInner
+					nav.menu__nav
 						ul.menu__list
 							li
 								a(href="#") Обучающая игра
@@ -24,11 +33,30 @@ header.header#header
 								a(href="#") Рейтинг
 							li
 								a(href="#") Баланс
+
+						// user
+						.user.md-visible
+							a(href="#").user__icon
+								img(src="img/chat_icon.svg", alt="")
+							a(href="#").user__icon
+								img(src="img/gear_icon.svg", alt="")
+							a(href="#").user__lk
+								img(src="img/user_1.jpg", alt="")
+								span Личный кабинет
+						//	/user
+
+						// lang
+						a(href="#").lang.md-visible
+							span.active RU
+							span.lang__slash /
+							span EN
+						//	/lang
+
 						#menu-close.menu__close
 					#menu-over.menu__over
 				// /menu
 
-			.header__col
+			.header__col.md-hide
 				
 				// user
 				.user

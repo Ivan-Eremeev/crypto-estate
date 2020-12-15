@@ -23,7 +23,7 @@ block content
 		.content
 
 			// head
-			.head
+			.head.mobile-hide
 				.head__line
 				.wrapper
 					.head__row
@@ -48,7 +48,7 @@ block content
 			//	/head
 
 			// statistics
-			.statistics
+			.statistics.mobile-hide
 				.wrapper
 					.statistics__row
 						.statistics__col
@@ -98,6 +98,63 @@ block content
 										span.statistics__text Настройки
 			//	/statistics
 
+			// headStatisticsMob
+			.headStatisticsMob.mobile-visible
+				.wrapper
+					.headStatisticsMob__row
+						.statistics__name Nikole
+						.statistics__btns
+							a(href="#").statistics__btn.statistics__btn--dark Обучающая игра
+							a(href="#").statistics__btn.statistics__btn--orange Криптолотереи
+					.headStatisticsMob__row
+						.statistics__items
+							.statistics__item
+								span Баланс ETH:
+								span.statistics__cristal
+									img(src="img/cristal_icon.svg", alt="")
+								span 235
+							.statistics__item
+								span Капитал за неделю:
+								span.statistics__cristal
+									img(src="img/cristal_icon.svg", alt="")
+								span 235
+							.statistics__item
+								span Общий капитал:
+								span.statistics__cristal
+									img(src="img/cristal_icon.svg", alt="")
+								span 235
+					.headStatisticsMob__row
+						.headStatisticsMob__items
+							.head__item
+								.head__num.head__num--1 35
+								.head__text Место в общем рейтинге
+							.head__item
+								.head__num.head__num--2 31
+								.head__text Место в рейтинге недели
+							.head__item
+								.head__price 0 ETH
+								.head__text Призовой фонд лотереи
+					.headStatisticsMob__row.headStatisticsMob__row--flexStart
+						.statistics__icons
+							a(href="#").statistics__iconItem
+								span.statistics__icon
+									img(src="img/star_icon.svg", alt="")
+								span.statistics__text Рейтинг
+							a(href="#").statistics__iconItem
+								span.statistics__icon
+									img(src="img/barrel_icon.svg", alt="")
+								span.statistics__text Данные
+							a(href="#").statistics__iconItem
+								span.statistics__icon
+									img(src="img/coins_icon.png", alt="")
+								span.statistics__text Баланс
+							a(href="#").statistics__iconItem.statistics__iconItem--ml
+								span.statistics__icon
+									img(src="img/gear_icon.svg", alt="")
+								span.statistics__text Настройки
+						a(href="#").head__btn Создать игру
+			//	/headStatisticsMob
+
 			// gameList
 			.gameList
 				.wrapper
@@ -136,7 +193,9 @@ block content
 											span 0.005 eth
 									.gameList__col.gameList__col--4
 										.gameList__btn
-											a(href="#").btn.btn--first Присоедениться
+											a(href="#").btn.btn--first
+												span.mobile-hide Присоедениться
+												img(src="img/plus_icon.svg", alt="").mobile-visible
 
 								.gameList__item
 									.gameList__col.gameList__col--1
@@ -157,7 +216,9 @@ block content
 											span 0.005 eth
 									.gameList__col.gameList__col--4
 										.gameList__btn
-											a(href="#").btn.btn--first Присоедениться
+											a(href="#").btn.btn--first
+												span.mobile-hide Присоедениться
+												img(src="img/plus_icon.svg", alt="").mobile-visible
 
 								.gameList__item
 									.gameList__col.gameList__col--1
@@ -178,7 +239,9 @@ block content
 											span 0.005 eth
 									.gameList__col.gameList__col--4
 										.gameList__btn
-											a(href="#").btn.btn--first Присоедениться
+											a(href="#").btn.btn--first
+												span.mobile-hide Присоедениться
+												img(src="img/plus_icon.svg", alt="").mobile-visible
 
 								.gameList__item
 									.gameList__col.gameList__col--1
@@ -199,7 +262,9 @@ block content
 											span 0.005 eth
 									.gameList__col.gameList__col--4
 										.gameList__btn
-											a(href="#").btn.btn--first Присоедениться
+											a(href="#").btn.btn--first
+												span.mobile-hide Присоедениться
+												img(src="img/plus_icon.svg", alt="").mobile-visible
 
 								.gameList__item
 									.gameList__col.gameList__col--1
@@ -220,7 +285,9 @@ block content
 											span 0.005 eth
 									.gameList__col.gameList__col--4
 										.gameList__btn
-											a(href="#").btn.btn--first Присоедениться
+											a(href="#").btn.btn--first
+												span.mobile-hide Присоедениться
+												img(src="img/plus_icon.svg", alt="").mobile-visible
 
 								.gameList__item
 									.gameList__col.gameList__col--1
@@ -241,7 +308,9 @@ block content
 											span 0.005 eth
 									.gameList__col.gameList__col--4
 										.gameList__btn
-											a(href="#").btn.btn--first Присоедениться
+											a(href="#").btn.btn--first
+												span.mobile-hide Присоедениться
+												img(src="img/plus_icon.svg", alt="").mobile-visible
 
 			//	/gameList
 
@@ -251,31 +320,32 @@ block content
 					.chat__head Чат
 					.chat__container
 						.chat__scrollHide
-							.chat__content
-								.chat__text
-									span.chat__name 19:22 Ilon Mask:
-									span Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-								.chat__text
-									span.chat__name 19:21 Nikol:
-									span Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-								.chat__text
-									span.chat__name 19:22 Ilon Mask:
-									span Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-								.chat__text
-									span.chat__name 19:22 Arnold:
-									span Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-								.chat__text
-									span.chat__name 19:22 Ilon Mask:
-									span Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-								.chat__text
-									span.chat__name 19:21 Nikol:
-									span Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-								.chat__text
-									span.chat__name 19:22 Ilon Mask:
-									span Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-								.chat__text
-									span.chat__name 19:22 Arnold:
-									span Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							.js_scrollbar.chat__content.scrollbar-inner
+								.chat__contentInner
+									.chat__text
+										span.chat__name 19:22 Ilon Mask:
+										span Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+									.chat__text
+										span.chat__name 19:21 Nikol:
+										span Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+									.chat__text
+										span.chat__name 19:22 Ilon Mask:
+										span Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+									.chat__text
+										span.chat__name 19:22 Arnold:
+										span Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+									.chat__text
+										span.chat__name 19:22 Ilon Mask:
+										span Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+									.chat__text
+										span.chat__name 19:21 Nikol:
+										span Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+									.chat__text
+										span.chat__name 19:22 Ilon Mask:
+										span Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+									.chat__text
+										span.chat__name 19:22 Arnold:
+										span Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 						form(action="").chat__form
 							input(type="text", name="chat")
 							button(type="submit").chat__btn

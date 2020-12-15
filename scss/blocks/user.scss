@@ -79,12 +79,17 @@
         height: 17px;
       }
     }
-  }
-  &__lk {
-    height: 38px;
-    img {
-      width: 30px;
-      height: 30px;
+    &__lk {
+      height: 38px;
+
+      img {
+        width: 30px;
+        height: 30px;
+      }
     }
+  }
+  @media (max-width: $break_md) {
+    justify-content: center;
+    margin-bottom: 30px;
   }
 }

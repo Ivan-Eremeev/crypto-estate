@@ -1,0 +1,15 @@
+.userIconMob {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: $elementColor;
+  img {
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+    overflow: hidden;
+  }
+}

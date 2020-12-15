@@ -1,0 +1,22 @@
+.headStatisticsMob {
+  padding: 14px 0 8px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid $elementColor;
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $fontColor;
+    margin-bottom: 7px;
+    &--flexStart {
+      align-items: flex-start;
+      margin-top: 14px;
+    }
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: -20px;
+  }
+}

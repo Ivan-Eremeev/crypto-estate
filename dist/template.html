@@ -15,27 +15,37 @@
 				<div class="wrapper">
 					<div class="header__row">
 						<div class="header__col header__col--logo">
-							<!-- logo--><a class="logo" href="#"><img src="img/logo.png" alt=""></a>
+							<!-- logo--><a class="logo md-hide" href="#"><img src="img/logo.png" alt=""></a>
 							<!-- /logo-->
+							<!-- userIconMob--><a class="userIconMob md-visible" href="#"><img src="img/user_1.jpg" alt=""></a>
+							<!--	/userIconMob-->
 						</div>
+						<div class="header__col mobile-visible"><img src="img/slogan_mob.png" alt=""></div>
 						<div class="header__col">
 							<!-- menu-->
-							<div class="js-menu menu menu--right">
-								<div class="menu__btn" id="menu-btn"></div>
-								<nav class="menu__nav" id="mmenu">
+							<div class="menu menu--right" id="menu">
+								<div class="menu__btn" id="menu-btn">
+									<div class="menu__btnInner"></div>
+								</div>
+								<nav class="menu__nav">
 									<ul class="menu__list">
 										<li><a href="#">Обучающая игра</a></li>
 										<li><a href="#">Данные</a></li>
 										<li><a href="#">Рейтинг</a></li>
 										<li><a href="#">Баланс</a></li>
 									</ul>
+									<!-- user-->
+									<div class="user md-visible"><a class="user__icon" href="#"><img src="img/chat_icon.svg" alt=""></a><a class="user__icon" href="#"><img src="img/gear_icon.svg" alt=""></a><a class="user__lk" href="#"><img src="img/user_1.jpg" alt=""><span>Личный кабинет</span></a></div>
+									<!--	/user-->
+									<!-- lang--><a class="lang md-visible" href="#"><span class="active">RU</span><span class="lang__slash">/</span><span>EN</span></a>
+									<!--	/lang-->
 									<div class="menu__close" id="menu-close"></div>
 								</nav>
 								<div class="menu__over" id="menu-over"></div>
 							</div>
 							<!-- /menu-->
 						</div>
-						<div class="header__col">
+						<div class="header__col md-hide">
 							<!-- user-->
 							<div class="user"><a class="user__icon" href="#"><img src="img/chat_icon.svg" alt=""></a><a class="user__icon" href="#"><img src="img/gear_icon.svg" alt=""></a><a class="user__lk" href="#"><img src="img/user_1.jpg" alt=""><span>Личный кабинет</span></a></div>
 							<!--	/user-->

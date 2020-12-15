@@ -24,6 +24,7 @@
     overflow-y: auto;
   }
   &__text {
+    display: flex;
     margin-bottom: 10px;
     font-family: $firstFont;
     font-size: 14px;
@@ -33,6 +34,7 @@
     font-family: $secondFont;
     font-size: 12px;
     color: #8f909b;
+    white-space: nowrap;
   }
   &__form {
     display: flex;
@@ -95,6 +97,25 @@
       svg {
         width: 20px;
         height: 18px;
+      }
+    }
+  }
+  @media (max-width: $break_sm) {
+    margin-bottom: 46px;
+    &__contentInner{
+      padding: 12px;
+    }
+    &__container {
+      padding: 0;
+    }
+    &__content {
+      height: 145px;
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+    &__form {
+      input {
+        padding: 0 12px;
       }
     }
   }

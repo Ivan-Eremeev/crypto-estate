@@ -29,36 +29,35 @@ $(document).ready(function () {
 		e.preventDefault();
 	});
 
-	// // Мобильное меню
-	// function myMenu(menu) {
-	// 	var menuBtn = menu.find('#menu-btn'),
-	// 			over = menu.find('#menu-over'),
-	// 			close = menu.find('#menu-close'),
-	// 			html = $('html'),
-	// 			scrollbarWidth;
-	// 	menuBtn.on('click', menuOpen);
-	// 	over.on('click', menuClose);
-	// 	close.on('click', menuClose);
-	// 	function menuOpen() {
-	// 		html.addClass('lock').css('padding-right',scrollbarWidth);
-	// 		menu.addClass('open');
-	// 		menuBtn.addClass('active');
-	// 	}
-	// 	function menuClose() {
-	// 		html.removeClass('lock').css('padding-right',0);
-	// 		menu.removeClass('open');
-	// 		menuBtn.removeClass('active');
-	// 	}
-	// 	function scrollbarWidthCalc() {
-	// 		var documentWidth = parseInt(document.documentElement.clientWidth),
-	// 				windowsWidth = parseInt(window.innerWidth);
-	// 		scrollbarWidth = windowsWidth - documentWidth;
-	// 		console.log(scrollbarWidth);
-	// 	}
-	// 	scrollbarWidthCalc();
-	// 	$(window).resize(scrollbarWidthCalc);
-	// };
-	// myMenu();
+	// Мобильное меню
+	function myMenu(menu) {
+		var menuBtn = menu.find('#menu-btn'),
+				over = menu.find('#menu-over'),
+				close = menu.find('#menu-close'),
+				html = $('html'),
+				scrollbarWidth;
+		menuBtn.on('click', menuOpen);
+		over.on('click', menuClose);
+		close.on('click', menuClose);
+		function menuOpen() {
+			html.addClass('lock').css('padding-right',scrollbarWidth);
+			menu.addClass('open');
+			menuBtn.addClass('active');
+		}
+		function menuClose() {
+			html.removeClass('lock').css('padding-right',0);
+			menu.removeClass('open');
+			menuBtn.removeClass('active');
+		}
+		function scrollbarWidthCalc() {
+			var documentWidth = parseInt(document.documentElement.clientWidth),
+					windowsWidth = parseInt(window.innerWidth);
+			scrollbarWidth = windowsWidth - documentWidth;
+		}
+		scrollbarWidthCalc();
+		$(window).resize(scrollbarWidthCalc);
+	};
+	myMenu($('#menu'));
 
 	// // Блок с высотой окна браузера
 	// function screenHeight(fullHeight) {

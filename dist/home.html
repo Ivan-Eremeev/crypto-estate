@@ -16,27 +16,37 @@
 				<div class="wrapper">
 					<div class="header__row">
 						<div class="header__col header__col--logo">
-							<!-- logo--><a class="logo" href="#"><img src="img/logo.png" alt=""></a>
+							<!-- logo--><a class="logo md-hide" href="#"><img src="img/logo.png" alt=""></a>
 							<!-- /logo-->
+							<!-- userIconMob--><a class="userIconMob md-visible" href="#"><img src="img/user_1.jpg" alt=""></a>
+							<!--	/userIconMob-->
 						</div>
+						<div class="header__col mobile-visible"><img src="img/slogan_mob.png" alt=""></div>
 						<div class="header__col">
 							<!-- menu-->
-							<div class="js-menu menu menu--right">
-								<div class="menu__btn" id="menu-btn"></div>
-								<nav class="menu__nav" id="mmenu">
+							<div class="menu menu--right" id="menu">
+								<div class="menu__btn" id="menu-btn">
+									<div class="menu__btnInner"></div>
+								</div>
+								<nav class="menu__nav">
 									<ul class="menu__list">
 										<li><a href="#">Обучающая игра</a></li>
 										<li><a href="#">Данные</a></li>
 										<li><a href="#">Рейтинг</a></li>
 										<li><a href="#">Баланс</a></li>
 									</ul>
+									<!-- user-->
+									<div class="user md-visible"><a class="user__icon" href="#"><img src="img/chat_icon.svg" alt=""></a><a class="user__icon" href="#"><img src="img/gear_icon.svg" alt=""></a><a class="user__lk" href="#"><img src="img/user_1.jpg" alt=""><span>Личный кабинет</span></a></div>
+									<!--	/user-->
+									<!-- lang--><a class="lang md-visible" href="#"><span class="active">RU</span><span class="lang__slash">/</span><span>EN</span></a>
+									<!--	/lang-->
 									<div class="menu__close" id="menu-close"></div>
 								</nav>
 								<div class="menu__over" id="menu-over"></div>
 							</div>
 							<!-- /menu-->
 						</div>
-						<div class="header__col">
+						<div class="header__col md-hide">
 							<!-- user-->
 							<div class="user"><a class="user__icon" href="#"><img src="img/chat_icon.svg" alt=""></a><a class="user__icon" href="#"><img src="img/gear_icon.svg" alt=""></a><a class="user__lk" href="#"><img src="img/user_1.jpg" alt=""><span>Личный кабинет</span></a></div>
 							<!--	/user-->
@@ -49,7 +59,7 @@
 			<!-- /header-->
 			<div class="content">
 				<!-- head-->
-				<div class="head">
+				<div class="head mobile-hide">
 					<div class="head__line"></div>
 					<div class="wrapper">
 						<div class="head__row">
@@ -82,7 +92,7 @@
 				</div>
 				<!--	/head-->
 				<!-- statistics-->
-				<div class="statistics">
+				<div class="statistics mobile-hide">
 					<div class="wrapper">
 						<div class="statistics__row">
 							<div class="statistics__col">
@@ -109,6 +119,42 @@
 					</div>
 				</div>
 				<!--	/statistics-->
+				<!-- headStatisticsMob-->
+				<div class="headStatisticsMob mobile-visible">
+					<div class="wrapper">
+						<div class="headStatisticsMob__row">
+							<div class="statistics__name">Nikole</div>
+							<div class="statistics__btns"><a class="statistics__btn statistics__btn--dark" href="#">Обучающая игра</a><a class="statistics__btn statistics__btn--orange" href="#">Криптолотереи</a></div>
+						</div>
+						<div class="headStatisticsMob__row">
+							<div class="statistics__items">
+								<div class="statistics__item"><span>Баланс ETH:</span><span class="statistics__cristal"><img src="img/cristal_icon.svg" alt=""></span><span>235</span></div>
+								<div class="statistics__item"><span>Капитал за неделю:</span><span class="statistics__cristal"><img src="img/cristal_icon.svg" alt=""></span><span>235</span></div>
+								<div class="statistics__item"><span>Общий капитал:</span><span class="statistics__cristal"><img src="img/cristal_icon.svg" alt=""></span><span>235</span></div>
+							</div>
+						</div>
+						<div class="headStatisticsMob__row">
+							<div class="headStatisticsMob__items">
+								<div class="head__item">
+									<div class="head__num head__num--1">35</div>
+									<div class="head__text">Место в общем рейтинге</div>
+								</div>
+								<div class="head__item">
+									<div class="head__num head__num--2">31</div>
+									<div class="head__text">Место в рейтинге недели</div>
+								</div>
+								<div class="head__item">
+									<div class="head__price">0 ETH</div>
+									<div class="head__text">Призовой фонд лотереи</div>
+								</div>
+							</div>
+						</div>
+						<div class="headStatisticsMob__row headStatisticsMob__row--flexStart">
+							<div class="statistics__icons"><a class="statistics__iconItem" href="#"><span class="statistics__icon"><img src="img/star_icon.svg" alt=""></span><span class="statistics__text">Рейтинг</span></a><a class="statistics__iconItem" href="#"><span class="statistics__icon"><img src="img/barrel_icon.svg" alt=""></span><span class="statistics__text">Данные</span></a><a class="statistics__iconItem" href="#"><span class="statistics__icon"><img src="img/coins_icon.png" alt=""></span><span class="statistics__text">Баланс</span></a><a class="statistics__iconItem statistics__iconItem--ml" href="#"><span class="statistics__icon"><img src="img/gear_icon.svg" alt=""></span><span class="statistics__text">Настройки</span></a></div><a class="head__btn" href="#">Создать игру</a>
+						</div>
+					</div>
+				</div>
+				<!--	/headStatisticsMob-->
 				<!-- gameList-->
 				<div class="gameList">
 					<div class="wrapper">
@@ -138,7 +184,7 @@
 											<div class="gameList__rate"><img src="img/cristal_icon.svg" alt=""><span>0.005 eth</span></div>
 										</div>
 										<div class="gameList__col gameList__col--4">
-											<div class="gameList__btn"><a class="btn btn--first" href="#">Присоедениться</a></div>
+											<div class="gameList__btn"><a class="btn btn--first" href="#"><span class="mobile-hide">Присоедениться</span><img class="mobile-visible" src="img/plus_icon.svg" alt=""></a></div>
 										</div>
 									</div>
 									<div class="gameList__item">
@@ -157,7 +203,7 @@
 											<div class="gameList__rate"><img src="img/cristal_icon.svg" alt=""><span>0.005 eth</span></div>
 										</div>
 										<div class="gameList__col gameList__col--4">
-											<div class="gameList__btn"><a class="btn btn--first" href="#">Присоедениться</a></div>
+											<div class="gameList__btn"><a class="btn btn--first" href="#"><span class="mobile-hide">Присоедениться</span><img class="mobile-visible" src="img/plus_icon.svg" alt=""></a></div>
 										</div>
 									</div>
 									<div class="gameList__item">
@@ -176,7 +222,7 @@
 											<div class="gameList__rate"><img src="img/cristal_icon.svg" alt=""><span>0.005 eth</span></div>
 										</div>
 										<div class="gameList__col gameList__col--4">
-											<div class="gameList__btn"><a class="btn btn--first" href="#">Присоедениться</a></div>
+											<div class="gameList__btn"><a class="btn btn--first" href="#"><span class="mobile-hide">Присоедениться</span><img class="mobile-visible" src="img/plus_icon.svg" alt=""></a></div>
 										</div>
 									</div>
 									<div class="gameList__item">
@@ -195,7 +241,7 @@
 											<div class="gameList__rate"><img src="img/cristal_icon.svg" alt=""><span>0.005 eth</span></div>
 										</div>
 										<div class="gameList__col gameList__col--4">
-											<div class="gameList__btn"><a class="btn btn--first" href="#">Присоедениться</a></div>
+											<div class="gameList__btn"><a class="btn btn--first" href="#"><span class="mobile-hide">Присоедениться</span><img class="mobile-visible" src="img/plus_icon.svg" alt=""></a></div>
 										</div>
 									</div>
 									<div class="gameList__item">
@@ -214,7 +260,7 @@
 											<div class="gameList__rate"><img src="img/cristal_icon.svg" alt=""><span>0.005 eth</span></div>
 										</div>
 										<div class="gameList__col gameList__col--4">
-											<div class="gameList__btn"><a class="btn btn--first" href="#">Присоедениться</a></div>
+											<div class="gameList__btn"><a class="btn btn--first" href="#"><span class="mobile-hide">Присоедениться</span><img class="mobile-visible" src="img/plus_icon.svg" alt=""></a></div>
 										</div>
 									</div>
 									<div class="gameList__item">
@@ -233,7 +279,7 @@
 											<div class="gameList__rate"><img src="img/cristal_icon.svg" alt=""><span>0.005 eth</span></div>
 										</div>
 										<div class="gameList__col gameList__col--4">
-											<div class="gameList__btn"><a class="btn btn--first" href="#">Присоедениться</a></div>
+											<div class="gameList__btn"><a class="btn btn--first" href="#"><span class="mobile-hide">Присоедениться</span><img class="mobile-visible" src="img/plus_icon.svg" alt=""></a></div>
 										</div>
 									</div>
 								</div>
@@ -248,15 +294,17 @@
 						<div class="chat__head">Чат</div>
 						<div class="chat__container">
 							<div class="chat__scrollHide">
-								<div class="chat__content">
-									<div class="chat__text"><span class="chat__name">19:22 Ilon Mask:</span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></div>
-									<div class="chat__text"><span class="chat__name">19:21 Nikol:</span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></div>
-									<div class="chat__text"><span class="chat__name">19:22 Ilon Mask:</span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></div>
-									<div class="chat__text"><span class="chat__name">19:22 Arnold:</span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></div>
-									<div class="chat__text"><span class="chat__name">19:22 Ilon Mask:</span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></div>
-									<div class="chat__text"><span class="chat__name">19:21 Nikol:</span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></div>
-									<div class="chat__text"><span class="chat__name">19:22 Ilon Mask:</span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></div>
-									<div class="chat__text"><span class="chat__name">19:22 Arnold:</span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></div>
+								<div class="js_scrollbar chat__content scrollbar-inner">
+									<div class="chat__contentInner">
+										<div class="chat__text"><span class="chat__name">19:22 Ilon Mask:</span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></div>
+										<div class="chat__text"><span class="chat__name">19:21 Nikol:</span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></div>
+										<div class="chat__text"><span class="chat__name">19:22 Ilon Mask:</span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></div>
+										<div class="chat__text"><span class="chat__name">19:22 Arnold:</span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></div>
+										<div class="chat__text"><span class="chat__name">19:22 Ilon Mask:</span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></div>
+										<div class="chat__text"><span class="chat__name">19:21 Nikol:</span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></div>
+										<div class="chat__text"><span class="chat__name">19:22 Ilon Mask:</span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></div>
+										<div class="chat__text"><span class="chat__name">19:22 Arnold:</span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></div>
+									</div>
 								</div>
 							</div>
 							<form class="chat__form" action="">

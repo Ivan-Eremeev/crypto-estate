@@ -94,4 +94,30 @@
       font-size: 12px;
     }
   }
+  @media (max-width: $break_sm) {
+    &__item {
+      display: flex;
+      padding-left: 20px;
+    }
+    &__num {
+      font-size: 12px;
+      margin-bottom: 0;
+      margin-right: 5px;
+    }
+    &__text {
+      margin-top: 3px;
+      font-size: 8px;
+    }
+    &__price {
+      font-size: 12px;
+      white-space: nowrap;
+      margin-bottom: 0;
+      margin-right: 5px;
+    }
+    &__btn {
+      width: 100%;
+      max-width: 120px;
+      margin-left: 20px;
+    }
+  }
 }
