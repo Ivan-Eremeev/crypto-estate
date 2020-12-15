@@ -13,26 +13,35 @@
 			<!-- header-->
 			<header class="header" id="header">
 				<div class="wrapper">
-					<div class="header_container">
-						<!-- menu-->
-						<div class="js-menu menu menu--right">
-							<div class="menu_btn" id="menu-btn"></div>
-							<nav class="menu_nav" id="mmenu">
-								<ul class="menu_list">
-									<li class="menu_item"><a class="menu_link" href="#">Меню 1</a></li>
-									<li class="menu_item"><a class="menu_link" href="#">Меню 2</a></li>
-									<li class="menu_item"><a class="menu_link" href="#">Меню 3</a></li>
-									<li class="menu_item"><a class="menu_link" href="#">Меню 4</a></li>
-									<li class="menu_item"><a class="menu_link" href="#">Меню 5</a></li>
-									<li class="menu_item"><a class="menu_link" href="#">Меню 6</a></li>
-									<li class="menu_item"><a class="menu_link" href="#">Меню 7</a></li>
-									<li class="menu_item"><a class="menu_link" href="#">Меню 8</a></li>
-								</ul>
-								<div class="menu_close" id="menu-close"></div>
-							</nav>
-							<div class="menu_over" id="menu-over"></div>
+					<div class="header__row">
+						<div class="header__col header__col--logo">
+							<!-- logo--><a class="logo" href="#"><img src="img/logo.png" alt=""></a>
+							<!-- /logo-->
 						</div>
-						<!-- /menu-->
+						<div class="header__col">
+							<!-- menu-->
+							<div class="js-menu menu menu--right">
+								<div class="menu__btn" id="menu-btn"></div>
+								<nav class="menu__nav" id="mmenu">
+									<ul class="menu__list">
+										<li><a href="#">Обучающая игра</a></li>
+										<li><a href="#">Данные</a></li>
+										<li><a href="#">Рейтинг</a></li>
+										<li><a href="#">Баланс</a></li>
+									</ul>
+									<div class="menu__close" id="menu-close"></div>
+								</nav>
+								<div class="menu__over" id="menu-over"></div>
+							</div>
+							<!-- /menu-->
+						</div>
+						<div class="header__col">
+							<!-- user-->
+							<div class="user"><a class="user__icon" href="#"><img src="img/chat_icon.svg" alt=""></a><a class="user__icon" href="#"><img src="img/gear_icon.svg" alt=""></a><a class="user__lk" href="#"><img src="img/user_1.jpg" alt=""><span>Личный кабинет</span></a></div>
+							<!--	/user-->
+							<!-- lang--><a class="lang" href="#"><span class="active">RU</span><span class="lang__slash">/</span><span>EN</span></a>
+							<!--	/lang-->
+						</div>
 					</div>
 				</div>
 			</header>

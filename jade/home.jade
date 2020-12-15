@@ -10,7 +10,7 @@ block style-libs
 	//- link(rel="stylesheet", href="css/libs/hamburgers.min.css")
 	//- link(rel="stylesheet", href="css/libs/jquery.fancybox.min.css")
 	//- link(rel="stylesheet", href="css/libs/jquery.mmenu.all.css")
-	//- link(rel="stylesheet", href="css/libs/jquery.scrollbar.css")
+	link(rel="stylesheet", href="css/libs/jquery.scrollbar.css")
 	//- link(rel="stylesheet", href="css/libs/slick.css")
 	//- link(rel="stylesheet", href="css/libs/tooltipster.bundle.min.css")
 
@@ -21,11 +21,269 @@ block content
 		include blocks/header.jade
 		
 		.content
-			.wrapper
 
-				
+			// head
+			.head
+				.head__line
+				.wrapper
+					.head__row
+						.head__col.head__col--content
+							.head__rowInner
+								.head__item
+									.head__num.head__num--1 35
+									.head__text Место в общем рейтинге
+								.head__item
+									.head__num.head__num--2 31
+									.head__text Место в рейтинге недели
+						.head__col.head__col--slogan
+							.head__slogan
+								img(src="img/slogan.png", alt="")
+						.head__col.head__col--content
+							.head__rowInner
+								.head__item
+									.head__price 0 ETH
+									.head__text Призовой фонд лотереи
+								.head__item
+									a(href="#").head__btn Создать игру
+			//	/head
+
+			// statistics
+			.statistics
+				.wrapper
+					.statistics__row
+						.statistics__col
+							.statistics__photo
+								img(src="img/user_1.jpg", alt="")
+							.statistics__content
+								.statistics__head
+									.statistics__name Nikole
+									.statistics__desc Личный кабинет
+								.statistics__items
+									.statistics__item
+										span Баланс ETH:
+										span.statistics__cristal
+											img(src="img/cristal_icon.svg", alt="")
+										span 235
+									.statistics__item
+										span Капитал за неделю:
+										span.statistics__cristal
+											img(src="img/cristal_icon.svg", alt="")
+										span 235
+									.statistics__item
+										span Общий капитал:
+										span.statistics__cristal
+											img(src="img/cristal_icon.svg", alt="")
+										span 235
+						.statistics__col
+							.statistics__b
+								.statistics__btns
+									a(href="#").statistics__btn.statistics__btn--dark Обучающая игра
+									a(href="#").statistics__btn.statistics__btn--orange Криптолотереи
+								.statistics__icons
+									a(href="#").statistics__iconItem
+										span.statistics__icon
+											img(src="img/star_icon.svg", alt="")
+										span.statistics__text Рейтинг
+									a(href="#").statistics__iconItem
+										span.statistics__icon
+											img(src="img/barrel_icon.svg", alt="")
+										span.statistics__text Данные
+									a(href="#").statistics__iconItem
+										span.statistics__icon
+											img(src="img/coins_icon.png", alt="")
+										span.statistics__text Баланс
+									a(href="#").statistics__iconItem.statistics__iconItem--ml
+										span.statistics__icon
+											img(src="img/gear_icon.svg", alt="")
+										span.statistics__text Настройки
+			//	/statistics
+
+			// gameList
+			.gameList
+				.wrapper
+
+					.gameList__head
+						.gameList__block
+							span Список игр
+						.gameList__block
+							.gameList__blockB
+								span Количество игр:
+								span.gameList__num 7
+							.gameList__blockB
+								span Игроков онлайн:
+								span.gameList__num 13
+
+					.gameList__contentWrap
+						.js_scrollbar.gameList__content.scrollbar-inner
+							.gameList__contentInner
+
+								.gameList__item
+									.gameList__col.gameList__col--1
+										.gameList__name Lorem ipsum dolor
+									.gameList__col.gameList__col--2
+										.gameList__icons
+											.gameList__icon
+												img(src="img/user_1.jpg", alt="")
+											.gameList__icon
+												img(src="img/user_1.jpg", alt="")
+											.gameList__icon
+												img(src="img/user_1.jpg", alt="")
+											.gameList__icon.gameList__icon--plus
+												img(src="img/plus_icon.svg", alt="")
+									.gameList__col.gameList__col--3
+										.gameList__rate
+											img(src="img/cristal_icon.svg", alt="")
+											span 0.005 eth
+									.gameList__col.gameList__col--4
+										.gameList__btn
+											a(href="#").btn.btn--first Присоедениться
+
+								.gameList__item
+									.gameList__col.gameList__col--1
+										.gameList__name Lorem ipsum dolor
+									.gameList__col.gameList__col--2
+										.gameList__icons
+											.gameList__icon
+												img(src="img/user_1.jpg", alt="")
+											.gameList__icon
+												img(src="img/user_1.jpg", alt="")
+											.gameList__icon
+												img(src="img/user_1.jpg", alt="")
+											.gameList__icon.gameList__icon--plus
+												img(src="img/plus_icon.svg", alt="")
+									.gameList__col.gameList__col--3
+										.gameList__rate
+											img(src="img/cristal_icon.svg", alt="")
+											span 0.005 eth
+									.gameList__col.gameList__col--4
+										.gameList__btn
+											a(href="#").btn.btn--first Присоедениться
+
+								.gameList__item
+									.gameList__col.gameList__col--1
+										.gameList__name Lorem ipsum dolor
+									.gameList__col.gameList__col--2
+										.gameList__icons
+											.gameList__icon
+												img(src="img/user_1.jpg", alt="")
+											.gameList__icon
+												img(src="img/user_1.jpg", alt="")
+											.gameList__icon
+												img(src="img/user_1.jpg", alt="")
+											.gameList__icon.gameList__icon--plus
+												img(src="img/plus_icon.svg", alt="")
+									.gameList__col.gameList__col--3
+										.gameList__rate
+											img(src="img/cristal_icon.svg", alt="")
+											span 0.005 eth
+									.gameList__col.gameList__col--4
+										.gameList__btn
+											a(href="#").btn.btn--first Присоедениться
+
+								.gameList__item
+									.gameList__col.gameList__col--1
+										.gameList__name Lorem ipsum dolor
+									.gameList__col.gameList__col--2
+										.gameList__icons
+											.gameList__icon
+												img(src="img/user_1.jpg", alt="")
+											.gameList__icon
+												img(src="img/user_1.jpg", alt="")
+											.gameList__icon
+												img(src="img/user_1.jpg", alt="")
+											.gameList__icon.gameList__icon--plus
+												img(src="img/plus_icon.svg", alt="")
+									.gameList__col.gameList__col--3
+										.gameList__rate
+											img(src="img/cristal_icon.svg", alt="")
+											span 0.005 eth
+									.gameList__col.gameList__col--4
+										.gameList__btn
+											a(href="#").btn.btn--first Присоедениться
+
+								.gameList__item
+									.gameList__col.gameList__col--1
+										.gameList__name Lorem ipsum dolor
+									.gameList__col.gameList__col--2
+										.gameList__icons
+											.gameList__icon
+												img(src="img/user_1.jpg", alt="")
+											.gameList__icon
+												img(src="img/user_1.jpg", alt="")
+											.gameList__icon
+												img(src="img/user_1.jpg", alt="")
+											.gameList__icon.gameList__icon--plus
+												img(src="img/plus_icon.svg", alt="")
+									.gameList__col.gameList__col--3
+										.gameList__rate
+											img(src="img/cristal_icon.svg", alt="")
+											span 0.005 eth
+									.gameList__col.gameList__col--4
+										.gameList__btn
+											a(href="#").btn.btn--first Присоедениться
+
+								.gameList__item
+									.gameList__col.gameList__col--1
+										.gameList__name Lorem ipsum dolor
+									.gameList__col.gameList__col--2
+										.gameList__icons
+											.gameList__icon
+												img(src="img/user_1.jpg", alt="")
+											.gameList__icon
+												img(src="img/user_1.jpg", alt="")
+											.gameList__icon
+												img(src="img/user_1.jpg", alt="")
+											.gameList__icon.gameList__icon--plus
+												img(src="img/plus_icon.svg", alt="")
+									.gameList__col.gameList__col--3
+										.gameList__rate
+											img(src="img/cristal_icon.svg", alt="")
+											span 0.005 eth
+									.gameList__col.gameList__col--4
+										.gameList__btn
+											a(href="#").btn.btn--first Присоедениться
+
+			//	/gameList
+
+			// chat
+			.chat
+				.wrapper
+					.chat__head Чат
+					.chat__container
+						.chat__scrollHide
+							.chat__content
+								.chat__text
+									span.chat__name 19:22 Ilon Mask:
+									span Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								.chat__text
+									span.chat__name 19:21 Nikol:
+									span Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								.chat__text
+									span.chat__name 19:22 Ilon Mask:
+									span Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								.chat__text
+									span.chat__name 19:22 Arnold:
+									span Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								.chat__text
+									span.chat__name 19:22 Ilon Mask:
+									span Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								.chat__text
+									span.chat__name 19:21 Nikol:
+									span Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								.chat__text
+									span.chat__name 19:22 Ilon Mask:
+									span Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								.chat__text
+									span.chat__name 19:22 Arnold:
+									span Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						form(action="").chat__form
+							input(type="text", name="chat")
+							button(type="submit").chat__btn
+								img(src="img/chat_icon.svg", alt="")
 			
-		include blocks/footer.jade
+			//	/chat
+			
+		//- include blocks/footer.jade
 
 block js-libs
 	script(src="js/libs/jquery.min.js")
@@ -39,6 +297,6 @@ block js-libs
 	//- script(src="js/libs/wow.min.js")
 	//- script(src="js/libs/fullpage.min.js")
 	//- script(src="js/libs/jquery.vide.min.js")
-	//- script(src="js/libs/jquery.scrollbar.min.js")
+	script(src="js/libs/jquery.scrollbar.min.js")
 	//- script(src="http://api-maps.yandex.ru/2.1/?lang=ru_RU")
 	//- script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDArYzQvxn3CL3pB92Iqn9gaDltBFLfF4Y")

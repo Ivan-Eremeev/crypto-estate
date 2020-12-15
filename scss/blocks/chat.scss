@@ -1,0 +1,101 @@
+.chat {
+  margin-bottom: 100px;
+  .wrapper {
+  }
+  &__head {
+    margin-bottom: 15px;
+    font-family: $firstFont;
+    font-size: 20px;
+    color: $fontColor;
+  }
+  &__container {
+    padding: 20px 30px;
+    background-color: $backColor;
+  }
+  &__scrollHide {
+    overflow: hidden;
+  }
+  &__content {
+    height: 128px;
+    margin-right: -30px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    color: $fontColor;
+    overflow-y: auto;
+  }
+  &__text {
+    margin-bottom: 10px;
+    font-family: $firstFont;
+    font-size: 14px;
+  }
+  &__name {
+    margin-right: 20px;
+    font-family: $secondFont;
+    font-size: 12px;
+    color: #8f909b;
+  }
+  &__form {
+    display: flex;
+    height: 54px;
+    font-family: $firstFont;
+    input {
+      height: 100%;
+      padding: 0 25px;
+      flex-grow: 1;
+      background-color: #1e1f28;
+      border: 1px solid #2a2c40;
+      color: $fontDarkColor;
+    }
+  }
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 54px;
+    background-color: $secondColor;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+    cursor: pointer;
+    svg {
+      width: 26px;
+      height: 24px;
+      fill: #fff
+    }
+    &:hover {
+      background-color: $secondLightColor;
+    }
+  }
+  @media (max-width: $break_xl) {
+    &__head {
+      font-size: 15px;
+    }
+    &__name {
+      font-size: 9px;
+    }
+    &__text {
+      font-size: 10px;
+    }
+    &__container {
+      padding: 15px 20px;
+    }
+    &__content {
+      height: 100px;
+      margin-bottom: 15px;
+    }
+    &__form {
+      height: 42px;
+      input {
+        font-size: 10px;
+      }
+    }
+    &__btn {
+      width: 42px;
+      svg {
+        width: 20px;
+        height: 18px;
+      }
+    }
+  }
+}

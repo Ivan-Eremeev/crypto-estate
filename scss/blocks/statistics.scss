@@ -1,0 +1,235 @@
+.statistics {
+  color: $fontColor;
+  margin-bottom: 37px;
+  .wrapper {
+    padding-top: 10px;
+    padding-bottom: 34px;
+    position: relative;
+    &:after {
+      content: '';
+      display: block;
+      width: 110%;
+      height: 1px;
+      background-color: $elementColor;
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translate(-50%,0);
+    }
+  }
+  &__row {
+    display: flex;
+  }
+  &__col {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+  }
+  &__photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 114px;
+    height: 114px;
+    margin-right: 20px;
+    background-color: $elementColor;
+    border-radius: 100%;
+    img {
+      display: block;
+      width: 100px;
+      height: 100px;
+      border-radius: 100%;
+      overflow: hidden;
+      object-fit: cover;
+    }
+  }
+  &__head {
+
+  }
+  &__name {
+    font-size: 30px;
+  }
+  &__desc {
+    font-family: $secondFont;
+    font-size: 16px;
+    color: $fontDarkColor;
+    margin-bottom: 10px;
+  }
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    padding: 6px 14px;
+    margin-left: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 15px;
+    background-color: $elementColor;
+    font-size: 13px;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  &__cristal {
+    svg {
+      width: 17px;
+      height: 17px;
+      fill: $mainColor;
+      margin: 0 2px;
+    }
+  }
+  &__b {
+    width: 100%;
+  }
+  &__btns {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: -13px;
+    margin-bottom: 15px;
+  }
+  &__btn {
+    padding: 13px 25px;
+    border-radius: 12px;
+    margin-right: 13px;
+    font-size: 16px;
+    color: $fontColor;
+    white-space: nowrap;
+    &--dark {
+      background-color: #282932;
+      &:hover {
+        background-color: $mainColor;
+      }
+    }
+    &--orange {
+      background-color: $thirdColor;
+      &:hover {
+        background-color: $thirdLightColor;
+      }
+    }
+  }
+  &__icons {
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__iconItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 18px;
+    font-family: $secondFont;
+    font-size: 13px;
+    color: $fontDarkColor;
+    &:hover {
+      color: $fontColor;
+      .statistics__icon {
+        &:after {
+          transform: translate(-50%, -50%) scale(1);
+        }
+
+        svg {
+          fill: #fff;
+        }
+      }
+    }
+    &--ml {
+      margin-left: 11px;
+    }
+  }
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 100%;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 5px;
+    background-color: $elementColor;
+    position: relative;
+    svg {
+      width: 23px;
+      height: 23px;
+      fill: $iconColor;
+    }
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      background-color: $secondColor;
+      border-radius: 100%;
+      transform: translate(-50%, -50%) scale(0);
+      transition: 0.3s;
+      z-index: 2;
+    }
+    svg {
+      width: 23px;
+      height: 23px;
+      fill: $iconColor;
+      position: relative;
+      z-index: 3;
+      transition: 0.3s;
+    }
+    img {
+      position: relative;
+      z-index: 3;
+    }
+  }
+  @media (max-width: $break_xl) {
+    margin-bottom: 25px;
+    .wrapper {
+      padding-bottom: 20px;
+    }
+    &__photo {
+      width: 87px;
+      height: 87px;
+      margin-right: 5px;
+      img {
+        width: 76px;
+        height: 76px;
+      }
+    }
+    &__name {
+      font-size: 22px;
+    }
+    &__btn {
+      padding: 10px 22px;
+      font-size: 12px;
+    }
+    &__item {
+      padding: 3px 10px;
+      margin-left: 10px;
+      font-size: 10px;
+    }
+    &__iconItem {
+      font-size: 10px;
+    }
+    &__icon {
+      width: 36px;
+      height: 36px;
+      svg {
+        width: 17px;
+        height: 17px;
+      }
+      img {
+        width: 17px;
+      }
+    }
+    &__cristal {
+      svg {
+        width: 11px;
+        height: 11px;
+      }
+    }
+  }
+  @media (max-width: $break_sm) {
+    margin-bottom: 30px;
+  }
+}

@@ -1,0 +1,97 @@
+.head {
+  background-color: $backColor;
+  &__line {
+    height: 37px;
+    background-color: #1f1f29;
+  }
+  &__row {
+    display: flex;
+    padding-bottom: 25px;
+  }
+  &__rowInner {
+    display: flex;
+  }
+  &__col {
+    &--content {
+      width: 270px;
+      flex-shrink: 0;
+      padding-top: 12px;
+    }
+    &--slogan {
+      flex-grow: 1;
+    }
+  }
+  &__item {
+    width: 50%;
+  }
+  &__num {
+    font-size: 20px;
+    margin-bottom: 10px;
+    &--1 {
+      color: #19cabf;
+    }
+
+    &--2 {
+      color: #e38516;
+    }
+  }
+  &__text {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: $fontColor;
+  }
+  &__price {
+    font-size: 20px;
+    color: #1c96e6;
+    margin-bottom: 10px;
+  }
+  &__btn {
+    display: block;
+    padding: 20px 10px;
+    font-size: 16px;
+    background-color: $secondColor;
+    border-radius: 12px;
+    color: #fff;
+    text-align: center;
+    &:hover {
+      background-color: $secondLightColor;
+    }
+  }
+  &__slogan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // padding: 20px 0 30px;
+    border-radius: 0 0 25px 25px;
+    // background-color: $bodyColor;
+    img {
+      min-width: 100px;
+    }
+  }
+  @media (max-width: $break_xl) {
+    &__row {
+      padding-bottom: 16px;
+    }
+    &__line {
+      height: 23px;
+    }
+    &__col {
+      &--content {
+        width: 200px;
+      }
+    }
+    &__num {
+      font-size: 15px;
+    }
+    &__text {
+      font-size: 10px;
+    }
+    &__price {
+      font-size: 15px;
+    }
+    &__btn {
+      padding: 16px 10px;
+      font-size: 12px;
+    }
+  }
+}

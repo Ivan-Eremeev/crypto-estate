@@ -6,33 +6,55 @@
 
 // Переменные для кастомизации Mixingrid
 $columns: 12; // Колличество колонок
-$max-width: 1200px; // Максимальная ширина контейнера
-$gutter: 15px; // Расстояние между колонками
+$max-width: 1030px; // Максимальная ширина контейнера
+$gutter: 30px; // Расстояние между колонками
 $offset: 30px; // Поля контейнера
 $offset-sm: 15px; // Поля контейнера на мобилке
 // Брэйкпоинты
-$break_xl: 1400px;
+$break_xl: 1440px;
 $break_lg: 1200px;
 $break_md: 1050px;
 $break_sm: 769px;
 $break_xs: 500px;
 
-// Переменные для кастомизации Bootstrap 4
-// $grid-gutter-width: 15px; // Отступы между колонками
-// $grid-columns: 12; // Колличество колонок
-// $grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1410px); // Брэйкпоинты
-// $container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1400px); // Максимальная ширина контейнера
-// $gutter: $grid-gutter-width; // Переменная для задания отступов равных междуколоночным
-
 // Шрифты
-// @include font-face("EastAP", "../fonts/EastAP/EastAP", bold, italic);
+@include font-face("FuturaFuturisC", "../fonts/FuturaFuturisC/FuturaFuturisC", normal, normal);
+@include font-face("FuturaFuturisC", "../fonts/FuturaFuturisC/FuturaFuturisC-Italic", normal, italic);
+@include font-face("FuturaFuturisC", "../fonts/FuturaFuturisC/FuturaFuturisC-Bold", bold, normal);
 
-// Цвета
-// $black: #000;
+@include font-face("FuturaBookС", "../fonts/FuturaBookС/futurabookc", normal, normal);
+@include font-face("FuturaС", "../fonts/FuturaС/futurabookc-italic", normal, italic);
+
+
+// Переменные цвета
+$mainColor: #58ab5c;
+$mainLightColor: #6ec172;
+$secondColor: #1376d3;
+$secondLightColor: #3093f0;
+$thirdColor: #bd7019;
+$thirdLightColor: #d3862f;
+$bodyColor: #1b1c23;
+$backColor: #13141d;
+$elementColor: #282936;
+$elementHightlight: #313346;
+$iconColor: #8c8e9c;
+$fontColor: #fff;
+$fontDarkColor: #4d4e55;
+
+// Переменные шрифты
+$firstFont: "FuturaС",
+sans-serif;
+$secondFont: "FuturaFuturisC",
+sans-serif;
 
 // Подключение файлов
-// @import 'blocks/menu';
-// @import 'blocks/mmenu';
+@import 'blocks/header';
+@import 'blocks/menu';
+@import 'blocks/user';
+@import 'blocks/head';
+@import 'blocks/statistics';
+@import 'blocks/gameList';
+@import 'blocks/chat';
 // @import 'blocks/modal';
 // @import 'blocks/tooltipster-noir';
 
@@ -50,14 +72,14 @@ a {
 button,
 input,
 textarea {
-  font-family: Arial;
-  font-size: 16px;
+  font-family: $firstFont;
+  font-size: 14px;
 }
 body {
   height: 100%;
-  background-color: #fff;
-  font-family: Arial;
-  font-size: 16px;
+  background-color: $bodyColor;
+  font-family: $firstFont;
+  font-size: 14px;
 }
 .mobile-hide {
   @media (max-width: $break_sm) {
@@ -96,6 +118,9 @@ body {
 }
 .wrapper {
   @include wrapper();
+  @media (max-width: $break_xl) {
+    max-width: 834px;
+  }
 }
 input:-webkit-autofill {
   -webkit-box-shadow: inset 0 0 0 50px #fff !important;
@@ -112,4 +137,49 @@ input:-webkit-autofill {
 .content {
   flex-grow: 1;
 }
+.title {
+  font-family: $secondFont;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.subtitle {
+  font-family: $firstFont;
+  font-size: 20px;
+}
+.subtitleB {
+  font-family: $secondFont;
+  font-size: 16px;
+}
+.btn {
+  padding: 15px 20px;
+  font-family: $secondFont;
+  font-size: 14px;
+  color: $fontColor;
+  &--first {
+    background-color: $mainColor;
+    &:hover {
+      background-color: $mainLightColor;
+    }
+  }
+  @media (max-width: $break_xl) {
+    font-size: 10px;
+  }
+}
 /* /settings */
+
+/* pageNav */
+.pageNav {
+  padding: 50px 0;
+  font-size: 20px;
+  li {
+    
+  }
+  a {
+    color: $fontColor;
+  }
+}
+svg {
+  max-width: 100%;
+  max-height: 100%;
+}
+/* /pageNav */

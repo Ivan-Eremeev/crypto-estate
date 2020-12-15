@@ -1,32 +1,51 @@
 // header
 header.header#header
 	.wrapper
-		.header_container
+		.header__row
 
-			// menu
-			//- .menu--left .menu--right .menu--top .menu--bottom .menu--drop
-			.js-menu.menu.menu--right
-				#menu-btn.menu_btn
-				nav#mmenu.menu_nav
-					ul.menu_list
-						li.menu_item
-							a(href="#").menu_link Меню 1
-						li.menu_item
-							a(href="#").menu_link Меню 2
-						li.menu_item
-							a(href="#").menu_link Меню 3
-						li.menu_item
-							a(href="#").menu_link Меню 4
-						li.menu_item
-							a(href="#").menu_link Меню 5
-						li.menu_item
-							a(href="#").menu_link Меню 6
-						li.menu_item
-							a(href="#").menu_link Меню 7
-						li.menu_item
-							a(href="#").menu_link Меню 8
-					#menu-close.menu_close
-				#menu-over.menu_over
-			// /menu
+			.header__col.header__col--logo
+				// logo
+				a(href="#").logo
+					img(src="img/logo.png", alt="")
+				// /logo
+
+			.header__col
+				// menu
+				//- .menu--left .menu--right .menu--top .menu--bottom .menu--drop
+				.js-menu.menu.menu--right
+					#menu-btn.menu__btn
+					nav#mmenu.menu__nav
+						ul.menu__list
+							li
+								a(href="#") Обучающая игра
+							li
+								a(href="#") Данные
+							li
+								a(href="#") Рейтинг
+							li
+								a(href="#") Баланс
+						#menu-close.menu__close
+					#menu-over.menu__over
+				// /menu
+
+			.header__col
+				
+				// user
+				.user
+					a(href="#").user__icon
+						img(src="img/chat_icon.svg", alt="")
+					a(href="#").user__icon
+						img(src="img/gear_icon.svg", alt="")
+					a(href="#").user__lk
+						img(src="img/user_1.jpg", alt="")
+						span Личный кабинет
+				//	/user
+
+				// lang
+				a(href="#").lang
+					span.active RU
+					span.lang__slash /
+					span EN
+				//	/lang
 
 // /header
