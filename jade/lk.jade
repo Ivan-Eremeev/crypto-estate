@@ -1,0 +1,100 @@
+extends blocks/base.jade
+
+block title 
+	title Личный кабинет
+
+block style-libs
+	//- link(rel="stylesheet", href="css/libs/animate.min.css")
+	//- link(rel="stylesheet", href="css/libs/bootstrap-grid.min.css")
+	//- link(rel="stylesheet", href="css/libs/fullpage.css")
+	//- link(rel="stylesheet", href="css/libs/hamburgers.min.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.fancybox.min.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.mmenu.all.css")
+	link(rel="stylesheet", href="css/libs/jquery.scrollbar.css")
+	//- link(rel="stylesheet", href="css/libs/slick.css")
+	//- link(rel="stylesheet", href="css/libs/tooltipster.bundle.min.css")
+
+block content
+
+	.page
+
+		include blocks/header.jade
+		
+		.content
+
+			// head
+			.head.mobile-hide
+				.head__line
+				.wrapper
+					.head__row
+						.head__col.head__col--content.head__col--alignCenter
+							a(href="home.html").head__back на главную
+						.head__col.head__col--slogan
+							.head__slogan
+								img(src="img/slogan.png", alt="")
+						.head__col.head__col--content
+			//	/head	
+
+			// persona
+			.persona
+				.wrapper
+					.persona__photo
+						img(src="img/user_1.jpg", alt="")
+					.persona__name @Nikole Kidman
+					a(href="#").persona__btn Обновить аватар
+					.persona__desc Не менее 100x100px
+					
+			//	/persona
+
+			// personaItems
+			.personaItems
+				.wrapper
+					.row
+						.personaItems__col
+							form(action="").personaItems__item
+								.personaItems__title Партнерская ссылка
+								.personaItems__input
+									input(type="text")
+								.personaItems__row
+									.personaItems__subcol
+										.personaItems__subtitle Кол-во партнеров
+										.personaItems__num 12
+									.personaItems__subcol
+										.personaItems__subtitle Ваш доход
+										.personaItems__num 1.023 ETH
+						.personaItems__col
+							.personaItems__item
+								.personaItems__title История моих игр
+								.personaItems__btn
+									a(href="#").btn.btn--first Смотреть
+								.personaItems__title Двухфакторная авторизация
+								.personaItems__btn
+									a(href="#").btn.btn--first Включить
+						.personaItems__col
+							form(action="").personaItems__item
+								.personaItems__title
+									span Изменить E-mail
+									a(href="#").personaItems__red Удалить
+								.personaItems__input
+									input(type="text")
+								.personaItems__text Используйте свой реальный  E-mail  в качестве логина. На него будет отправлен вааш пароль для входа на сайт.
+					.personaItems__back 
+						a(href="#").btn.btn--gray Вернуться на главный экран
+			//	/personaItems
+		//- include blocks/footer.jade
+
+block js-libs
+	script(src="js/libs/jquery.min.js")
+	//- script(src="js/libs/jquery.fancybox.min.js")
+	//- script(src="js/libs/slick.min.js")
+	//- script(src="js/libs/jquery.matchHeight-min.js")
+	//- script(src="js/libs/jquery.inputmask.min.js")
+	//- script(src="js/libs/autosize.min.js")
+	//- script(src="js/libs/tooltipster.bundle.min.js")
+	//- script(src="js/libs/jquery.mmenu.min.all.js")
+	//- script(src="js/libs/wow.min.js")
+	//- script(src="js/libs/fullpage.min.js")
+	//- script(src="js/libs/jquery.vide.min.js")
+	script(src="js/libs/jquery.scrollbar.min.js")
+	//- script(src="http://api-maps.yandex.ru/2.1/?lang=ru_RU")
+	//- script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDArYzQvxn3CL3pB92Iqn9gaDltBFLfF4Y")

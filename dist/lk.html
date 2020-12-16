@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<title>Личный кабинет</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<link rel="stylesheet" href="css/libs/jquery.scrollbar.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="page">
+			<!-- header-->
+			<header class="header" id="header">
+				<div class="wrapper">
+					<div class="header__row">
+						<div class="header__col header__col--logo">
+							<!-- logo--><a class="logo md-hide" href="#"><img src="img/logo.png" alt=""></a>
+							<!-- /logo-->
+							<!-- userIconMob--><a class="userIconMob md-visible" href="#"><img src="img/user_1.jpg" alt=""></a>
+							<!--	/userIconMob-->
+						</div>
+						<div class="header__col mobile-visible"><img src="img/slogan_mob.png" alt=""></div>
+						<div class="header__col">
+							<!-- menu-->
+							<div class="menu menu--right" id="menu">
+								<div class="menu__btn" id="menu-btn">
+									<div class="menu__btnInner"></div>
+								</div>
+								<nav class="menu__nav">
+									<ul class="menu__list">
+										<li><a href="#">Обучающая игра</a></li>
+										<li><a href="#">Данные</a></li>
+										<li><a href="#">Рейтинг</a></li>
+										<li><a href="#">Баланс</a></li>
+									</ul>
+									<!-- user-->
+									<div class="user md-visible"><a class="user__icon" href="#"><img src="img/chat_icon.svg" alt=""></a><a class="user__icon" href="#"><img src="img/gear_icon.svg" alt=""></a><a class="user__lk" href="#"><img src="img/user_1.jpg" alt=""><span>Личный кабинет</span></a></div>
+									<!--	/user-->
+									<!-- lang--><a class="lang md-visible" href="#"><span class="active">RU</span><span class="lang__slash">/</span><span>EN</span></a>
+									<!--	/lang-->
+									<div class="menu__close" id="menu-close"></div>
+								</nav>
+								<div class="menu__over" id="menu-over"></div>
+							</div>
+							<!-- /menu-->
+						</div>
+						<div class="header__col md-hide">
+							<!-- user-->
+							<div class="user"><a class="user__icon" href="#"><img src="img/chat_icon.svg" alt=""></a><a class="user__icon" href="#"><img src="img/gear_icon.svg" alt=""></a><a class="user__lk" href="#"><img src="img/user_1.jpg" alt=""><span>Личный кабинет</span></a></div>
+							<!--	/user-->
+							<!-- lang--><a class="lang" href="#"><span class="active">RU</span><span class="lang__slash">/</span><span>EN</span></a>
+							<!--	/lang-->
+						</div>
+					</div>
+				</div>
+			</header>
+			<!-- /header-->
+			<div class="content">
+				<!-- head-->
+				<div class="head mobile-hide">
+					<div class="head__line"></div>
+					<div class="wrapper">
+						<div class="head__row">
+							<div class="head__col head__col--content head__col--alignCenter"><a class="head__back" href="home.html">на главную</a></div>
+							<div class="head__col head__col--slogan">
+								<div class="head__slogan"><img src="img/slogan.png" alt=""></div>
+							</div>
+							<div class="head__col head__col--content"></div>
+						</div>
+					</div>
+				</div>
+				<!--	/head	-->
+				<!-- persona-->
+				<div class="persona">
+					<div class="wrapper">
+						<div class="persona__photo"><img src="img/user_1.jpg" alt=""></div>
+						<div class="persona__name">@Nikole Kidman</div><a class="persona__btn" href="#">Обновить аватар</a>
+						<div class="persona__desc">Не менее 100x100px</div>
+					</div>
+				</div>
+				<!--	/persona-->
+				<!-- personaItems-->
+				<div class="personaItems">
+					<div class="wrapper">
+						<div class="row">
+							<div class="personaItems__col">
+								<form class="personaItems__item" action="">
+									<div class="personaItems__title">Партнерская ссылка</div>
+									<div class="personaItems__input">
+										<input type="text">
+									</div>
+									<div class="personaItems__row">
+										<div class="personaItems__subcol">
+											<div class="personaItems__subtitle">Кол-во партнеров</div>
+											<div class="personaItems__num">12</div>
+										</div>
+										<div class="personaItems__subcol">
+											<div class="personaItems__subtitle">Ваш доход</div>
+											<div class="personaItems__num">1.023 ETH</div>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="personaItems__col">
+								<div class="personaItems__item">
+									<div class="personaItems__title">История моих игр</div>
+									<div class="personaItems__btn"><a class="btn btn--first" href="#">Смотреть</a></div>
+									<div class="personaItems__title">Двухфакторная авторизация</div>
+									<div class="personaItems__btn"><a class="btn btn--first" href="#">Включить</a></div>
+								</div>
+							</div>
+							<div class="personaItems__col">
+								<form class="personaItems__item" action="">
+									<div class="personaItems__title"><span>Изменить E-mail</span><a class="personaItems__red" href="#">Удалить</a></div>
+									<div class="personaItems__input">
+										<input type="text">
+									</div>
+									<div class="personaItems__text">Используйте свой реальный  E-mail  в качестве логина. На него будет отправлен вааш пароль для входа на сайт.</div>
+								</form>
+							</div>
+						</div>
+						<div class="personaItems__back"> <a class="btn btn--gray" href="#">Вернуться на главный экран</a></div>
+					</div>
+				</div>
+				<!--	/personaItems-->
+			</div>
+		</div>
+		<script src="js/libs/jquery.min.js"></script>
+		<script src="js/libs/jquery.scrollbar.min.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
