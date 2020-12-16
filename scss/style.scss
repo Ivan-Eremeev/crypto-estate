@@ -59,7 +59,7 @@ sans-serif;
 @import 'blocks/headStatisticsMob';
 @import 'blocks/persona';
 @import 'blocks/personaItems';
-// @import 'blocks/modal';
+@import 'blocks/modal';
 // @import 'blocks/tooltipster-noir';
 
 /* settings */
@@ -157,6 +157,9 @@ input:-webkit-autofill {
   font-size: 24px;
   text-transform: uppercase;
   color: $fontColor;
+  @media (max-width: $break_xl) {
+    font-size: 18px;
+  }
 }
 .subtitle {
   font-family: $firstFont;
@@ -182,6 +185,12 @@ input:-webkit-autofill {
     background-color: $mainColor;
     &:hover {
       background-color: $mainLightColor;
+    }
+  }
+  &--second {
+    background-color: $secondColor;
+    &:hover {
+      background-color: $secondLightColor;
     }
   }
   &--gray {

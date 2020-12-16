@@ -1422,6 +1422,104 @@ h1, h2, h3 {
     .personaItems__text {
       font-size: 10px; } }
 
+.modal {
+  position: relative;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 13;
+  font-family: "FuturaFuturisC", sans-serif;
+  color: #fff; }
+  .modal__container {
+    width: 100%;
+    max-width: 500px;
+    position: absolute;
+    overflow-y: auto;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: relative; }
+  .modal__head {
+    padding: 30px 60px 30px 35px;
+    background-color: #13141d; }
+  .modal__body {
+    padding: 22px 35px;
+    background-color: #1b1c23; }
+  .modal__row {
+    margin-bottom: 30px; }
+    .modal__row:last-child {
+      margin-bottom: 13px; }
+    .modal__row--center {
+      text-align: center; }
+  .modal__text {
+    font-size: 16px;
+    color: #5b5c64; }
+  .modal__hint {
+    color: #5b5c64;
+    margin-bottom: 10px; }
+  .modal__input {
+    height: 48px; }
+    .modal__input--white input {
+      color: #fff; }
+  .modal .btn {
+    display: inline-block;
+    padding-left: 60px;
+    padding-right: 60px; }
+  .modal__close {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+    position: absolute;
+    top: 35px;
+    right: 35px; }
+    .modal__close:after, .modal__close:before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: #fff;
+      position: absolute;
+      top: 50%; }
+    .modal__close:after {
+      -webkit-transform: translate(0, -50%) rotate(45deg);
+      -ms-transform: translate(0, -50%) rotate(45deg);
+      transform: translate(0, -50%) rotate(45deg); }
+    .modal__close:before {
+      -webkit-transform: translate(0, -50%) rotate(-45deg);
+      -ms-transform: translate(0, -50%) rotate(-45deg);
+      transform: translate(0, -50%) rotate(-45deg); }
+  @media (max-width: 1440px) {
+    .modal__container {
+      max-width: 377px; }
+    .modal__head {
+      padding: 20px 40px 20px 26px; }
+    .modal__body {
+      padding: 16px 26px; }
+    .modal__text {
+      font-size: 12px; }
+    .modal__hint {
+      font-size: 10px; }
+    .modal__input {
+      height: 37px; }
+    .modal__row {
+      margin-bottom: 24px; }
+      .modal__row:last-child {
+        margin-bottom: 10px; }
+    .modal__close {
+      width: 16px;
+      height: 16px;
+      top: 22px;
+      right: 20px; } }
+
 /* settings */
 html {
   height: 100%; }
@@ -1555,6 +1653,9 @@ input:-webkit-autofill {
   font-size: 24px;
   text-transform: uppercase;
   color: #fff; }
+  @media (max-width: 1440px) {
+    .title {
+      font-size: 18px; } }
 
 .subtitle {
   font-family: "FuturaС", sans-serif;
@@ -1582,6 +1683,10 @@ input:-webkit-autofill {
     background-color: #58ab5c; }
     .btn--first:hover {
       background-color: #6ec172; }
+  .btn--second {
+    background-color: #1376d3; }
+    .btn--second:hover {
+      background-color: #3093f0; }
   .btn--gray {
     background-color: #282936; }
     .btn--gray:hover {

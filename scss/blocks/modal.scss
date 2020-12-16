@@ -1,41 +1,119 @@
 .modal {
-	display: none;
-	background-color: rgba(0,0,0,.5);
+	position: relative;
+	padding: 10px;
+	background-color: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(4px);
 	position: fixed;
 	top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
-	overflow: auto;
-	&_body {
-		max-width: 100%;
-		max-height: 100%;
-		padding: 10px;
+	z-index: 13;
+	font-family: $secondFont;
+	color: $fontColor;
+	&__container {
+		width: 100%;
+		max-width: 500px;
 		position: absolute;
-		top: 50%;
+		overflow-y: auto;
 		left: 50%;
-		transform: translate(-50%,-50%) scale(0, 0);
-		opacity: 0;
-		transition: .5s;
-	}
-	&_content {
+		top: 50%;
+		transform: translate(-50%,-50%);
 		position: relative;
-		background-color: #fff;
 	}
-	&_close {
+	&__head {
+		padding: 30px 60px 30px 35px;
+		background-color: $backColor;
+	}
+	&__body {
+		padding: 22px 35px;
+		background-color: $bodyColor;
+	}
+	&__row {
+		margin-bottom: 30px;
+		&:last-child {
+			margin-bottom: 13px;
+		}
+		&--center {
+			text-align: center;
+		}
+	}
+	&__text {
+		font-size: 16px;
+		color: $fontDarkColor;
+	}
+	&__hint {
+		color: $fontDarkColor;
+		margin-bottom: 10px;
+	}
+	&__input {
+		height: 48px;
+		&--white {
+			input {
+				color: $fontColor;
+			}
+		}
+	}
+	.btn {
+		display: inline-block;
+		padding-left: 60px;
+		padding-right: 60px;
+	}
+	&__close {
 		width: 20px;
 		height: 20px;
-		background-color: #000;
-		position: absolute;
-		top: 0;
-		right: 0;
+		position: relative;
 		cursor: pointer;
-		user-select: none;
+		position: absolute;
+		top: 35px;
+		right: 35px;
+		&:after,
+		&:before {
+			content: '';
+			display: block;
+			width: 100%;
+			height: 2px;
+			background-color: #fff;
+			position: absolute;
+			top: 50%;
+		}
+		&:after {
+			transform: translate(0, -50%) rotate(45deg);
+		}
+		&:before {
+			transform: translate(0, -50%) rotate(-45deg);
+		}
 	}
-	&.open {
-		.modal_body {
-			transform: translate(-50%,-50%) scale(1, 1);
-			opacity: 1;
+	@media (max-width: $break_xl) {
+		&__container {
+			max-width: 377px;
+		}
+		&__head {
+			padding: 20px 40px 20px 26px;
+		}
+		&__body {
+			padding: 16px 26px;
+		}
+		&__text {
+			font-size: 12px;
+		}
+		&__hint {
+			font-size: 10px;
+		}
+		&__input {
+			height: 37px;
+		}
+		&__row {
+			margin-bottom: 24px;
+			&:last-child {
+				margin-bottom: 10px;
+			}
+		}
+		&__close {
+			width: 16px;
+			height: 16px;
+			top: 22px;
+			right: 20px;
 		}
 	}
 }
