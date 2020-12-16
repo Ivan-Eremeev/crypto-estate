@@ -1467,7 +1467,8 @@ h1, h2, h3 {
     .modal__text p {
       margin-bottom: 15px; }
     .modal__text a {
-      margin: 0 3px; }
+      margin: 0 3px;
+      color: #1c96e6; }
   .modal__hint {
     color: #5b5c64;
     margin-bottom: 10px; }
