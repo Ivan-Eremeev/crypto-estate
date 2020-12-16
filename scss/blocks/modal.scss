@@ -11,11 +11,11 @@
 	z-index: 13;
 	font-family: $secondFont;
 	color: $fontColor;
+	overflow-y: auto;
 	&__container {
 		width: 100%;
 		max-width: 500px;
 		position: absolute;
-		overflow-y: auto;
 		left: 50%;
 		top: 50%;
 		transform: translate(-50%,-50%);
@@ -37,10 +37,19 @@
 		&--center {
 			text-align: center;
 		}
+		&--mb10 {
+			margin-bottom: 10px;
+		}
 	}
 	&__text {
 		font-size: 16px;
 		color: $fontDarkColor;
+		p {
+			margin-bottom: 15px;
+		}
+		a {
+			margin: 0 3px;
+		}
 	}
 	&__hint {
 		color: $fontDarkColor;
@@ -107,6 +116,9 @@
 			margin-bottom: 24px;
 			&:last-child {
 				margin-bottom: 10px;
+			}
+			&--mb10 {
+				margin-bottom: 5px;
 			}
 		}
 		&__close {

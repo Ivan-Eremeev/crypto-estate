@@ -1435,12 +1435,12 @@ h1, h2, h3 {
   right: 0;
   z-index: 13;
   font-family: "FuturaFuturisC", sans-serif;
-  color: #fff; }
+  color: #fff;
+  overflow-y: auto; }
   .modal__container {
     width: 100%;
     max-width: 500px;
     position: absolute;
-    overflow-y: auto;
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -1459,9 +1459,15 @@ h1, h2, h3 {
       margin-bottom: 13px; }
     .modal__row--center {
       text-align: center; }
+    .modal__row--mb10 {
+      margin-bottom: 10px; }
   .modal__text {
     font-size: 16px;
     color: #5b5c64; }
+    .modal__text p {
+      margin-bottom: 15px; }
+    .modal__text a {
+      margin: 0 3px; }
   .modal__hint {
     color: #5b5c64;
     margin-bottom: 10px; }
@@ -1514,6 +1520,8 @@ h1, h2, h3 {
       margin-bottom: 24px; }
       .modal__row:last-child {
         margin-bottom: 10px; }
+      .modal__row--mb10 {
+        margin-bottom: 5px; }
     .modal__close {
       width: 16px;
       height: 16px;

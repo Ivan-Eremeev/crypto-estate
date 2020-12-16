@@ -2,7 +2,7 @@
 <html lang="ru">
 	<head>
 		<meta charset="UTF-8">
-		<title>Навигация по страницам</title>
+		<title>Авторизация</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="keywords" content="">
 		<meta name="description" content="">
@@ -56,21 +56,41 @@
 				</div>
 			</header>
 			<!-- /header-->
-			<main class="content">
-				<div class="wrapper">
-					<!-- pageNav-->
-					<div class="pageNav">
-						<div class="title">Навигация по страницам</div>
-						<ul class="pageNav__list">
-							<li><a href="home.html">Главная</a></li>
-							<li><a href="lk.html">Личный кабинет</a></li>
-							<li><a href="password_recovery.html">Восстановление пароля</a></li>
-							<li><a href="autorization.html">Авторизация</a></li>
-						</ul>
+			<div class="content">
+				<!-- modal-->
+				<div class="modal">
+					<div class="modal__container">
+						<div class="modal__head">
+							<div class="title">Авторизация</div>
+							<div class="modal__close"></div>
+						</div>
+						<div class="modal__body">
+							<div class="modal__row modal__row--mb10">
+								<div class="modal__hint">Введите имя пользователя</div>
+								<div class="modal__input modal__input--white">
+									<input type="text">
+								</div>
+							</div>
+							<div class="modal__row">
+								<div class="modal__hint">Введите пароль</div>
+								<div class="modal__input modal__input--white">
+									<input type="text">
+								</div>
+							</div>
+							<div class="modal__row modal__row--center">
+								<div class="btn btn--second">Авторизоваться</div>
+							</div>
+							<div class="modal__row modal__row--center">
+								<div class="modal__text">
+									<p>Не зарегистрированы?<a href="#">Регистрация</a></p>
+									<p>Забыли пароль?</p>
+								</div>
+							</div>
+						</div>
 					</div>
-					<!-- /pageNav-->
 				</div>
-			</main>
+				<!--	/modal-->
+			</div>
 		</div>
 		<script src="js/libs/jquery.min.js"></script>
 		<script src="js/scripts.js"></script>
