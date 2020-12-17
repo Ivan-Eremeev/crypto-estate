@@ -1456,6 +1456,8 @@ h1, h2, h3 {
   .modal__body {
     padding: 22px 35px;
     background-color: #1b1c23; }
+    .modal__body--noHead {
+      padding: 68px 60px 59px 35px; }
   .modal__row {
     margin-bottom: 30px;
     position: relative; }
@@ -1552,6 +1554,8 @@ h1, h2, h3 {
       padding: 20px 40px 20px 26px; }
     .modal__body {
       padding: 16px 26px; }
+      .modal__body--noHead {
+        padding: 45px 40px 40px 26px; }
     .modal__text {
       font-size: 12px; }
     .modal__hint {
@@ -1794,6 +1798,41 @@ h1, h2, h3 {
         margin-top: 30px;
         font-size: 11px; } }
 
+.confirm {
+  max-width: 460px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  position: relative; }
+  .confirm__text {
+    font-size: 20px;
+    margin-bottom: 40px; }
+    .confirm__text p {
+      margin-bottom: 6px; }
+  .confirm__btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .confirm__btns .btn {
+      width: 47.5%;
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 18px; }
+  @media (max-width: 1440px) {
+    .confirm {
+      max-width: 320px; }
+      .confirm__text {
+        font-size: 14px;
+        margin-bottom: 25px; }
+      .confirm__btns .btn {
+        font-size: 12px; } }
+  @media (max-width: 769px) {
+    .confirm__btns .btn {
+      font-size: 10px; } }
+
 /* settings */
 html {
   height: 100%; }
@@ -1969,6 +2008,10 @@ input:-webkit-autofill {
     background-color: #282936; }
     .btn--gray:hover {
       background-color: #58ab5c; }
+  .btn--third {
+    background-color: #282936; }
+    .btn--third:hover {
+      background-color: #bd7019; }
   .btn:disabled {
     background-color: #282936;
     cursor: default; }

@@ -1,7 +1,7 @@
 extends blocks/base.jade
 
 block title 
-	title Навигация по страницам
+	title Подтвердить
 
 block style-libs
 	//- link(rel="stylesheet", href="css/libs/animate.min.css")
@@ -20,32 +20,24 @@ block content
 
 		include blocks/header.jade
 		
-		main.content
-			.wrapper
+		.content
 
-				// pageNav
-				.pageNav
-					.title Навигация по страницам
-					ul.pageNav__list
-						li
-							a(href="home.html") Главная
-						li
-							a(href="lk.html") Личный кабинет
-						li
-							a(href="password_recovery.html") Восстановление пароля
-						li
-							a(href="autorization.html") Авторизация
-						li
-							a(href="balance.html") Баланс
-						li
-							a(href="registration.html") Регистрация
-						li
-							a(href="win.html") Победа
-						li
-							a(href="loss.html") Поражение
-						li
-							a(href="confirm.html") Подтвердить
-				// /pageNav
+			// modal
+			form(action="#").modal
+				.modal__container.modal__container--w700
+					.modal__body.modal__body--noHead
+						// confirm
+						.confirm
+							.confirm__text
+								p Вы выбрали режим "Игра на ставку". 
+								p Подтверждаете списание ставки для участия в игре?
+							.confirm__btns
+								.btn.btn--second Подтверждаю
+								.btn.btn--third Отменить
+						.modal__close
+						//	/confirm
+								
+			//	/modal
 			
 		//- include blocks/footer.jade
 

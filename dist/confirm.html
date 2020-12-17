@@ -2,7 +2,7 @@
 <html lang="ru">
 	<head>
 		<meta charset="UTF-8">
-		<title>Навигация по страницам</title>
+		<title>Подтвердить</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="keywords" content="">
 		<meta name="description" content="">
@@ -56,26 +56,29 @@
 				</div>
 			</header>
 			<!-- /header-->
-			<main class="content">
-				<div class="wrapper">
-					<!-- pageNav-->
-					<div class="pageNav">
-						<div class="title">Навигация по страницам</div>
-						<ul class="pageNav__list">
-							<li><a href="home.html">Главная</a></li>
-							<li><a href="lk.html">Личный кабинет</a></li>
-							<li><a href="password_recovery.html">Восстановление пароля</a></li>
-							<li><a href="autorization.html">Авторизация</a></li>
-							<li><a href="balance.html">Баланс</a></li>
-							<li><a href="registration.html">Регистрация</a></li>
-							<li><a href="win.html">Победа</a></li>
-							<li><a href="loss.html">Поражение</a></li>
-							<li><a href="confirm.html">Подтвердить</a></li>
-						</ul>
+			<div class="content">
+				<!-- modal-->
+				<form class="modal" action="#">
+					<div class="modal__container modal__container--w700">
+						<div class="modal__body modal__body--noHead">
+							<!-- confirm-->
+							<div class="confirm">
+								<div class="confirm__text">
+									<p>Вы выбрали режим "Игра на ставку". </p>
+									<p>Подтверждаете списание ставки для участия в игре?</p>
+								</div>
+								<div class="confirm__btns">
+									<div class="btn btn--second">Подтверждаю</div>
+									<div class="btn btn--third">Отменить</div>
+								</div>
+							</div>
+							<div class="modal__close"></div>
+							<!--	/confirm-->
+						</div>
 					</div>
-					<!-- /pageNav-->
-				</div>
-			</main>
+				</form>
+				<!--	/modal-->
+			</div>
 		</div>
 		<script src="js/libs/jquery.min.js"></script>
 		<script src="js/scripts.js"></script>

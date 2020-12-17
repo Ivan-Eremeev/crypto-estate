@@ -32,6 +32,9 @@
 	&__body {
 		padding: 22px 35px;
 		background-color: $bodyColor;
+		&--noHead {
+			padding: 68px 60px 59px 35px;
+		}
 	}
 	&__row {
 		margin-bottom: 30px;
@@ -153,6 +156,9 @@
 		}
 		&__body {
 			padding: 16px 26px;
+			&--noHead {
+				padding: 45px 40px 40px 26px;
+			}
 		}
 		&__text {
 			font-size: 12px;
