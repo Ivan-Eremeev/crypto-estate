@@ -149,6 +149,9 @@
             right: 10px;
           }
         }
+        &:nth-child(3) {
+           order: 4;
+        }
       }
       &:after {
         content: '';

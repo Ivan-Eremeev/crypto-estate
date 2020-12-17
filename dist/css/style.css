@@ -1717,6 +1717,10 @@ h1, h2, h3 {
       bottom: 0;
       left: 0;
       right: 10px; }
+    .balance__item .balance__col:nth-child(3) {
+      -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+      order: 4; }
     .balance__item:after {
       content: '';
       display: block;
