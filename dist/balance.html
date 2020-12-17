@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<title>Баланс</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<link rel="stylesheet" href="css/libs/jquery.scrollbar.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="page">
+			<!-- header-->
+			<header class="header" id="header">
+				<div class="wrapper">
+					<div class="header__row">
+						<div class="header__col header__col--logo">
+							<!-- logo--><a class="logo md-hide" href="#"><img src="img/logo.png" alt=""></a>
+							<!-- /logo-->
+							<!-- userIconMob--><a class="userIconMob md-visible" href="#"><img src="img/user_1.jpg" alt=""></a>
+							<!--	/userIconMob-->
+						</div>
+						<div class="header__col mobile-visible"><img src="img/slogan_mob.png" alt=""></div>
+						<div class="header__col">
+							<!-- menu-->
+							<div class="menu menu--right" id="menu">
+								<div class="menu__btn" id="menu-btn">
+									<div class="menu__btnInner"></div>
+								</div>
+								<nav class="menu__nav">
+									<ul class="menu__list">
+										<li><a href="#">Обучающая игра</a></li>
+										<li><a href="#">Данные</a></li>
+										<li><a href="#">Рейтинг</a></li>
+										<li><a href="#">Баланс</a></li>
+									</ul>
+									<!-- user-->
+									<div class="user md-visible"><a class="user__icon" href="#"><img src="img/chat_icon.svg" alt=""></a><a class="user__icon" href="#"><img src="img/gear_icon.svg" alt=""></a><a class="user__lk" href="#"><img src="img/user_1.jpg" alt=""><span>Личный кабинет</span></a></div>
+									<!--	/user-->
+									<!-- lang--><a class="lang md-visible" href="#"><span class="active">RU</span><span class="lang__slash">/</span><span>EN</span></a>
+									<!--	/lang-->
+									<div class="menu__close" id="menu-close"></div>
+								</nav>
+								<div class="menu__over" id="menu-over"></div>
+							</div>
+							<!-- /menu-->
+						</div>
+						<div class="header__col md-hide">
+							<!-- user-->
+							<div class="user"><a class="user__icon" href="#"><img src="img/chat_icon.svg" alt=""></a><a class="user__icon" href="#"><img src="img/gear_icon.svg" alt=""></a><a class="user__lk" href="#"><img src="img/user_1.jpg" alt=""><span>Личный кабинет</span></a></div>
+							<!--	/user-->
+							<!-- lang--><a class="lang" href="#"><span class="active">RU</span><span class="lang__slash">/</span><span>EN</span></a>
+							<!--	/lang-->
+						</div>
+					</div>
+				</div>
+			</header>
+			<!-- /header-->
+			<div class="content">
+				<!-- modal-->
+				<form class="modal" action="">
+					<div class="modal__container modal__container--w700">
+						<!-- balance-->
+						<div class="balance">
+							<div class="modal__head">
+								<div class="title">Баланс</div>
+								<div class="modal__close"></div>
+							</div>
+							<div class="modal__body">
+								<div class="modal__hint">Ваш игровой ETH кошелек для пополнения счета игры</div>
+								<div class="modal__flex">
+									<div class="modal__input">
+										<input type="text">
+									</div>
+									<button class="btn btn--first" type="submit">Создать кошелек</button>
+								</div>
+								<div class="modal__text">Инструкция по пополнению и выводу перейдите по <a href="#">ссылке</a></div>
+								<div class="modal__line"></div>
+								<div class="modal__flex modal__flex--p20">
+									<div class="title">Вывод средств</div>
+									<button class="btn btn--first" type="submit">Пройти авторизацию</button>
+								</div>
+								<div class="modal__line"></div>
+								<div class="modal__row">
+									<div class="modal__flex modal__flex--p20">
+										<div class="title">Вывод средств</div>
+										<button class="btn btn--first" type="submit" disabled>Пройти авторизацию</button>
+									</div>
+									<div class="modal__row">
+										<div class="modal__hint">Введите пароль</div>
+										<div class="modal__input modal__input--white">
+											<input type="text">
+										</div>
+									</div>
+									<div class="modal__row">
+										<div class="modal__hint">Введите код</div>
+										<div class="modal__flex">
+											<div class="modal__input modal__input--center">
+												<input type="text">
+											</div>
+											<button class="btn btn--first" type="submit">Подтвердить</button>
+										</div>
+									</div>
+									<div class="modal__row">
+										<div class="modal__hint">Введите код</div>
+										<div class="modal__flex">
+											<div class="modal__input modal__input--center">
+												<input class="error" type="text">
+											</div>
+											<button class="btn btn--first" type="submit">Подтвердить</button>
+										</div>
+										<div class="modal__text modal__text--error">Код введен не верно. Повторите попытку</div>
+									</div>
+									<div class="modal__row">
+										<div class="modal__hint">Введите код</div>
+										<div class="modal__flex">
+											<div class="modal__input modal__input--center">
+												<input type="text">
+											</div>
+											<button class="btn" type="submit" disabled><span class="btn__checked"><img src="img/checked_icon.svg" alt=""><span>Подтверждено</span></span></button>
+										</div>
+									</div>
+									<div class="modal__row modal__row--mb20">
+										<div class="modal__hint">Сумма вывода</div>
+										<div class="modal__flex">
+											<div class="modal__input modal__input--center">
+												<input type="text">
+											</div>
+											<button class="btn btn--second" type="submit">Вывести средства</button>
+										</div>
+									</div>
+									<div class="modal__line"></div>
+								</div>
+								<div class="modal__row">
+									<div class="modal__hint">История ввода/вывода</div>
+									<div class="balance__table">
+										<div class="balance__title">
+											<div class="balance__row">
+												<div class="balance__col"> <span>Операция</span></div>
+												<div class="balance__col"> <span>Сумма ETH</span></div>
+												<div class="balance__col"> <span>Остаток</span></div>
+												<div class="balance__col"> <span>Дата</span></div>
+											</div>
+										</div>
+										<div class="balance__items js_scrollbar scrollbar-inner">
+											<div class="balance__item">
+												<div class="balance__row">
+													<div class="balance__col">
+														<div class="balance__titleMob mobile-visible">Операция</div><span>Ставка в игре 32</span>
+													</div>
+													<div class="balance__col">
+														<div class="balance__titleMob mobile-visible">Сумма ETH</div>
+														<div class="balance__colInner"><img src="img/cristal_icon.svg" alt=""><span>0.0000422</span></div>
+													</div>
+													<div class="balance__col">
+														<div class="balance__titleMob mobile-visible">Остаток</div>
+														<div class="balance__colInner"><img src="img/cristal_icon.svg" alt=""><span>0.0000422</span></div>
+													</div>
+													<div class="balance__col">
+														<div class="balance__titleMob mobile-visible">Дата</div><span>2020-11-23 12:32:31</span>
+													</div>
+												</div>
+											</div>
+											<div class="balance__item">
+												<div class="balance__row">
+													<div class="balance__col">
+														<div class="balance__titleMob mobile-visible">Операция</div><span>Ставка в игре 32</span>
+													</div>
+													<div class="balance__col">
+														<div class="balance__titleMob mobile-visible">Сумма ETH</div>
+														<div class="balance__colInner"><img src="img/cristal_icon.svg" alt=""><span>0.0000422</span></div>
+													</div>
+													<div class="balance__col">
+														<div class="balance__titleMob mobile-visible">Остаток</div>
+														<div class="balance__colInner"><img src="img/cristal_icon.svg" alt=""><span>0.0000422</span></div>
+													</div>
+													<div class="balance__col">
+														<div class="balance__titleMob mobile-visible">Дата</div><span>2020-11-23 12:32:31</span>
+													</div>
+												</div>
+											</div>
+											<div class="balance__item">
+												<div class="balance__row">
+													<div class="balance__col">
+														<div class="balance__titleMob mobile-visible">Операция</div><span>Ставка в игре 32</span>
+													</div>
+													<div class="balance__col">
+														<div class="balance__titleMob mobile-visible">Сумма ETH</div>
+														<div class="balance__colInner"><img src="img/cristal_icon.svg" alt=""><span>0.0000422</span></div>
+													</div>
+													<div class="balance__col">
+														<div class="balance__titleMob mobile-visible">Остаток</div>
+														<div class="balance__colInner"><img src="img/cristal_icon.svg" alt=""><span>0.0000422</span></div>
+													</div>
+													<div class="balance__col">
+														<div class="balance__titleMob mobile-visible">Дата</div><span>2020-11-23 12:32:31</span>
+													</div>
+												</div>
+											</div>
+											<div class="balance__item">
+												<div class="balance__row">
+													<div class="balance__col">
+														<div class="balance__titleMob mobile-visible">Операция</div><span>Ставка в игре 32</span>
+													</div>
+													<div class="balance__col">
+														<div class="balance__titleMob mobile-visible">Сумма ETH</div>
+														<div class="balance__colInner"><img src="img/cristal_icon.svg" alt=""><span>0.0000422</span></div>
+													</div>
+													<div class="balance__col">
+														<div class="balance__titleMob mobile-visible">Остаток</div>
+														<div class="balance__colInner"><img src="img/cristal_icon.svg" alt=""><span>0.0000422</span></div>
+													</div>
+													<div class="balance__col">
+														<div class="balance__titleMob mobile-visible">Дата</div><span>2020-11-23 12:32:31</span>
+													</div>
+												</div>
+											</div>
+											<div class="balance__item">
+												<div class="balance__row">
+													<div class="balance__col">
+														<div class="balance__titleMob mobile-visible">Операция</div><span>Ставка в игре 32</span>
+													</div>
+													<div class="balance__col">
+														<div class="balance__titleMob mobile-visible">Сумма ETH</div>
+														<div class="balance__colInner"><img src="img/cristal_icon.svg" alt=""><span>0.0000422</span></div>
+													</div>
+													<div class="balance__col">
+														<div class="balance__titleMob mobile-visible">Остаток</div>
+														<div class="balance__colInner"><img src="img/cristal_icon.svg" alt=""><span>0.0000422</span></div>
+													</div>
+													<div class="balance__col">
+														<div class="balance__titleMob mobile-visible">Дата</div><span>2020-11-23 12:32:31</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--  /balance-->
+					</div>
+				</form>
+				<!--	/modal-->
+			</div>
+		</div>
+		<script src="js/libs/jquery.min.js"></script>
+		<script src="js/libs/jquery.scrollbar.min.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

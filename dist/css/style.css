@@ -1440,6 +1440,7 @@ h1, h2, h3 {
   .modal__container {
     width: 100%;
     max-width: 500px;
+    max-height: 100%;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -1447,6 +1448,8 @@ h1, h2, h3 {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     position: relative; }
+    .modal__container--w700 {
+      max-width: 700px; }
   .modal__head {
     padding: 30px 60px 30px 35px;
     background-color: #13141d; }
@@ -1454,27 +1457,57 @@ h1, h2, h3 {
     padding: 22px 35px;
     background-color: #1b1c23; }
   .modal__row {
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    position: relative; }
     .modal__row:last-child {
       margin-bottom: 13px; }
     .modal__row--center {
       text-align: center; }
     .modal__row--mb10 {
       margin-bottom: 10px; }
+    .modal__row--mb20 {
+      margin-bottom: 20px; }
+    .modal__row--pb15 {
+      padding-bottom: 10px; }
+  .modal__flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .modal__flex--p20 {
+      padding-top: 20px;
+      padding-bottom: 20px; }
+    .modal__flex .btn {
+      height: 48px;
+      padding-top: 0 !important;
+      padding-bottom: 0 !important; }
   .modal__text {
     font-size: 16px;
     color: #5b5c64; }
     .modal__text p {
       margin-bottom: 15px; }
     .modal__text a {
-      margin: 0 3px;
       color: #1c96e6; }
+    .modal__text--error {
+      font-size: 14px;
+      color: #910317; }
   .modal__hint {
     color: #5b5c64;
     margin-bottom: 10px; }
   .modal__input {
     height: 48px; }
+    .modal__input input.error {
+      border: 1px solid #910317; }
     .modal__input--white input {
+      color: #fff; }
+    .modal__input--center input {
+      font-size: 24px !important;
+      text-align: center;
       color: #fff; }
   .modal .btn {
     display: inline-block;
@@ -1504,9 +1537,17 @@ h1, h2, h3 {
       -webkit-transform: translate(0, -50%) rotate(-45deg);
       -ms-transform: translate(0, -50%) rotate(-45deg);
       transform: translate(0, -50%) rotate(-45deg); }
+  .modal__line {
+    height: 1px;
+    margin-left: -10px;
+    margin-right: -10px;
+    background-color: #424456;
+    bottom: 0; }
   @media (max-width: 1440px) {
     .modal__container {
       max-width: 377px; }
+      .modal__container--w700 {
+        max-width: 525px; }
     .modal__head {
       padding: 20px 40px 20px 26px; }
     .modal__body {
@@ -1517,17 +1558,176 @@ h1, h2, h3 {
       font-size: 10px; }
     .modal__input {
       height: 37px; }
+      .modal__input--center input {
+        font-size: 18px !important; }
     .modal__row {
       margin-bottom: 24px; }
       .modal__row:last-child {
         margin-bottom: 10px; }
       .modal__row--mb10 {
         margin-bottom: 5px; }
+      .modal__row--mb20 {
+        margin-bottom: 15px; }
     .modal__close {
       width: 16px;
       height: 16px;
       top: 22px;
-      right: 20px; } }
+      right: 20px; }
+    .modal__flex--p20 {
+      padding-top: 15px;
+      padding-bottom: 15px; }
+    .modal__flex .btn {
+      height: 37px; } }
+  @media (max-width: 769px) {
+    .modal__input--center input {
+      font-size: 15px !important; } }
+  @media (max-width: 500px) {
+    .modal__flex {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; } }
+
+.balance .modal__hint {
+  font-size: 16px;
+  color: #fff; }
+
+.balance .modal__input {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1; }
+  .balance .modal__input input {
+    font-size: 14px; }
+
+.balance .modal__text {
+  margin: 10px 0;
+  font-size: 13px; }
+
+.balance .btn {
+  width: 175px;
+  padding: 15px 10px;
+  margin-left: 20px; }
+
+.balance__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.balance__col {
+  width: 23.3%;
+  padding: 20px 10px 20px 25px; }
+  .balance__col:last-child {
+    width: 30%; }
+
+.balance__colInner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.balance__items {
+  overflow-y: auto;
+  max-height: 180px; }
+  .balance__items .scroll-content {
+    padding-right: 8px; }
+
+.balance__item {
+  margin-bottom: 4px; }
+  .balance__item .balance__col {
+    background-color: #282936;
+    position: relative; }
+    .balance__item .balance__col:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 1px;
+      height: 80%;
+      top: 50%;
+      right: 0;
+      -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+      background-color: #424456; }
+    .balance__item .balance__col:last-child:after {
+      display: none; }
+  .balance__item svg {
+    margin-right: 5px;
+    width: 17px;
+    height: 17px;
+    fill: #58ab5c;
+    -ms-flex-negative: 0;
+    flex-shrink: 0; }
+  .balance__item:last-child {
+    margin-bottom: 0; }
+
+.balance__title {
+  font-size: 13px;
+  color: #5b5c64; }
+
+@media (max-width: 1440px) {
+  .balance .modal__hint {
+    font-size: 12px; }
+  .balance .modal__input input {
+    font-size: 10px; }
+  .balance .modal__text {
+    font-size: 10px; }
+  .balance .btn {
+    font-size: 10px; }
+  .balance__col {
+    padding: 12px 10px 12px 15px;
+    font-size: 10px; }
+  .balance__items {
+    max-height: 119px; }
+  .balance__item svg {
+    width: 13px;
+    height: 13px; } }
+
+@media (max-width: 769px) {
+  .balance__titleMob {
+    color: #5b5c64;
+    margin-bottom: 5px; }
+  .balance__col {
+    width: 50%; }
+    .balance__col:last-child {
+      width: 50%; }
+  .balance__items {
+    max-height: 224px; }
+  .balance__item {
+    position: relative; }
+    .balance__item .balance__col:after {
+      display: none; }
+    .balance__item .balance__col:nth-child(1):before {
+      content: '';
+      display: block;
+      height: 1px;
+      background-color: #424456;
+      position: absolute;
+      bottom: 0;
+      left: 10px;
+      right: 0; }
+    .balance__item .balance__col:nth-child(2):before {
+      content: '';
+      display: block;
+      height: 1px;
+      background-color: #424456;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 10px; }
+    .balance__item:after {
+      content: '';
+      display: block;
+      width: 1px;
+      background-color: #424456;
+      position: absolute;
+      left: 50%;
+      top: 10px;
+      bottom: 10px; } }
+
+@media (max-width: 500px) {
+  .balance .btn {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px; } }
 
 /* settings */
 html {
@@ -1687,7 +1887,11 @@ input:-webkit-autofill {
   text-align: center;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
-  transition: 0.3s; }
+  transition: 0.3s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
   .btn--first {
     background-color: #58ab5c; }
     .btn--first:hover {
@@ -1700,10 +1904,35 @@ input:-webkit-autofill {
     background-color: #282936; }
     .btn--gray:hover {
       background-color: #58ab5c; }
+  .btn:disabled {
+    background-color: #282936;
+    cursor: default; }
+    .btn:disabled:hover {
+      background-color: #282936; }
+  .btn__checked {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .btn__checked svg {
+      width: 23px;
+      height: 23px;
+      margin-right: 5px;
+      fill: #58ab5c;
+      -ms-flex-negative: 0;
+      flex-shrink: 0; }
   @media (max-width: 1440px) {
     .btn {
       padding: 12px 20px;
       font-size: 12px; } }
+  .btn__checked svg {
+    width: 12px;
+    height: 12px; }
 
 .scrollbar-inner > .scroll-element.scroll-y {
   width: 4px; }
@@ -1721,6 +1950,9 @@ input:-webkit-autofill {
   background-color: #58ab5c; }
 
 .scrollbar-inner > .scroll-element:hover .scroll-bar {
+  background-color: #6ec172; }
+
+.scrollbar-inner > .scroll-element.scroll-draggable .scroll-bar {
   background-color: #6ec172; }
 
 svg {

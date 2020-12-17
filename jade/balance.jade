@@ -1,0 +1,225 @@
+extends blocks/base.jade
+
+block title 
+	title Баланс
+
+block style-libs
+	//- link(rel="stylesheet", href="css/libs/animate.min.css")
+	//- link(rel="stylesheet", href="css/libs/bootstrap-grid.min.css")
+	//- link(rel="stylesheet", href="css/libs/fullpage.css")
+	//- link(rel="stylesheet", href="css/libs/hamburgers.min.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.fancybox.min.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.mmenu.all.css")
+	link(rel="stylesheet", href="css/libs/jquery.scrollbar.css")
+	//- link(rel="stylesheet", href="css/libs/slick.css")
+	//- link(rel="stylesheet", href="css/libs/tooltipster.bundle.min.css")
+
+block content
+
+	.page
+
+		include blocks/header.jade
+		
+		.content
+
+			// modal
+			form(action="").modal
+				.modal__container.modal__container--w700
+					// balance
+					.balance
+						.modal__head
+							.title Баланс
+							.modal__close
+						.modal__body
+
+							.modal__hint Ваш игровой ETH кошелек для пополнения счета игры
+							.modal__flex
+								.modal__input
+									input(type="text")
+								button(type="submit").btn.btn--first Создать кошелек
+							.modal__text Инструкция по пополнению и выводу перейдите по 
+								a(href="#") ссылке
+							.modal__line
+								
+							.modal__flex.modal__flex--p20
+								.title Вывод средств
+								button(type="submit").btn.btn--first Пройти авторизацию
+							.modal__line
+
+							.modal__row
+								.modal__flex.modal__flex--p20
+									.title Вывод средств
+									button(type="submit" disabled).btn.btn--first Пройти авторизацию
+									
+								.modal__row
+									.modal__hint Введите пароль
+									.modal__input.modal__input--white
+										input(type="text")
+
+								.modal__row
+									.modal__hint Введите код
+									.modal__flex
+										.modal__input.modal__input--center
+											input(type="text")
+										button(type="submit").btn.btn--first Подтвердить
+
+								.modal__row
+									.modal__hint Введите код
+									.modal__flex
+										.modal__input.modal__input--center
+											input(type="text").error
+										button(type="submit").btn.btn--first Подтвердить
+									.modal__text.modal__text--error Код введен не верно. Повторите попытку
+
+								.modal__row
+									.modal__hint Введите код
+									.modal__flex
+										.modal__input.modal__input--center
+											input(type="text")
+										button(type="submit" disabled).btn
+											span.btn__checked
+												img(src="img/checked_icon.svg", alt="")
+												span Подтверждено
+								
+								.modal__row.modal__row--mb20
+									.modal__hint Сумма вывода
+									.modal__flex
+										.modal__input.modal__input--center
+											input(type="text")
+										button(type="submit").btn.btn--second Вывести средства
+										
+								.modal__line
+
+							.modal__row
+								.modal__hint История ввода/вывода
+								.balance__table
+
+									.balance__title
+										.balance__row
+											.balance__col 
+												span Операция
+											.balance__col 
+												span Сумма ETH
+											.balance__col 
+												span Остаток
+											.balance__col 
+												span Дата
+
+									.balance__items.js_scrollbar.scrollbar-inner
+
+										.balance__item
+											.balance__row
+												.balance__col
+													.balance__titleMob.mobile-visible Операция
+													span Ставка в игре 32
+												.balance__col
+													.balance__titleMob.mobile-visible Сумма ETH
+													.balance__colInner
+														img(src="img/cristal_icon.svg", alt="")
+														span 0.0000422
+												.balance__col
+													.balance__titleMob.mobile-visible Остаток
+													.balance__colInner
+														img(src="img/cristal_icon.svg", alt="")
+														span 0.0000422
+												.balance__col
+													.balance__titleMob.mobile-visible Дата
+													span 2020-11-23 12:32:31
+
+										.balance__item
+											.balance__row
+												.balance__col
+													.balance__titleMob.mobile-visible Операция
+													span Ставка в игре 32
+												.balance__col
+													.balance__titleMob.mobile-visible Сумма ETH
+													.balance__colInner
+														img(src="img/cristal_icon.svg", alt="")
+														span 0.0000422
+												.balance__col
+													.balance__titleMob.mobile-visible Остаток
+													.balance__colInner
+														img(src="img/cristal_icon.svg", alt="")
+														span 0.0000422
+												.balance__col
+													.balance__titleMob.mobile-visible Дата
+													span 2020-11-23 12:32:31
+
+										.balance__item
+											.balance__row
+												.balance__col
+													.balance__titleMob.mobile-visible Операция
+													span Ставка в игре 32
+												.balance__col
+													.balance__titleMob.mobile-visible Сумма ETH
+													.balance__colInner
+														img(src="img/cristal_icon.svg", alt="")
+														span 0.0000422
+												.balance__col
+													.balance__titleMob.mobile-visible Остаток
+													.balance__colInner
+														img(src="img/cristal_icon.svg", alt="")
+														span 0.0000422
+												.balance__col
+													.balance__titleMob.mobile-visible Дата
+													span 2020-11-23 12:32:31
+
+										.balance__item
+											.balance__row
+												.balance__col
+													.balance__titleMob.mobile-visible Операция
+													span Ставка в игре 32
+												.balance__col
+													.balance__titleMob.mobile-visible Сумма ETH
+													.balance__colInner
+														img(src="img/cristal_icon.svg", alt="")
+														span 0.0000422
+												.balance__col
+													.balance__titleMob.mobile-visible Остаток
+													.balance__colInner
+														img(src="img/cristal_icon.svg", alt="")
+														span 0.0000422
+												.balance__col
+													.balance__titleMob.mobile-visible Дата
+													span 2020-11-23 12:32:31
+
+										.balance__item
+											.balance__row
+												.balance__col
+													.balance__titleMob.mobile-visible Операция
+													span Ставка в игре 32
+												.balance__col
+													.balance__titleMob.mobile-visible Сумма ETH
+													.balance__colInner
+														img(src="img/cristal_icon.svg", alt="")
+														span 0.0000422
+												.balance__col
+													.balance__titleMob.mobile-visible Остаток
+													.balance__colInner
+														img(src="img/cristal_icon.svg", alt="")
+														span 0.0000422
+												.balance__col
+													.balance__titleMob.mobile-visible Дата
+													span 2020-11-23 12:32:31
+					//  /balance
+
+									
+			//	/modal
+			
+		//- include blocks/footer.jade
+
+block js-libs
+	script(src="js/libs/jquery.min.js")
+	//- script(src="js/libs/jquery.fancybox.min.js")
+	//- script(src="js/libs/slick.min.js")
+	//- script(src="js/libs/jquery.matchHeight-min.js")
+	//- script(src="js/libs/jquery.inputmask.min.js")
+	//- script(src="js/libs/autosize.min.js")
+	//- script(src="js/libs/tooltipster.bundle.min.js")
+	//- script(src="js/libs/jquery.mmenu.min.all.js")
+	//- script(src="js/libs/wow.min.js")
+	//- script(src="js/libs/fullpage.min.js")
+	//- script(src="js/libs/jquery.vide.min.js")
+	script(src="js/libs/jquery.scrollbar.min.js")
+	//- script(src="http://api-maps.yandex.ru/2.1/?lang=ru_RU")
+	//- script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDArYzQvxn3CL3pB92Iqn9gaDltBFLfF4Y")

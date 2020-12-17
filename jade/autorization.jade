@@ -23,7 +23,7 @@ block content
 		.content
 
 			// modal
-			.modal
+			form(action="#").modal
 				.modal__container
 					.modal__head
 						.title Авторизация
@@ -38,10 +38,10 @@ block content
 							.modal__input.modal__input--white
 								input(type="text")
 						.modal__row.modal__row--center
-								.btn.btn--second Авторизоваться
+								button(type="submit").btn.btn--second Авторизоваться
 						.modal__row.modal__row--center
 							.modal__text
-								p Не зарегистрированы?
+								p Не зарегистрированы? 
 									a(href="#") Регистрация
 								p Забыли пароль?
 

@@ -15,11 +15,15 @@
 	&__container {
 		width: 100%;
 		max-width: 500px;
+		max-height: 100%;
 		position: absolute;
 		left: 50%;
 		top: 50%;
 		transform: translate(-50%,-50%);
 		position: relative;
+		&--w700 {
+			max-width: 700px;
+		}
 	}
 	&__head {
 		padding: 30px 60px 30px 35px;
@@ -31,6 +35,7 @@
 	}
 	&__row {
 		margin-bottom: 30px;
+		position: relative;
 		&:last-child {
 			margin-bottom: 13px;
 		}
@@ -40,6 +45,26 @@
 		&--mb10 {
 			margin-bottom: 10px;
 		}
+		&--mb20 {
+			margin-bottom: 20px;
+		}
+		&--pb15 {
+			padding-bottom: 10px;
+		}
+	}
+	&__flex {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		&--p20 {
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+		.btn {
+			height: 48px;
+			padding-top: 0 !important;
+			padding-bottom: 0 !important;
+		}
 	}
 	&__text {
 		font-size: 16px;
@@ -48,8 +73,11 @@
 			margin-bottom: 15px;
 		}
 		a {
-			margin: 0 3px;
 			color: #1c96e6;
+		}
+		&--error {
+			font-size: 14px;
+			color: #910317;
 		}
 	}
 	&__hint {
@@ -58,8 +86,20 @@
 	}
 	&__input {
 		height: 48px;
+		input {
+			&.error {
+				border: 1px solid #910317;
+			}
+		}
 		&--white {
 			input {
+				color: $fontColor;
+			}
+		}
+		&--center {
+			input {
+				font-size: 24px !important;
+				text-align: center;
 				color: $fontColor;
 			}
 		}
@@ -94,9 +134,19 @@
 			transform: translate(0, -50%) rotate(-45deg);
 		}
 	}
+	&__line {
+		height: 1px;
+		margin-left: -10px;
+		margin-right: -10px;
+		background-color: #424456;
+		bottom: 0;
+	}
 	@media (max-width: $break_xl) {
 		&__container {
 			max-width: 377px;
+			&--w700 {
+				max-width: 525px;
+			}
 		}
 		&__head {
 			padding: 20px 40px 20px 26px;
@@ -112,6 +162,11 @@
 		}
 		&__input {
 			height: 37px;
+			&--center {
+				input {
+					font-size: 18px !important;
+				}
+			}
 		}
 		&__row {
 			margin-bottom: 24px;
@@ -121,12 +176,38 @@
 			&--mb10 {
 				margin-bottom: 5px;
 			}
+			&--mb20 {
+				margin-bottom: 15px;
+			}
 		}
 		&__close {
 			width: 16px;
 			height: 16px;
 			top: 22px;
 			right: 20px;
+		}
+		&__flex {
+			&--p20 {
+				padding-top: 15px;
+				padding-bottom: 15px;
+			}
+			.btn {
+				height: 37px;
+			}
+		}
+	}
+	@media (max-width: $break_sm) {
+		&__input {
+			&--center {
+				input {
+					font-size: 15px !important;
+				}
+			}
+		}
+	}
+	@media (max-width: $break_xs) {
+		&__flex {
+			flex-wrap: wrap;
 		}
 	}
 }

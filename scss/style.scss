@@ -60,6 +60,7 @@ sans-serif;
 @import 'blocks/persona';
 @import 'blocks/personaItems';
 @import 'blocks/modal';
+@import 'blocks/balance';
 // @import 'blocks/tooltipster-noir';
 
 /* settings */
@@ -181,6 +182,7 @@ input:-webkit-autofill {
   border: none;
   text-align: center;
   transition: 0.3s;
+  user-select: none;
   &--first {
     background-color: $mainColor;
     &:hover {
@@ -199,9 +201,34 @@ input:-webkit-autofill {
       background-color: $mainColor;
     }
   }
+  &:disabled {
+    background-color: $elementColor;
+    cursor: default;
+    &:hover {
+      background-color: $elementColor;
+    }
+  }
+  &__checked {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg {
+      width: 23px;
+      height: 23px;
+      margin-right: 5px;
+      fill: $mainColor;
+      flex-shrink: 0;
+    }
+  }
   @media (max-width: $break_xl) {
     padding: 12px 20px;
     font-size: 12px;
+  }
+  &__checked {
+    svg {
+      width: 12px;
+      height: 12px;
+    }
   }
 }
 .scrollbar-inner>.scroll-element.scroll-y {
@@ -223,6 +250,9 @@ input:-webkit-autofill {
   background-color: $mainColor;
 }
 .scrollbar-inner>.scroll-element:hover .scroll-bar {
+  background-color: $mainLightColor;
+}
+.scrollbar-inner>.scroll-element.scroll-draggable .scroll-bar {
   background-color: $mainLightColor;
 }
 svg {
