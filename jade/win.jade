@@ -1,7 +1,7 @@
 extends blocks/base.jade
 
 block title 
-	title Авторизация
+	title Победа
 
 block style-libs
 	//- link(rel="stylesheet", href="css/libs/animate.min.css")
@@ -25,31 +25,16 @@ block content
 			// modal
 			form(action="#").modal
 				.modal__container
-					.modal__head
-						.title Авторизация
-						.modal__close
-					.modal__body
-
-						.modal__row.modal__row--mb10
-							.modal__hint Введите имя пользователя
-							.modal__input.modal__input--white
-								input(type="text")
-
-						.modal__row
-							.modal__hint Введите пароль
-							.modal__input.modal__input--white
-								input(type="text")
-
-						.modal__row.modal__row--center
-								button(type="submit").btn.btn--second Авторизоваться
+					// win
+					.win
+						.win__img
+							img(src="img/user_1.jpg", alt="")
+						.win__name @Nikole Kidman
+						.win__price $ 1 344 000
+						.win__rate Ставка: 23.023 ETH
+						.btn.btn--gray Закрыть
+					//	/win
 								
-						.modal__row.modal__row--center
-							.modal__text
-								p Не зарегистрированы? 
-									a(href="#") Регистрация
-								p Забыли пароль?
-
-									
 			//	/modal
 			
 		//- include blocks/footer.jade

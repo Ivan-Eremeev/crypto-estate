@@ -2,7 +2,7 @@
 <html lang="ru">
 	<head>
 		<meta charset="UTF-8">
-		<title>Навигация по страницам</title>
+		<title>Регистрация</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="keywords" content="">
 		<meta name="description" content="">
@@ -56,25 +56,52 @@
 				</div>
 			</header>
 			<!-- /header-->
-			<main class="content">
-				<div class="wrapper">
-					<!-- pageNav-->
-					<div class="pageNav">
-						<div class="title">Навигация по страницам</div>
-						<ul class="pageNav__list">
-							<li><a href="home.html">Главная</a></li>
-							<li><a href="lk.html">Личный кабинет</a></li>
-							<li><a href="password_recovery.html">Восстановление пароля</a></li>
-							<li><a href="autorization.html">Авторизация</a></li>
-							<li><a href="balance.html">Баланс</a></li>
-							<li><a href="registration.html">Регистрация</a></li>
-							<li><a href="win.html">Победа</a></li>
-							<li><a href="loss.html">Поражение</a></li>
-						</ul>
+			<div class="content">
+				<!-- modal-->
+				<form class="modal" action="#">
+					<div class="modal__container">
+						<div class="modal__head">
+							<div class="title">Регистрация</div>
+							<div class="modal__close"></div>
+						</div>
+						<div class="modal__body">
+							<div class="modal__row modal__row--mb10">
+								<div class="modal__hint">Придумайте себе имя</div>
+								<div class="modal__input modal__input--white">
+									<input type="text">
+								</div>
+							</div>
+							<div class="modal__row modal__row--mb10">
+								<div class="modal__hint">Введите ваш e-mail</div>
+								<div class="modal__input modal__input--white">
+									<input type="text">
+								</div>
+							</div>
+							<div class="modal__row modal__row--mb10">
+								<div class="modal__hint">Придумайте пароль</div>
+								<div class="modal__input modal__input--white">
+									<input type="text">
+								</div>
+							</div>
+							<div class="modal__row">
+								<div class="modal__hint">Повторите пароль</div>
+								<div class="modal__input modal__input--white">
+									<input type="text">
+								</div>
+							</div>
+							<div class="modal__row modal__row--center">
+								<button class="btn btn--second" type="submit">Авторизоваться</button>
+							</div>
+							<div class="modal__row modal__row--center">
+								<div class="modal__text">
+									<p>Есть аккаунт? <a href="#">Войдите</a></p>
+								</div>
+							</div>
+						</div>
 					</div>
-					<!-- /pageNav-->
-				</div>
-			</main>
+				</form>
+				<!--	/modal-->
+			</div>
 		</div>
 		<script src="js/libs/jquery.min.js"></script>
 		<script src="js/scripts.js"></script>

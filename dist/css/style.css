@@ -1729,6 +1729,71 @@ h1, h2, h3 {
     margin-left: 0;
     margin-top: 20px; } }
 
+.win {
+  padding: 225px 20px 20px;
+  background-image: url(../img/win.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  text-align: center; }
+  .win--loss {
+    background-image: url(../img/loss.png); }
+  .win__img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 108px;
+    height: 108px;
+    background-color: #1376d3;
+    border-radius: 100%;
+    margin-bottom: 20px; }
+    .win__img img {
+      width: 100px;
+      height: 100px;
+      border-radius: 100%;
+      overflow: hidden;
+      -o-object-fit: cover;
+      object-fit: cover; }
+  .win__name {
+    font-size: 26px; }
+  .win__price {
+    margin-bottom: 15px;
+    font-size: 16px; }
+  .win__rate {
+    font-size: 17px;
+    color: #ffc02a; }
+  .win .btn {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 40px; }
+  @media (max-width: 1440px) {
+    .win {
+      padding: 170px 20px 20px; }
+      .win__img {
+        width: 90px;
+        height: 90px;
+        margin-bottom: 10px; }
+        .win__img img {
+          width: 84px;
+          height: 84px; }
+      .win__name {
+        font-size: 22px; }
+      .win__price {
+        font-size: 15px;
+        margin-bottom: 10px; }
+      .win__rate {
+        font-size: 14px; }
+      .win .btn {
+        margin-top: 30px;
+        font-size: 11px; } }
+
 /* settings */
 html {
   height: 100%; }

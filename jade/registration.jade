@@ -1,7 +1,7 @@
 extends blocks/base.jade
 
 block title 
-	title Авторизация
+	title Регистрация
 
 block style-libs
 	//- link(rel="stylesheet", href="css/libs/animate.min.css")
@@ -26,30 +26,38 @@ block content
 			form(action="#").modal
 				.modal__container
 					.modal__head
-						.title Авторизация
+						.title Регистрация
 						.modal__close
 					.modal__body
 
 						.modal__row.modal__row--mb10
-							.modal__hint Введите имя пользователя
+							.modal__hint Придумайте себе имя
+							.modal__input.modal__input--white
+								input(type="text")
+
+						.modal__row.modal__row--mb10
+							.modal__hint Введите ваш e-mail
+							.modal__input.modal__input--white
+								input(type="text")
+
+						.modal__row.modal__row--mb10
+							.modal__hint Придумайте пароль
 							.modal__input.modal__input--white
 								input(type="text")
 
 						.modal__row
-							.modal__hint Введите пароль
+							.modal__hint Повторите пароль
 							.modal__input.modal__input--white
 								input(type="text")
 
 						.modal__row.modal__row--center
 								button(type="submit").btn.btn--second Авторизоваться
-								
+
 						.modal__row.modal__row--center
 							.modal__text
-								p Не зарегистрированы? 
-									a(href="#") Регистрация
-								p Забыли пароль?
-
-									
+								p Есть аккаунт? 
+									a(href="#") Войдите
+								
 			//	/modal
 			
 		//- include blocks/footer.jade
