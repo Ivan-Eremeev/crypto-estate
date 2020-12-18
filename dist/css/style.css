@@ -1857,6 +1857,12 @@ h1, h2, h3 {
   display: block; }
 
 .guide__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   background-color: #1e1f29;
   padding: 25px; }
 
@@ -1872,7 +1878,7 @@ h1, h2, h3 {
   .guide__triggers:after {
     content: '';
     display: block;
-    width: 90%;
+    width: 110%;
     height: 1px;
     background-color: #373849;
     position: absolute;

@@ -1,5 +1,7 @@
 .guide {
   &__head {
+    display: flex;
+    justify-content: center;
     background-color: #1e1f29;
     padding: 25px;
   }
@@ -11,7 +13,7 @@
     &:after {
       content: '';
       display: block;
-      width: 90%;
+      width: 110%;
       height: 1px;
       background-color: #373849;
       position: absolute;
