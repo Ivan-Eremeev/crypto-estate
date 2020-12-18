@@ -150,7 +150,7 @@ h1, h2, h3 {
   margin-left: 57px;
   font-family: "FuturaFuturisC", sans-serif;
   font-size: 16px;
-  color: #5b5c64; }
+  color: #818186; }
   .lang .active {
     color: #c1c1c1; }
   .lang__slash {
@@ -624,7 +624,7 @@ h1, h2, h3 {
   .statistics__desc {
     font-family: "FuturaFuturisC", sans-serif;
     font-size: 16px;
-    color: #5b5c64;
+    color: #818186;
     margin-bottom: 10px; }
   .statistics__items {
     display: -webkit-box;
@@ -701,7 +701,7 @@ h1, h2, h3 {
     margin-left: 18px;
     font-family: "FuturaFuturisC", sans-serif;
     font-size: 13px;
-    color: #5b5c64; }
+    color: #818186; }
     .statistics__iconItem:hover {
       color: #fff; }
       .statistics__iconItem:hover .statistics__icon:after {
@@ -1126,7 +1126,7 @@ h1, h2, h3 {
       flex-grow: 1;
       background-color: #1e1f28;
       border: 1px solid #2a2c40;
-      color: #5b5c64; }
+      color: #818186; }
   .chat__btn {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1301,7 +1301,7 @@ h1, h2, h3 {
   .persona__desc {
     font-family: "FuturaFuturisC", sans-serif;
     font-size: 13px;
-    color: #5b5c64; }
+    color: #818186; }
   @media (max-width: 1440px) {
     .persona {
       margin-bottom: 33px; }
@@ -1372,14 +1372,14 @@ h1, h2, h3 {
       padding-left: 20px;
       border-left: 1px solid #282936; }
   .personaItems__subtitle {
-    color: #5b5c64;
+    color: #818186;
     font-size: 15px;
     margin-bottom: 10px; }
   .personaItems__num {
     font-size: 16px; }
   .personaItems__text {
     font-size: 13px;
-    color: #5b5c64;
+    color: #818186;
     line-height: 1.5; }
   .personaItems__btn {
     margin-bottom: 10px; }
@@ -1452,12 +1452,14 @@ h1, h2, h3 {
       max-width: 700px; }
   .modal__head {
     padding: 30px 60px 30px 35px;
-    background-color: #13141d; }
+    background-color: #1c1d26; }
   .modal__body {
     padding: 22px 35px;
-    background-color: #1b1c23; }
+    background-color: #21222d; }
     .modal__body--noHead {
       padding: 68px 60px 59px 35px; }
+    .modal__body--p0 {
+      padding: 0; }
   .modal__row {
     margin-bottom: 30px;
     position: relative; }
@@ -1490,7 +1492,7 @@ h1, h2, h3 {
       padding-bottom: 0 !important; }
   .modal__text {
     font-size: 16px;
-    color: #5b5c64; }
+    color: #818186; }
     .modal__text p {
       margin-bottom: 15px; }
     .modal__text a {
@@ -1499,12 +1501,14 @@ h1, h2, h3 {
       font-size: 14px;
       color: #910317; }
   .modal__hint {
-    color: #5b5c64;
+    color: #818186;
     margin-bottom: 10px; }
   .modal__input {
     height: 48px; }
-    .modal__input input.error {
-      border: 1px solid #910317; }
+    .modal__input input {
+      background-color: #282937; }
+      .modal__input input.error {
+        border: 1px solid #910317; }
     .modal__input--white input {
       color: #fff; }
     .modal__input--center input {
@@ -1556,6 +1560,8 @@ h1, h2, h3 {
       padding: 16px 26px; }
       .modal__body--noHead {
         padding: 45px 40px 40px 26px; }
+      .modal__body--p0 {
+        padding: 0; }
     .modal__text {
       font-size: 12px; }
     .modal__hint {
@@ -1665,7 +1671,7 @@ h1, h2, h3 {
 
 .balance__title {
   font-size: 13px;
-  color: #5b5c64; }
+  color: #818186; }
 
 @media (max-width: 1440px) {
   .balance .modal__hint {
@@ -1687,7 +1693,7 @@ h1, h2, h3 {
 
 @media (max-width: 769px) {
   .balance__titleMob {
-    color: #5b5c64;
+    color: #818186;
     margin-bottom: 5px; }
   .balance__col {
     width: 50%; }
@@ -1836,6 +1842,119 @@ h1, h2, h3 {
   @media (max-width: 769px) {
     .confirm__btns .btn {
       font-size: 10px; } }
+
+#tabs_triggers > * {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer; }
+
+#tabs_content > * {
+  display: none; }
+
+#tabs_content > .open {
+  display: block; }
+
+.guide__head {
+  background-color: #1e1f29;
+  padding: 25px; }
+
+.guide__triggers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 12px;
+  position: relative; }
+  .guide__triggers:after {
+    content: '';
+    display: block;
+    width: 90%;
+    height: 1px;
+    background-color: #373849;
+    position: absolute;
+    bottom: 0;
+    z-index: 1; }
+  .guide__triggers li {
+    margin: 0 20px;
+    padding-bottom: 10px;
+    position: relative; }
+    .guide__triggers li:after {
+      content: '';
+      display: block;
+      height: 3px;
+      background-color: transparent;
+      position: absolute;
+      bottom: -1px;
+      left: -20px;
+      right: -20px;
+      z-index: 2;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
+    .guide__triggers li.active:after {
+      background-color: #58ab5c; }
+
+.guide__content {
+  max-height: 400px; }
+  .guide__content > div {
+    padding: 25px; }
+  .guide__content p {
+    font-size: 10px;
+    color: #818186;
+    margin-bottom: 10px; }
+
+.guide__scroll {
+  position: relative;
+  overflow-y: auto; }
+
+.guide__scrollWrap {
+  position: relative; }
+  .guide__scrollWrap:after {
+    content: '';
+    display: block;
+    height: 25px;
+    width: 100%;
+    background-color: #21222d;
+    position: absolute;
+    top: -1px;
+    z-index: 2; }
+  .guide__scrollWrap:before {
+    content: '';
+    display: block;
+    height: 25px;
+    width: 100%;
+    background-color: #21222d;
+    position: absolute;
+    bottom: -1px;
+    z-index: 2; }
+
+.guide__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: 12px;
+  border-bottom: 1px solid #373849; }
+
+.guide__num {
+  color: #58ab5c;
+  white-space: nowrap;
+  margin-left: 10px; }
+
+@media (max-width: 769px) {
+  .guide__head {
+    padding: 25px 15px; }
+  .guide__triggers:after {
+    width: 100%; }
+  .guide__content p {
+    font-size: 12px; } }
 
 /* settings */
 html {
@@ -2079,7 +2198,7 @@ input {
   border: none;
   font-family: "FuturaС", sans-serif;
   font-size: 16px;
-  color: #5b5c64; }
+  color: #818186; }
   @media (max-width: 1440px) {
     input {
       padding: 0 17px;

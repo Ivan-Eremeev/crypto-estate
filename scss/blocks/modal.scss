@@ -27,13 +27,16 @@
 	}
 	&__head {
 		padding: 30px 60px 30px 35px;
-		background-color: $backColor;
+		background-color: #1c1d26;
 	}
 	&__body {
 		padding: 22px 35px;
-		background-color: $bodyColor;
+		background-color: #21222d;
 		&--noHead {
 			padding: 68px 60px 59px 35px;
+		}
+		&--p0 {
+			padding: 0;
 		}
 	}
 	&__row {
@@ -90,6 +93,7 @@
 	&__input {
 		height: 48px;
 		input {
+			background-color: #282937;
 			&.error {
 				border: 1px solid #910317;
 			}
@@ -158,6 +162,9 @@
 			padding: 16px 26px;
 			&--noHead {
 				padding: 45px 40px 40px 26px;
+			}
+			&--p0 {
+				padding: 0;
 			}
 		}
 		&__text {

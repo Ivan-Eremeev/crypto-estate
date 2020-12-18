@@ -39,7 +39,7 @@ $elementColor: #282936;
 $elementHightlight: #313346;
 $iconColor: #8c8e9c;
 $fontColor: #fff;
-$fontDarkColor: #5b5c64;
+$fontDarkColor: #818186;
 
 // Переменные шрифты
 $firstFont: "FuturaС",
@@ -63,6 +63,8 @@ sans-serif;
 @import 'blocks/balance';
 @import 'blocks/win';
 @import 'blocks/confirm';
+@import 'blocks/tabs';
+@import 'blocks/guide';
 // @import 'blocks/tooltipster-noir';
 
 /* settings */

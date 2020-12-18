@@ -114,25 +114,29 @@ $(document).ready(function () {
 	// };
 	// fontResize();
 
-	// // Табы
-	// function tabs(tabs) {
-	// 	var trigger = tabs.find('#tabs_triggers').children(),
-	// 			content = tabs.find('#tabs_content').children(),
-	// 			time = 300;
-	// 	content.filter('.hide').css({
-	// 		display: 'none'});
-	// 	trigger.click(function() {
-	// 		var $this = $(this),
-	// 				index = $this.index();
-	// 		if (!$this.hasClass('active')) {
-	// 			trigger.removeClass('active');
-	// 			$this.addClass('active');
-	// 			content.hide();
-	// 			content.eq(index).fadeIn(time);
-	// 		}
-	// 	});
-	// };
-	// tabs();
+	// Табы
+	function tabs(tabs) {
+		if (tabs.length) {
+			tabs.each(function() {
+				var trigger = $(this).find('#tabs_triggers').children(),
+						content = $(this).find('#tabs_content').children(),
+						time = 300;
+				trigger.click(function () {
+					var $this = $(this),
+							index = $this.index();
+					if (!$this.hasClass('active')) {
+						trigger.removeClass('active');
+						$this.addClass('active');
+						content.hide();
+						content.eq(index).fadeIn(time);
+					}else {
+						return false;
+					}
+				});
+			});
+		}
+	}
+	tabs($('.js_tabs'));
 
 	// // Аккордеон
 	// function accordeon(accordeon, mobile) {
