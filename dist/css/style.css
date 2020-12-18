@@ -1905,7 +1905,7 @@ h1, h2, h3 {
       background-color: #58ab5c; }
 
 .guide__content {
-  max-height: 400px; }
+  max-height: 377px; }
   .guide__content > div {
     padding: 25px; }
   .guide__content p {
@@ -2046,8 +2046,10 @@ h1, h2, h3 {
 @media (max-width: 1440px) {
   .guide__triggers {
     font-size: 12px; }
-  .guide__content p {
-    font-size: 10px; }
+  .guide__content {
+    max-height: 342px; }
+    .guide__content p {
+      font-size: 10px; }
   .guide__item {
     font-size: 12px; }
   .guide__table {
