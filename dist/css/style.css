@@ -1873,7 +1873,7 @@ h1, h2, h3 {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  font-size: 12px;
+  font-size: 16px;
   position: relative; }
   .guide__triggers:after {
     content: '';
@@ -1909,7 +1909,7 @@ h1, h2, h3 {
   .guide__content > div {
     padding: 25px; }
   .guide__content p {
-    font-size: 10px;
+    font-size: 12px;
     color: #818186;
     margin-bottom: 10px; }
 
@@ -1946,7 +1946,7 @@ h1, h2, h3 {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 10px;
-  font-size: 12px;
+  font-size: 14px;
   border-bottom: 1px solid #373849; }
 
 .guide__num {
@@ -1954,13 +1954,176 @@ h1, h2, h3 {
   white-space: nowrap;
   margin-left: 10px; }
 
+.guide__table {
+  font-size: 14px; }
+
+.guide__titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  color: #818186;
+  padding-bottom: 10px; }
+
+.guide__element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 4px 0;
+  background-color: #282936;
+  margin-bottom: 4px; }
+  .guide__element .guide__col:after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: #373849;
+    position: absolute;
+    top: 0;
+    right: 0; }
+
+.guide__col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 2px 20px;
+  position: relative;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap; }
+  .guide__col:nth-child(1) {
+    width: 15%; }
+  .guide__col:nth-child(2) {
+    width: 35%; }
+  .guide__col:nth-child(3) {
+    width: 25%; }
+  .guide__col:nth-child(4) {
+    width: 25%; }
+    .guide__col:nth-child(4):after {
+      display: none; }
+
+.guide__crystal {
+  width: 17px;
+  height: 17px;
+  margin-right: 5px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0; }
+  .guide__crystal svg {
+    fill: #58ab5c; }
+
+.guide__photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 100%;
+  background-color: #282936;
+  margin-right: 5px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0; }
+  .guide__photo img {
+    width: 28px;
+    height: 28px;
+    border-radius: 100%;
+    overflow: hidden;
+    -o-object-fit: cover;
+    object-fit: cover; }
+
+@media (max-width: 1440px) {
+  .guide__triggers {
+    font-size: 12px; }
+  .guide__content p {
+    font-size: 10px; }
+  .guide__item {
+    font-size: 12px; }
+  .guide__table {
+    font-size: 10px; }
+  .guide__col {
+    padding: 0 15px; } }
+
 @media (max-width: 769px) {
   .guide__head {
     padding: 25px 15px; }
   .guide__triggers:after {
     width: 100%; }
+  .guide__content > div {
+    padding: 10px; }
   .guide__content p {
-    font-size: 12px; } }
+    font-size: 12px; }
+  .guide__scrollWrap:after {
+    height: 10px; }
+  .guide__scrollWrap:before {
+    height: 10px; }
+  .guide__col {
+    padding: 0 10px; } }
+
+@media (max-width: 500px) {
+  .guide__titles {
+    display: none; }
+  .guide__element {
+    position: relative; }
+    .guide__element:after {
+      content: '';
+      display: block;
+      width: 1px;
+      position: absolute;
+      top: 10px;
+      bottom: 10px;
+      left: 50%;
+      background-color: #373849; }
+  .guide__col {
+    padding-top: 6px;
+    padding-bottom: 6px; }
+    .guide__col:nth-child(1) {
+      width: 50%;
+      -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+      order: 1; }
+      .guide__col:nth-child(1):after {
+        top: auto;
+        height: 1px;
+        width: auto;
+        bottom: 0;
+        left: 10px;
+        right: 0; }
+    .guide__col:nth-child(2) {
+      width: 50%;
+      -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+      order: 3; }
+      .guide__col:nth-child(2):after {
+        display: none; }
+    .guide__col:nth-child(3) {
+      width: 50%;
+      -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+      order: 2; }
+      .guide__col:nth-child(3):after {
+        height: 1px;
+        width: auto;
+        top: auto;
+        bottom: 0;
+        left: 0;
+        right: 10px; }
+    .guide__col:nth-child(4) {
+      width: 50%;
+      -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+      order: 4; } }
 
 /* settings */
 html {

@@ -1,0 +1,254 @@
+extends blocks/base.jade
+
+block title 
+	title Рейтинг
+
+block style-libs
+	//- link(rel="stylesheet", href="css/libs/animate.min.css")
+	//- link(rel="stylesheet", href="css/libs/bootstrap-grid.min.css")
+	//- link(rel="stylesheet", href="css/libs/fullpage.css")
+	//- link(rel="stylesheet", href="css/libs/hamburgers.min.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.fancybox.min.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.mmenu.all.css")
+	link(rel="stylesheet", href="css/libs/jquery.scrollbar.css")
+	//- link(rel="stylesheet", href="css/libs/slick.css")
+	//- link(rel="stylesheet", href="css/libs/tooltipster.bundle.min.css")
+
+block content
+
+	.page
+
+		include blocks/header.jade
+		
+		.content
+
+			// modal
+			form(action="#").modal
+				.modal__container.modal__container--w700
+					.modal__head
+						.title Описание и правила игры
+						.modal__close
+					.modal__body.modal__body--p0
+						// guide
+						.guide.js_tabs
+							.guide__head
+								ul.guide__triggers#tabs_triggers
+									li.active Общий рейтинг
+									li Недельный рейтинг
+							.guide__scrollWrap
+								.js_scrollbar.scrollbar-inner.guide__scroll
+									.guide__content#tabs_content
+										div.open
+											.guide__table
+												.guide__titles
+													.guide__col
+														span Место
+													.guide__col
+														span Имя
+													.guide__col
+														span Титул игрока
+													.guide__col
+														span Результат
+
+												.guide__element
+													.guide__col
+														span №1
+													.guide__col
+														.guide__photo
+															img(src="img/user_1.jpg", alt="")
+														span @dgsgegefg_eferher
+													.guide__col
+														span Наименование
+													.guide__col
+														.guide__crystal
+															img(src="img/cristal_icon.svg", alt="")
+														span 12,003 ETH
+
+												.guide__element
+													.guide__col
+														span №1
+													.guide__col
+														.guide__photo
+															img(src="img/user_1.jpg", alt="")
+														span @dgsgegefg_eferher
+													.guide__col
+														span Наименование
+													.guide__col
+														.guide__crystal
+															img(src="img/cristal_icon.svg", alt="")
+														span 12,003 ETH
+
+												.guide__element
+													.guide__col
+														span №1
+													.guide__col
+														.guide__photo
+															img(src="img/user_1.jpg", alt="")
+														span @dgsgegefg_eferher
+													.guide__col
+														span Наименование
+													.guide__col
+														.guide__crystal
+															img(src="img/cristal_icon.svg", alt="")
+														span 12,003 ETH
+
+												.guide__element
+													.guide__col
+														span №1
+													.guide__col
+														.guide__photo
+															img(src="img/user_1.jpg", alt="")
+														span @dgsgegefg_eferher
+													.guide__col
+														span Наименование
+													.guide__col
+														.guide__crystal
+															img(src="img/cristal_icon.svg", alt="")
+														span 12,003 ETH
+
+												.guide__element
+													.guide__col
+														span №1
+													.guide__col
+														.guide__photo
+															img(src="img/user_1.jpg", alt="")
+														span @dgsgegefg_eferher
+													.guide__col
+														span Наименование
+													.guide__col
+														.guide__crystal
+															img(src="img/cristal_icon.svg", alt="")
+														span 12,003 ETH
+
+												.guide__element
+													.guide__col
+														span №1
+													.guide__col
+														.guide__photo
+															img(src="img/user_1.jpg", alt="")
+														span @dgsgegefg_eferher
+													.guide__col
+														span Наименование
+													.guide__col
+														.guide__crystal
+															img(src="img/cristal_icon.svg", alt="")
+														span 12,003 ETH
+
+												.guide__element
+													.guide__col
+														span №1
+													.guide__col
+														.guide__photo
+															img(src="img/user_1.jpg", alt="")
+														span @dgsgegefg_eferher
+													.guide__col
+														span Наименование
+													.guide__col
+														.guide__crystal
+															img(src="img/cristal_icon.svg", alt="")
+														span 12,003 ETH
+
+												.guide__element
+													.guide__col
+														span №1
+													.guide__col
+														.guide__photo
+															img(src="img/user_1.jpg", alt="")
+														span @dgsgegefg_eferher
+													.guide__col
+														span Наименование
+													.guide__col
+														.guide__crystal
+															img(src="img/cristal_icon.svg", alt="")
+														span 12,003 ETH
+
+										div
+
+											.guide__table
+												.guide__titles
+													.guide__col
+														span Место
+													.guide__col
+														span Имя
+													.guide__col
+														span Титул игрока
+													.guide__col
+														span Результат
+
+												.guide__element
+													.guide__col
+														span №1
+													.guide__col
+														.guide__photo
+															img(src="img/user_1.jpg", alt="")
+														span @dgsgegefg_eferher
+													.guide__col
+														span Наименование
+													.guide__col
+														.guide__crystal
+															img(src="img/cristal_icon.svg", alt="")
+														span 12,003 ETH
+
+												.guide__element
+													.guide__col
+														span №1
+													.guide__col
+														.guide__photo
+															img(src="img/user_1.jpg", alt="")
+														span @dgsgegefg_eferher
+													.guide__col
+														span Наименование
+													.guide__col
+														.guide__crystal
+															img(src="img/cristal_icon.svg", alt="")
+														span 12,003 ETH
+
+												.guide__element
+													.guide__col
+														span №1
+													.guide__col
+														.guide__photo
+															img(src="img/user_1.jpg", alt="")
+														span @dgsgegefg_eferher
+													.guide__col
+														span Наименование
+													.guide__col
+														.guide__crystal
+															img(src="img/cristal_icon.svg", alt="")
+														span 12,003 ETH
+
+												.guide__element
+													.guide__col
+														span №1
+													.guide__col
+														.guide__photo
+															img(src="img/user_1.jpg", alt="")
+														span @dgsgegefg_eferher
+													.guide__col
+														span Наименование
+													.guide__col
+														.guide__crystal
+															img(src="img/cristal_icon.svg", alt="")
+														span 12,003 ETH
+											
+						//	/guide
+								
+			//	/modal
+			
+		//- include blocks/footer.jade
+
+block js-libs
+	script(src="js/libs/jquery.min.js")
+	//- script(src="js/libs/jquery.fancybox.min.js")
+	//- script(src="js/libs/slick.min.js")
+	//- script(src="js/libs/jquery.matchHeight-min.js")
+	//- script(src="js/libs/jquery.inputmask.min.js")
+	//- script(src="js/libs/autosize.min.js")
+	//- script(src="js/libs/tooltipster.bundle.min.js")
+	//- script(src="js/libs/jquery.mmenu.min.all.js")
+	//- script(src="js/libs/wow.min.js")
+	//- script(src="js/libs/fullpage.min.js")
+	//- script(src="js/libs/jquery.vide.min.js")
+	script(src="js/libs/jquery.scrollbar.min.js")
+	//- script(src="http://api-maps.yandex.ru/2.1/?lang=ru_RU")
+	//- script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDArYzQvxn3CL3pB92Iqn9gaDltBFLfF4Y")
