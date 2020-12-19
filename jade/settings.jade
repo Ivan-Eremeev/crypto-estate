@@ -1,7 +1,7 @@
 extends blocks/base.jade
 
 block title 
-	title Навигация по страницам
+	title Настройки
 
 block style-libs
 	//- link(rel="stylesheet", href="css/libs/animate.min.css")
@@ -13,6 +13,7 @@ block style-libs
 	//- link(rel="stylesheet", href="css/libs/jquery.scrollbar.css")
 	//- link(rel="stylesheet", href="css/libs/slick.css")
 	//- link(rel="stylesheet", href="css/libs/tooltipster.bundle.min.css")
+	link(rel="stylesheet", href="css/libs/jquery-ui.min.css")
 
 block content
 
@@ -20,38 +21,40 @@ block content
 
 		include blocks/header.jade
 		
-		main.content
-			.wrapper
+		.content
 
-				// pageNav
-				.pageNav
-					.title Навигация по страницам
-					ul.pageNav__list
-						li
-							a(href="home.html") Главная
-						li
-							a(href="lk.html") Личный кабинет
-						li
-							a(href="password_recovery.html") Восстановление пароля
-						li
-							a(href="autorization.html") Авторизация
-						li
-							a(href="balance.html") Баланс
-						li
-							a(href="registration.html") Регистрация
-						li
-							a(href="win.html") Победа
-						li
-							a(href="loss.html") Поражение
-						li
-							a(href="confirm.html") Подтвердить
-						li
-							a(href="guide.html") Правила
-						li
-							a(href="rating.html") Рейтинг
-						li
-							a(href="settings.html") Настройки
-				// /pageNav
+			// modal
+			form(action="#").modal
+				.modal__container.modal__container--w700
+					.modal__head
+						.title Настройки
+						.modal__close
+					.modal__body
+						// settings
+						.settings
+							.settings__row
+								.settings__col
+									.settings__text Звуки
+									// JQuery UI Slider
+									.js_slider(data-value="30")
+									input(type="text", name="")
+									// /JQuery UI Slider
+								.settings__col
+									.settings__text Музыка
+									// JQuery UI Slider
+									.js_slider.js_slider--noHandle(data-value="60")
+									input(type="text", name="")
+									// /JQuery UI Slider
+								.settings__col.settings__col--switch
+									.settings__text Музыка в игре
+									.js_switcher.settings__switcher
+										#switch.settings__switch.on
+										#switch_text.settings__textStatus Вкл
+										input(type="checkbox", name="" checked)
+							.settings__btn
+								.btn.btn--second Настроить 2FA
+						//	/settings
+			//	/modal
 			
 		//- include blocks/footer.jade
 
@@ -70,3 +73,4 @@ block js-libs
 	//- script(src="js/libs/jquery.scrollbar.min.js")
 	//- script(src="http://api-maps.yandex.ru/2.1/?lang=ru_RU")
 	//- script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDArYzQvxn3CL3pB92Iqn9gaDltBFLfF4Y")
+	script(src="js/libs/jquery-ui.min.js")

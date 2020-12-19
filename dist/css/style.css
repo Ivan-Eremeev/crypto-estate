@@ -2127,6 +2127,123 @@ h1, h2, h3 {
       -ms-flex-order: 4;
       order: 4; } }
 
+.settings {
+  font-size: 14px; }
+  .settings__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: -50px; }
+  .settings__col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 33.3%;
+    padding-left: 50px; }
+  .settings__text {
+    margin-bottom: 20px; }
+  .settings__switcher {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .settings__switch {
+    width: 30px;
+    height: 15px;
+    margin-right: 10px;
+    background-color: #323347;
+    border-radius: 8px;
+    position: relative;
+    -ms-flex-negative: 0;
+    flex-shrink: 0; }
+    .settings__switch:after {
+      content: '';
+      display: block;
+      width: 11px;
+      height: 11px;
+      background-color: #fff;
+      border-radius: 100%;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
+      position: absolute;
+      top: 50%;
+      left: 3px;
+      -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+      transform: translate(0, -50%); }
+    .settings__switch.on {
+      background-color: #58ab5c; }
+      .settings__switch.on:after {
+        -webkit-transform: translate(13px, -50%);
+        -ms-transform: translate(13px, -50%);
+        transform: translate(13px, -50%); }
+  .settings__textStatus {
+    color: #818186; }
+  .settings__btn {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 20px; }
+  .settings input {
+    display: none; }
+  @media (max-width: 1440px) {
+    .settings {
+      font-size: 10px; }
+      .settings__row {
+        margin-left: -35px; }
+      .settings__col {
+        padding-left: 35px; }
+      .settings__btn {
+        margin-top: 45px; } }
+  @media (max-width: 769px) {
+    .settings {
+      font-size: 15px; }
+      .settings__row {
+        margin-left: 0; }
+      .settings__col {
+        width: 100%;
+        padding-left: 0;
+        margin-bottom: 30px; }
+        .settings__col--switch {
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center; }
+          .settings__col--switch .settings__text {
+            margin-bottom: 0; }
+      .settings__text {
+        margin-bottom: 15px; }
+      .settings__swither {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+      .settings__switch {
+        margin-right: 0;
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2; }
+      .settings__textStatus {
+        margin-top: -2px;
+        font-size: 17px;
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+        margin: 10px; } }
+
 /* settings */
 html {
   height: 100%; }
@@ -2374,6 +2491,31 @@ input {
     input {
       padding: 0 17px;
       font-size: 12px; } }
+
+.ui-slider-range {
+  background-color: #58ab5c; }
+
+.ui-slider-horizontal {
+  height: 4px; }
+
+.js_slider {
+  border: none !important;
+  background-color: #323347;
+  cursor: pointer; }
+  .js_slider .ui-slider-handle {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+    top: -3px;
+    margin-left: -5px; }
+    .js_slider .ui-slider-handle.ui-state-focus {
+      border: none;
+      outline: none;
+      background-color: #fff; }
+  .js_slider--noHandle .ui-slider-handle {
+    display: none; }
 
 /* /settings */
 /* pageNav */

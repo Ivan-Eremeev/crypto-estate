@@ -66,6 +66,7 @@ sans-serif;
 @import 'blocks/tabs';
 @import 'blocks/guide';
 @import 'blocks/rating';
+@import 'blocks/settings';
 // @import 'blocks/tooltipster-noir';
 
 /* settings */
@@ -282,6 +283,36 @@ input {
   @media (max-width: $break_xl) {
     padding: 0 17px;
     font-size: 12px;
+  }
+}
+.ui-slider-range {
+  background-color: $mainColor;
+}
+.ui-slider-horizontal {
+  height: 4px;
+}
+.js_slider {
+  border: none !important;
+  background-color: #323347;
+  cursor: pointer;
+    .ui-slider-handle {
+      width: 10px;
+      height: 10px;
+      border-radius: 100%;
+      border: none;
+      cursor: pointer;
+      top: -3px;
+      margin-left: -5px;
+      &.ui-state-focus {
+        border: none;
+        outline: none;
+        background-color: #fff;
+      }
+    }
+  &--noHandle {
+    .ui-slider-handle {
+      display: none;
+    }
   }
 }
 /* /settings */

@@ -138,6 +138,49 @@ $(document).ready(function () {
 	}
 	tabs($('.js_tabs'));
 
+	// JQuery UI Slider
+	function JQSlider(slider) {
+		if (slider.length) {
+			slider.each(function() {
+				var $this = $(this),
+						val = $this.data('value'),
+						input = $this.next('input');
+				$this.slider({
+					range: "min",
+					value: val,
+					change: function (event, ui) {
+						input.val(ui.value) // Установить значение ползунка в input
+					}
+				});
+			})
+		}
+	}
+	JQSlider($('.js_slider'));
+
+	// Ползунок вкл/выкл
+	function switcher(switcher) {
+		if (switcher.length) {
+			switcher.each(function () {
+				var $this = $(this),
+						$switch = $this.find('#switch'),
+						text = $this.find('#switch_text'),
+						input = $this.find('input');
+				$switch.on('click', function () {
+					if ($switch.hasClass('on')) {
+						$switch.removeClass('on');
+						text.text('Выкл');
+						input.prop('checked', false);
+					}else {
+						$switch.addClass('on');
+						text.text('Вкл');
+						input.prop('checked', true);
+					}
+				})
+			});
+		}
+	}
+	switcher($('.js_switcher'));
+
 	// // Аккордеон
 	// function accordeon(accordeon, mobile) {
 	// 	var trigger = accordeon.find('.accordeon_trigger'),

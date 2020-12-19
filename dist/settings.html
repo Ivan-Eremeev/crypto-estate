@@ -2,10 +2,11 @@
 <html lang="ru">
 	<head>
 		<meta charset="UTF-8">
-		<title>Навигация по страницам</title>
+		<title>Настройки</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="keywords" content="">
 		<meta name="description" content="">
+		<link rel="stylesheet" href="css/libs/jquery-ui.min.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
@@ -56,31 +57,54 @@
 				</div>
 			</header>
 			<!-- /header-->
-			<main class="content">
-				<div class="wrapper">
-					<!-- pageNav-->
-					<div class="pageNav">
-						<div class="title">Навигация по страницам</div>
-						<ul class="pageNav__list">
-							<li><a href="home.html">Главная</a></li>
-							<li><a href="lk.html">Личный кабинет</a></li>
-							<li><a href="password_recovery.html">Восстановление пароля</a></li>
-							<li><a href="autorization.html">Авторизация</a></li>
-							<li><a href="balance.html">Баланс</a></li>
-							<li><a href="registration.html">Регистрация</a></li>
-							<li><a href="win.html">Победа</a></li>
-							<li><a href="loss.html">Поражение</a></li>
-							<li><a href="confirm.html">Подтвердить</a></li>
-							<li><a href="guide.html">Правила</a></li>
-							<li><a href="rating.html">Рейтинг</a></li>
-							<li><a href="settings.html">Настройки</a></li>
-						</ul>
+			<div class="content">
+				<!-- modal-->
+				<form class="modal" action="#">
+					<div class="modal__container modal__container--w700">
+						<div class="modal__head">
+							<div class="title">Настройки</div>
+							<div class="modal__close"></div>
+						</div>
+						<div class="modal__body">
+							<!-- settings-->
+							<div class="settings">
+								<div class="settings__row">
+									<div class="settings__col">
+										<div class="settings__text">Звуки</div>
+										<!-- JQuery UI Slider-->
+										<div class="js_slider" data-value="30"></div>
+										<input type="text" name="">
+										<!-- /JQuery UI Slider-->
+									</div>
+									<div class="settings__col">
+										<div class="settings__text">Музыка</div>
+										<!-- JQuery UI Slider-->
+										<div class="js_slider js_slider--noHandle" data-value="60"></div>
+										<input type="text" name="">
+										<!-- /JQuery UI Slider-->
+									</div>
+									<div class="settings__col settings__col--switch">
+										<div class="settings__text">Музыка в игре</div>
+										<div class="js_switcher settings__switcher">
+											<div class="settings__switch on" id="switch"></div>
+											<div class="settings__textStatus" id="switch_text">Вкл</div>
+											<input type="checkbox" name="" checked>
+										</div>
+									</div>
+								</div>
+								<div class="settings__btn">
+									<div class="btn btn--second">Настроить 2FA</div>
+								</div>
+							</div>
+							<!--	/settings-->
+						</div>
 					</div>
-					<!-- /pageNav-->
-				</div>
-			</main>
+				</form>
+				<!--	/modal-->
+			</div>
 		</div>
 		<script src="js/libs/jquery.min.js"></script>
+		<script src="js/libs/jquery-ui.min.js"></script>
 		<script src="js/scripts.js"></script>
 	</body>
 </html>
