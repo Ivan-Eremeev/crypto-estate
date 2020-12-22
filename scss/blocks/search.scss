@@ -59,6 +59,34 @@
   &__rate {
     display: flex;
     align-items: center;
+    &--createGame {
+      .search__rateItems {
+        width: 100%;
+        margin-right: -3px;
+      }
+      .search__rateItem {
+        flex: 1 1 0;
+        margin-right: 3px;
+        label {
+          width: auto;
+          height: 50px;
+          padding-top: 12px;
+          font-size: 13px;
+        }
+        input {
+          display: none;
+          &:checked {
+            + label {
+              border-radius: 7px;
+            }
+          }
+        }
+      }
+      .search__active {
+        width: 26px;
+        height: 26px;
+      }
+    }
   }
   &__rateItems {
     display: flex;
@@ -66,7 +94,6 @@
   }
   &__rateItem {
     text-align: center;
-    font-size: 11px;
     margin-right: 2px;
     position: relative;
     input {
@@ -88,6 +115,8 @@
       background-color: $elementColor;
       transition: 0.3s;
       font-size: 11px;
+      cursor: pointer;
+      user-select: none;
       &:hover {
         background-color: $mainColor;
       }
@@ -263,6 +292,31 @@
       width: 16px;
       height: 16px;
     }
+    &__rate {
+      &--createGame {
+        .search__rateItems {
+        }
+        .search__rateItem {
+          label {
+            height: 38px;
+            padding-top: 8px;
+            font-size: 10px;
+          }
+          input {
+            display: none;
+            &:checked {
+              + label {
+                border-radius: 5px;
+              }
+            }
+          }
+        }
+        .search__active {
+          width: 19px;
+          height: 19px;
+        }
+      }
+    }
   }
   @media (max-width: $break_sm) {
     &__head {
@@ -296,6 +350,12 @@
     &__rate {
       width: 100%;
       margin-bottom: 30px;
+      &--createGame {
+        margin-bottom: 0;
+        .search__active {
+          top: -11px;
+        }
+      }
     }
     &__rateItems {
       flex-grow: 1;

@@ -1,0 +1,183 @@
+.createGame {
+  &__row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px;
+    border-bottom: 1px solid #343547;
+  }
+  &__col1 {
+    width: 40%;
+  }
+  &__col2 {
+    width: 60%;
+  }
+  &__title {
+    font-size: 16px;
+    padding-right: 10px;
+  }
+  &__name {
+    height: 50px;
+    position: relative;
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 20px;
+      right: 20px;
+      bottom: 10px;
+      height: 1px;
+      background-color: #646576;
+    }
+    input {
+      background-color: #4a4b5d;
+      color: $fontColor;
+      &::placeholder {
+        color: $fontColor;
+      }
+    }
+  }
+  &__types {
+    display: flex;
+    margin-left: -10px;
+  }
+  &__type {
+    flex-grow: 1;
+    margin-left: 10px;
+    input {
+      display: none;
+      &:checked {
+        + label {
+          border-color: $mainColor;
+          background-color: #4a4b5d;
+          svg {
+            fill: $mainColor
+          }
+        }
+      }
+    }
+    label {
+      display: block;
+      height: 50px;
+      padding: 8px 10px;
+      background-color: #282937;
+      cursor: pointer;
+      transition: 0.3s;
+      border: 1px solid transparent;
+      text-align: center;
+      &:hover {
+        border-color: $mainColor;
+      }
+    }
+    svg {
+      height: 100%;
+      fill: #4a4b5d;
+      transition: 0.3s;
+    }
+  }
+  &__password {
+    height: 50px;
+    input {
+      text-align: center;
+      color: $fontColor;
+    }
+  }
+  &__btn {
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 10px;
+  }
+  &__text {
+    font-size: 13px;
+    color: $fontDarkColor;
+    text-align: center;
+  }
+  &__players {
+    display: flex;
+    padding-left: 30px;
+    padding-right: 80px;
+    background-color: #282937;
+    position: relative;
+  }
+  &__player {
+    flex-grow: 1;
+    input {
+      display: none;
+      &:checked {
+        + label {
+          svg {
+            fill: $mainColor
+          }
+        }
+      }
+    }
+    label {
+      padding: 8px 2px;
+      display: block;
+      height: 50px;
+      text-align: center;
+      cursor: pointer;
+    }
+    svg {
+      height: 100%;
+      fill: #4a4b5d;
+      transition: 0.3s;
+    }
+  }
+  &__num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #4a4b5d;
+    font-size: 23px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  @media (max-width: $break_xl) {
+    &__title {
+      font-size: 12px;
+    }
+    &__name {
+      height: 38px;
+    }
+    &__type {
+      label {
+        height: 38px;
+      }
+    }
+    &__players {
+      padding-left: 10px;
+      padding-right: 48px;
+    }
+    &__player {
+      label {
+        height: 38px;
+      }
+    }
+    &__num {
+      width: 38px;
+      height: 38px;
+      font-size: 17px;
+    }
+    &__password {
+      height: 38px;
+    }
+    &__text {
+      font-size: 10px;
+    }
+  }
+  @media (max-width: $break_xs) {
+    &__title {
+      margin-bottom: 10px;
+    }
+    &__col1 {
+      width: 100%;
+    }
+    &__col2 {
+      width: 100%;
+    }
+  }
+}

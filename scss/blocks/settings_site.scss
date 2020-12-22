@@ -1,0 +1,230 @@
+/* settings site */
+html {
+ height: 100%; 
+  &.lock {
+    overflow: hidden;
+  }
+}
+a {
+  transition: .3s;
+  text-decoration: none;
+}
+button,
+input,
+textarea {
+  font-family: $firstFont;
+  font-size: 14px;
+}
+body {
+  min-width: 319px;
+  height: 100%;
+  background-color: $bodyColor;
+  font-family: $firstFont;
+  font-size: 14px;
+}
+.img-responsive {
+  position: relative;
+  overflow: hidden;
+  img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  svg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &:after {
+    content: '';
+    display: block;
+    padding-top: 56.25%;
+  }
+}
+.row {
+  @include row-flex();
+}
+.wrapper {
+  @include wrapper();
+  @media (max-width: $break_xl) {
+    max-width: 834px;
+  }
+}
+input:-webkit-autofill {
+  -webkit-box-shadow: inset 0 0 0 50px #fff !important;
+}
+*::placeholder {
+  color: #a9a9a9;
+  opacity: 1;
+}
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.content {
+  flex-grow: 1;
+}
+.title {
+  font-family: $secondFont;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: $fontColor;
+  @media (max-width: $break_xl) {
+    font-size: 18px;
+  }
+}
+.subtitle {
+  font-family: $firstFont;
+  font-size: 20px;
+  color: $fontColor;
+  @media (max-width: $break_xl) {
+    font-size: 15px;
+  }
+}
+.subtitleB {
+  font-family: $secondFont;
+  font-size: 16px;
+  color: $fontColor;
+}
+.btn {
+  display: block;
+  padding: 15px 20px;
+  font-family: $secondFont;
+  font-size: 14px;
+  color: $fontColor;
+  cursor: pointer;
+  border: none;
+  text-align: center;
+  transition: 0.3s;
+  user-select: none;
+  &--first {
+    background-color: $mainColor;
+    &:hover {
+      background-color: $mainLightColor;
+    }
+  }
+  &--second {
+    background-color: $secondColor;
+    &:hover {
+      background-color: $secondLightColor;
+    }
+  }
+  &--gray {
+    background-color: $elementColor;
+    &:hover {
+      background-color: $mainColor;
+    }
+  }
+  &--third {
+    background-color: $elementColor;
+      &:hover {
+        background-color: $thirdColor;
+      }
+  }
+  &:disabled {
+    background-color: $elementColor;
+    cursor: default;
+    &:hover {
+      background-color: $elementColor;
+    }
+  }
+  &__checked {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg {
+      width: 23px;
+      height: 23px;
+      margin-right: 5px;
+      fill: $mainColor;
+      flex-shrink: 0;
+    }
+  }
+  @media (max-width: $break_xl) {
+    padding: 12px 20px;
+    font-size: 12px;
+  }
+  &__checked {
+    svg {
+      width: 12px;
+      height: 12px;
+    }
+  }
+}
+.scrollbar-inner>.scroll-element.scroll-y {
+  width: 4px;
+}
+
+.scrollbar-inner>.scroll-element .scroll-element_outer,
+.scrollbar-inner>.scroll-element .scroll-element_track,
+.scrollbar-inner>.scroll-element .scroll-bar {
+  border-radius: 0;
+  opacity: 1;
+}
+
+.scrollbar-inner>.scroll-element .scroll-element_track {
+  background-color: #2a2b34;
+}
+
+.scrollbar-inner>.scroll-element .scroll-bar {
+  background-color: $mainColor;
+}
+.scrollbar-inner>.scroll-element:hover .scroll-bar {
+  background-color: $mainLightColor;
+}
+.scrollbar-inner>.scroll-element.scroll-draggable .scroll-bar {
+  background-color: $mainLightColor;
+}
+svg {
+  max-width: 100%;
+  max-height: 100%;
+}
+input[type=text] {
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+  background-color: #282937;
+  border: none;
+  font-family: $firstFont;
+  font-size: 16px;
+  color: $fontDarkColor;
+  @media (max-width: $break_xl) {
+    padding: 0 17px;
+    font-size: 12px;
+  }
+}
+.ui-slider-range {
+  background-color: $mainColor;
+}
+.ui-slider-horizontal {
+  height: 4px;
+}
+.js_slider {
+  border: none !important;
+  background-color: #323347;
+  cursor: pointer;
+    .ui-slider-handle {
+      width: 10px;
+      height: 10px;
+      border-radius: 100%;
+      border: none;
+      cursor: pointer;
+      top: -3px;
+      margin-left: -5px;
+      &.ui-state-focus {
+        border: none;
+        outline: none;
+        background-color: #fff;
+      }
+    }
+  &--noHandle {
+    .ui-slider-handle {
+      display: none;
+    }
+  }
+}
+/* /settings site */

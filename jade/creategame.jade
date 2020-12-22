@@ -1,0 +1,164 @@
+extends blocks/base.jade
+
+block title 
+	title Создать игру
+
+block style-libs
+	//- link(rel="stylesheet", href="css/libs/animate.min.css")
+	//- link(rel="stylesheet", href="css/libs/bootstrap-grid.min.css")
+	//- link(rel="stylesheet", href="css/libs/fullpage.css")
+	//- link(rel="stylesheet", href="css/libs/hamburgers.min.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.fancybox.min.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.mmenu.all.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.scrollbar.css")
+	//- link(rel="stylesheet", href="css/libs/slick.css")
+	//- link(rel="stylesheet", href="css/libs/tooltipster.bundle.min.css")
+
+block content
+
+	.page
+
+		include blocks/header.jade
+		
+		.content
+
+			// modal
+			form(action="#").modal
+				.modal__container.modal__container--w700
+					.modal__head
+						.title Создать игру
+						.modal__close
+					.modal__body
+						// createGame
+						.createGame
+
+							.createGame__row
+								.createGame__col1
+									.createGame__title Название игры
+								.createGame__col2
+									.createGame__name
+										input(type="text" placeholder="NameGame")
+								
+							.createGame__row
+								.createGame__col1
+									.createGame__title Тип игры:
+								.createGame__col2
+									.createGame__types
+										.createGame__type
+											input#typeGame_1(type="radio" name="typeGame" checked)
+											label(for="typeGame_1")
+												img(src="img/player_icon_2.svg", alt="")
+										.createGame__type
+											input#typeGame_2(type="radio" name="typeGame")
+											label(for="typeGame_2")
+												img(src="img/player_icon_3.svg", alt="")
+										.createGame__type
+											input#typeGame_3(type="radio" name="typeGame")
+											label(for="typeGame_3")
+												img(src="img/player_icon_4.svg", alt="")
+
+							.createGame__row
+								.createGame__col1
+									.createGame__title Кол-во игроков:
+								.createGame__col2
+									.createGame__players
+										.createGame__player
+											input#player_1(type="checkbox" checked)
+											label(for="player_1")
+												img(src="img/player_icon_1.svg", alt="")
+										.createGame__player
+											input#player_2(type="checkbox" checked)
+											label(for="player_2")
+												img(src="img/player_icon_1.svg", alt="")
+										.createGame__player
+											input#player_3(type="checkbox")
+											label(for="player_3")
+												img(src="img/player_icon_1.svg", alt="")
+										.createGame__player
+											input#player_4(type="checkbox")
+											label(for="player_4")
+												img(src="img/player_icon_1.svg", alt="")
+										.createGame__num 2
+
+							.createGame__row
+								.createGame__col1
+									.createGame__title Выберите вашу ставку
+								.createGame__col2
+									.search__rate.search__rate--createGame
+										.search__rateItems
+											.search__rateItem
+												input#rate_1(type="radio", name="rate" checked)
+												label(for="rate_1")
+													span 0.000
+													span eth
+													span.search__active
+														img(src="img/cristal_icon.svg", alt="")
+											.search__rateItem
+												input#rate_2(type="radio", name="rate")
+												label(for="rate_2")
+													span 0.005
+													span eth
+													span.search__active
+														img(src="img/cristal_icon.svg", alt="")
+											.search__rateItem
+												input#rate_3(type="radio", name="rate")
+												label(for="rate_3")
+													span 0.01
+													span eth
+													span.search__active
+														img(src="img/cristal_icon.svg", alt="")
+											.search__rateItem
+												input#rate_4(type="radio", name="rate")
+												label(for="rate_4")
+													span 0.05
+													span eth
+													span.search__active
+														img(src="img/cristal_icon.svg", alt="")
+											.search__rateItem
+												input#rate_5(type="radio", name="rate")
+												label(for="rate_5")
+													span 0.10
+													span eth
+													span.search__active
+														img(src="img/cristal_icon.svg", alt="")
+											.search__rateItem
+												input#rate_6(type="radio", name="rate")
+												label(for="rate_6")
+													span 1.0
+													span eth
+													span.search__active
+														img(src="img/cristal_icon.svg", alt="")
+
+							.createGame__row
+								.createGame__col1
+									.createGame__title Придумайте пароль для приватной игры
+								.createGame__col2
+									.createGame__password
+										input(type="text", name="")
+
+							.createGame__btn
+								.btn.btn--second Создать игру
+
+							.createGame__text Если игра уже создана, то Вы присоединитесь к ней
+
+						//	/createGame
+
+			//	/modal
+			
+		//- include blocks/footer.jade
+
+block js-libs
+	script(src="js/libs/jquery.min.js")
+	//- script(src="js/libs/jquery.fancybox.min.js")
+	//- script(src="js/libs/slick.min.js")
+	//- script(src="js/libs/jquery.matchHeight-min.js")
+	//- script(src="js/libs/jquery.inputmask.min.js")
+	//- script(src="js/libs/autosize.min.js")
+	//- script(src="js/libs/tooltipster.bundle.min.js")
+	//- script(src="js/libs/jquery.mmenu.min.all.js")
+	//- script(src="js/libs/wow.min.js")
+	//- script(src="js/libs/fullpage.min.js")
+	//- script(src="js/libs/jquery.vide.min.js")
+	//- script(src="js/libs/jquery.scrollbar.min.js")
+	//- script(src="http://api-maps.yandex.ru/2.1/?lang=ru_RU")
+	//- script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDArYzQvxn3CL3pB92Iqn9gaDltBFLfF4Y")
