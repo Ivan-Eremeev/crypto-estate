@@ -15,7 +15,7 @@ $break_xl: 1440px;
 $break_lg: 1200px;
 $break_md: 1050px;
 $break_sm: 769px;
-$break_xs: 500px;
+$break_xs: 395px;
 
 // Шрифты
 @include font-face("FuturaFuturisC", "../fonts/FuturaFuturisC/FuturaFuturisC", normal, normal);
@@ -65,9 +65,9 @@ sans-serif;
 @import 'blocks/confirm';
 @import 'blocks/tabs';
 @import 'blocks/guide';
-@import 'blocks/rating';
 @import 'blocks/settings';
-// @import 'blocks/tooltipster-noir';
+@import 'blocks/search';
+@import 'blocks/form2fa';
 
 /* settings */
 html {
@@ -172,6 +172,9 @@ input:-webkit-autofill {
   font-family: $firstFont;
   font-size: 20px;
   color: $fontColor;
+  @media (max-width: $break_xl) {
+    font-size: 15px;
+  }
 }
 .subtitleB {
   font-family: $secondFont;
@@ -275,7 +278,7 @@ input {
   width: 100%;
   height: 100%;
   padding: 0 20px;
-  background-color: #23242e;
+  background-color: #282937;
   border: none;
   font-family: $firstFont;
   font-size: 16px;

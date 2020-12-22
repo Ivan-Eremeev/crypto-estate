@@ -27,6 +27,7 @@
     border-radius: 8px;
     position: relative;
     flex-shrink: 0;
+    cursor: pointer;
     &:after {
       content: '';
       display: block;

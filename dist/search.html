@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<title>Поиск игры</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<link rel="stylesheet" href="css/libs/jquery.scrollbar.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="page">
+			<!-- header-->
+			<header class="header" id="header">
+				<div class="wrapper">
+					<div class="header__row">
+						<div class="header__col header__col--logo">
+							<!-- logo--><a class="logo md-hide" href="#"><img src="img/logo.png" alt=""></a>
+							<!-- /logo-->
+							<!-- userIconMob--><a class="userIconMob md-visible" href="#"><img src="img/user_1.jpg" alt=""></a>
+							<!--	/userIconMob-->
+						</div>
+						<div class="header__col mobile-visible"><img src="img/slogan_mob.png" alt=""></div>
+						<div class="header__col">
+							<!-- menu-->
+							<div class="menu menu--right" id="menu">
+								<div class="menu__btn" id="menu-btn">
+									<div class="menu__btnInner"></div>
+								</div>
+								<nav class="menu__nav">
+									<ul class="menu__list">
+										<li><a href="#">Обучающая игра</a></li>
+										<li><a href="#">Данные</a></li>
+										<li><a href="#">Рейтинг</a></li>
+										<li><a href="#">Баланс</a></li>
+									</ul>
+									<!-- user-->
+									<div class="user md-visible"><a class="user__icon" href="#"><img src="img/chat_icon.svg" alt=""></a><a class="user__icon" href="#"><img src="img/gear_icon.svg" alt=""></a><a class="user__lk" href="#"><img src="img/user_1.jpg" alt=""><span>Личный кабинет</span></a></div>
+									<!--	/user-->
+									<!-- lang--><a class="lang md-visible" href="#"><span class="active">RU</span><span class="lang__slash">/</span><span>EN</span></a>
+									<!--	/lang-->
+									<div class="menu__close" id="menu-close"></div>
+								</nav>
+								<div class="menu__over" id="menu-over"></div>
+							</div>
+							<!-- /menu-->
+						</div>
+						<div class="header__col md-hide">
+							<!-- user-->
+							<div class="user"><a class="user__icon" href="#"><img src="img/chat_icon.svg" alt=""></a><a class="user__icon" href="#"><img src="img/gear_icon.svg" alt=""></a><a class="user__lk" href="#"><img src="img/user_1.jpg" alt=""><span>Личный кабинет</span></a></div>
+							<!--	/user-->
+							<!-- lang--><a class="lang" href="#"><span class="active">RU</span><span class="lang__slash">/</span><span>EN</span></a>
+							<!--	/lang-->
+						</div>
+					</div>
+				</div>
+			</header>
+			<!-- /header-->
+			<div class="content">
+				<!-- modal-->
+				<form class="modal" action="#">
+					<div class="modal__container modal__container--w700">
+						<div class="modal__head">
+							<div class="title">Поиск игры</div>
+							<div class="modal__close"></div>
+						</div>
+						<div class="modal__body modal__body--p0">
+							<!-- guide-->
+							<div class="guide js_tabs">
+								<div class="guide__head">
+									<ul class="guide__triggers" id="tabs_triggers">
+										<li class="active">Игра без ставок</li>
+										<li>Игра на ставки</li>
+									</ul>
+								</div>
+								<div class="guide__scrollWrap">
+									<div class="js_scrollbar scrollbar-inner guide__scroll">
+										<div class="guide__content" id="tabs_content">
+											<div class="open">
+												<!-- search-->
+												<div class="search">
+													<div class="search__head search__head--center">
+														<div class="search__name">
+															<div class="search__headText">Название игры:</div>
+															<div class="search__input">
+																<input type="text" placeholder="Name Game">
+															</div>
+														</div>
+													</div>
+													<div class="search__body">
+														<div class="search__item search__item--noRate">
+															<div class="search__col"><span>Lorem, ipsum dolor.</span></div>
+															<div class="search__col">
+																<div class="search__photo"><img src="img/user_1.jpg" alt=""></div>
+																<div class="search__photo"><img src="img/user_1.jpg" alt=""></div>
+																<div class="search__photo"><img src="img/user_1.jpg" alt=""></div>
+																<div class="search__photo">
+																	<div class="search__plus"><img src="img/plus_icon.svg" alt=""></div>
+																</div>
+															</div>
+															<div class="search__col">
+																<button class="btn btn--first" type="submit"><span class="mobile-hide">Присоединиться</span><img class="mobile-visible" src="img/plus_icon.svg" alt=""></button>
+															</div>
+														</div>
+														<div class="search__item search__item--noRate active">
+															<div class="search__col"><span>Lorem, ipsum dolor.</span></div>
+															<div class="search__col">
+																<div class="search__photo"><img src="img/user_1.jpg" alt=""></div>
+																<div class="search__photo"><img src="img/user_1.jpg" alt=""></div>
+																<div class="search__photo">
+																	<div class="search__plus"><img src="img/plus_icon.svg" alt=""></div>
+																</div>
+																<div class="search__photo"></div>
+															</div>
+															<div class="search__col">
+																<button class="btn btn--first" type="submit"><span class="mobile-hide">Присоединиться</span><img class="mobile-visible" src="img/plus_icon.svg" alt=""></button>
+															</div>
+														</div>
+														<div class="search__item search__item--noRate">
+															<div class="search__col"><span>Lorem, ipsum dolor.</span></div>
+															<div class="search__col">
+																<div class="search__photo"><img src="img/user_1.jpg" alt=""></div>
+																<div class="search__photo"><img src="img/user_1.jpg" alt=""></div>
+																<div class="search__photo"><img src="img/user_1.jpg" alt=""></div>
+																<div class="search__photo">
+																	<div class="search__plus"><img src="img/plus_icon.svg" alt=""></div>
+																</div>
+															</div>
+															<div class="search__col">
+																<button class="btn btn--first" type="submit"><span class="mobile-hide">Присоединиться</span><img class="mobile-visible" src="img/plus_icon.svg" alt=""></button>
+															</div>
+														</div>
+														<div class="search__item search__item--noRate">
+															<div class="search__col"><span>Lorem, ipsum dolor.</span></div>
+															<div class="search__col">
+																<div class="search__photo"><img src="img/user_1.jpg" alt=""></div>
+																<div class="search__photo"><img src="img/user_1.jpg" alt=""></div>
+																<div class="search__photo"><img src="img/user_1.jpg" alt=""></div>
+																<div class="search__photo">
+																	<div class="search__plus"><img src="img/plus_icon.svg" alt=""></div>
+																</div>
+															</div>
+															<div class="search__col">
+																<button class="btn btn--first" type="submit"><span class="mobile-hide">Присоединиться</span><img class="mobile-visible" src="img/plus_icon.svg" alt=""></button>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!--	/search-->
+											</div>
+											<div>
+												<!-- search-->
+												<div class="search">
+													<div class="search__head">
+														<div class="search__name">
+															<div class="search__headText">Название игры:</div>
+															<div class="search__input">
+																<input type="text" placeholder="Name Game">
+															</div>
+														</div>
+														<div class="search__rate">
+															<div class="search__headText">Ставка:</div>
+															<div class="search__rateItems">
+																<div class="search__rateItem">
+																	<input id="rate_1" type="radio" name="rate" checked>
+																	<label for="rate_1"><span>0.000</span><span>eth</span><span class="search__active"><img src="img/cristal_icon.svg" alt=""></span></label>
+																</div>
+																<div class="search__rateItem">
+																	<input id="rate_2" type="radio" name="rate">
+																	<label for="rate_2"><span>0.005</span><span>eth</span><span class="search__active"><img src="img/cristal_icon.svg" alt=""></span></label>
+																</div>
+																<div class="search__rateItem">
+																	<input id="rate_3" type="radio" name="rate">
+																	<label for="rate_3"><span>0.01</span><span>eth</span><span class="search__active"><img src="img/cristal_icon.svg" alt=""></span></label>
+																</div>
+																<div class="search__rateItem">
+																	<input id="rate_4" type="radio" name="rate">
+																	<label for="rate_4"><span>0.05</span><span>eth</span><span class="search__active"><img src="img/cristal_icon.svg" alt=""></span></label>
+																</div>
+																<div class="search__rateItem">
+																	<input id="rate_5" type="radio" name="rate">
+																	<label for="rate_5"><span>0.10</span><span>eth</span><span class="search__active"><img src="img/cristal_icon.svg" alt=""></span></label>
+																</div>
+																<div class="search__rateItem">
+																	<input id="rate_6" type="radio" name="rate">
+																	<label for="rate_6"><span>1.0</span><span>eth</span><span class="search__active"><img src="img/cristal_icon.svg" alt=""></span></label>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="search__body">
+														<div class="search__item">
+															<div class="search__col"><span>Lorem, ipsum dolor.</span></div>
+															<div class="search__col">
+																<div class="search__photo"><img src="img/user_1.jpg" alt=""></div>
+																<div class="search__photo"><img src="img/user_1.jpg" alt=""></div>
+																<div class="search__photo"><img src="img/user_1.jpg" alt=""></div>
+																<div class="search__photo">
+																	<div class="search__plus"><img src="img/plus_icon.svg" alt=""></div>
+																</div>
+															</div>
+															<div class="search__col">
+																<div class="search__cristal mobile-hide"><img src="img/cristal_icon.svg" alt=""></div><span>0.005 eth</span>
+															</div>
+															<div class="search__col">
+																<button class="btn btn--first" type="submit"><span class="mobile-hide">Присоединиться</span><img class="mobile-visible" src="img/plus_icon.svg" alt=""></button>
+															</div>
+														</div>
+														<div class="search__item active">
+															<div class="search__col"><span>Lorem, ipsum dolor.</span></div>
+															<div class="search__col">
+																<div class="search__photo"><img src="img/user_1.jpg" alt=""></div>
+																<div class="search__photo"><img src="img/user_1.jpg" alt=""></div>
+																<div class="search__photo">
+																	<div class="search__plus"><img src="img/plus_icon.svg" alt=""></div>
+																</div>
+																<div class="search__photo"></div>
+															</div>
+															<div class="search__col">
+																<div class="search__cristal mobile-hide"><img src="img/cristal_icon.svg" alt=""></div><span>0.005 eth</span>
+															</div>
+															<div class="search__col">
+																<button class="btn btn--first" type="submit"><span class="mobile-hide">Присоединиться</span><img class="mobile-visible" src="img/plus_icon.svg" alt=""></button>
+															</div>
+														</div>
+														<div class="search__item">
+															<div class="search__col"><span>Lorem, ipsum dolor.</span></div>
+															<div class="search__col">
+																<div class="search__photo"><img src="img/user_1.jpg" alt=""></div>
+																<div class="search__photo"><img src="img/user_1.jpg" alt=""></div>
+																<div class="search__photo"><img src="img/user_1.jpg" alt=""></div>
+																<div class="search__photo">
+																	<div class="search__plus"><img src="img/plus_icon.svg" alt=""></div>
+																</div>
+															</div>
+															<div class="search__col">
+																<div class="search__cristal mobile-hide"><img src="img/cristal_icon.svg" alt=""></div><span>0.005 eth</span>
+															</div>
+															<div class="search__col">
+																<button class="btn btn--first" type="submit"><span class="mobile-hide">Присоединиться</span><img class="mobile-visible" src="img/plus_icon.svg" alt=""></button>
+															</div>
+														</div>
+														<div class="search__item">
+															<div class="search__col"><span>Lorem, ipsum dolor.</span></div>
+															<div class="search__col">
+																<div class="search__photo"><img src="img/user_1.jpg" alt=""></div>
+																<div class="search__photo"><img src="img/user_1.jpg" alt=""></div>
+																<div class="search__photo"><img src="img/user_1.jpg" alt=""></div>
+																<div class="search__photo">
+																	<div class="search__plus"><img src="img/plus_icon.svg" alt=""></div>
+																</div>
+															</div>
+															<div class="search__col">
+																<div class="search__cristal mobile-hide"><img src="img/cristal_icon.svg" alt=""></div><span>0.005 eth</span>
+															</div>
+															<div class="search__col">
+																<button class="btn btn--first" type="submit"><span class="mobile-hide">Присоединиться</span><img class="mobile-visible" src="img/plus_icon.svg" alt=""></button>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!--	/search-->
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--	/guide-->
+						</div>
+					</div>
+				</form>
+				<!--	/modal-->
+			</div>
+		</div>
+		<script src="js/libs/jquery.min.js"></script>
+		<script src="js/libs/jquery.scrollbar.min.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

@@ -1,0 +1,106 @@
+extends blocks/base.jade
+
+block title 
+	title Настройки 2FA
+
+block style-libs
+	//- link(rel="stylesheet", href="css/libs/animate.min.css")
+	//- link(rel="stylesheet", href="css/libs/bootstrap-grid.min.css")
+	//- link(rel="stylesheet", href="css/libs/fullpage.css")
+	//- link(rel="stylesheet", href="css/libs/hamburgers.min.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.fancybox.min.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.mmenu.all.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.scrollbar.css")
+	//- link(rel="stylesheet", href="css/libs/slick.css")
+	//- link(rel="stylesheet", href="css/libs/tooltipster.bundle.min.css")
+
+block content
+
+	.page
+
+		include blocks/header.jade
+		
+		.content
+
+			// modal
+			form(action="#").modal
+				.modal__container.modal__container--w700
+					.modal__head
+						.title Настройки 2FA
+						.modal__close
+					.modal__body
+						// form2fa step 1
+						.form2fa
+							.form2fa__steps
+								.form2fa__step Шаг 1
+								.form2fa__stepCount 1/4
+							.subtitle Скачайте и установите приложение "Google Аuthenticator"
+							.form2fa__stores
+								a(href="#").form2fa__store
+									img(src="img/google_play.png", alt="")
+								a(href="#").form2fa__store
+									img(src="img/app_store.png", alt="")
+							.form2fa__btn
+								.btn.btn--second Далее
+						//	/form2fa step 1
+
+						// form2fa step 2
+						.form2fa
+							.form2fa__steps
+								.form2fa__step Шаг 2
+								.form2fa__stepCount 2/4
+							.subtitle Отсканируйте этот QR-код в приложении "Google Аuthenticator"
+							.form2fa__qr
+								img(src="img/qr_code.svg", alt="")
+							.form2fa__btn
+								.btn.btn--second Далее
+						//	/form2fa step 2
+
+						// form2fa step 3
+						.form2fa
+							.form2fa__steps
+								.form2fa__step Шаг 3
+								.form2fa__stepCount 3/4
+							.subtitle
+								p Пожалуйста, сохраните этот ключ на бумаге. 
+								p Этот ключ поможет Вам восстановить Ваш "Google Аuthenticator"<br>в случае потери телефона.
+							.form2fa__desc.form2fa__desc--maw500 Сброс Вашей аутентификации Google требует открытия заявки в службу поддержки и занимает не менее 7 дней для обработки.
+							.form2fa__flex
+								.form2fa__input
+									input(type="text")
+								.btn.btn--first Скопировать код
+							.form2fa__btn
+								.btn.btn--second Далее
+						//	/form2fa step 3
+
+						// form2fa step 4
+						.form2fa
+							.form2fa__steps
+								.form2fa__step Шаг 4
+								.form2fa__stepCount 4/4
+							.subtitle Включить "Google Аuthenticator"
+							.form2fa__input.form2fa__input--maw460.form2fa__input--center
+								input(type="text")
+							.form2fa__btn
+								.btn.btn--second Подтвердить
+						//	/form2fa step 4
+
+			//	/modal
+			
+		//- include blocks/footer.jade
+
+block js-libs
+	script(src="js/libs/jquery.min.js")
+	//- script(src="js/libs/jquery.fancybox.min.js")
+	//- script(src="js/libs/slick.min.js")
+	//- script(src="js/libs/jquery.matchHeight-min.js")
+	//- script(src="js/libs/jquery.inputmask.min.js")
+	//- script(src="js/libs/autosize.min.js")
+	//- script(src="js/libs/tooltipster.bundle.min.js")
+	//- script(src="js/libs/jquery.mmenu.min.all.js")
+	//- script(src="js/libs/wow.min.js")
+	//- script(src="js/libs/fullpage.min.js")
+	//- script(src="js/libs/jquery.vide.min.js")
+	//- script(src="js/libs/jquery.scrollbar.min.js")
+	//- script(src="http://api-maps.yandex.ru/2.1/?lang=ru_RU")
+	//- script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDArYzQvxn3CL3pB92Iqn9gaDltBFLfF4Y")

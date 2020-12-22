@@ -534,7 +534,7 @@ $(document).ready(function () {
 	// };
 	// textLimit();
 
-	// Вставляет svg в html, позволяет управлять цветом через css 
+	// Вставляет svg в html, позволяет управлять им через css 
 	$('img[src$=".svg"]').each(function(){
 		var $img = $(this);
 		var imgClass = $img.attr('class');

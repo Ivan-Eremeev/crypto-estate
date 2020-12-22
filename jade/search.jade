@@ -1,0 +1,286 @@
+extends blocks/base.jade
+
+block title 
+	title Поиск игры
+
+block style-libs
+	//- link(rel="stylesheet", href="css/libs/animate.min.css")
+	//- link(rel="stylesheet", href="css/libs/bootstrap-grid.min.css")
+	//- link(rel="stylesheet", href="css/libs/fullpage.css")
+	//- link(rel="stylesheet", href="css/libs/hamburgers.min.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.fancybox.min.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.mmenu.all.css")
+	link(rel="stylesheet", href="css/libs/jquery.scrollbar.css")
+	//- link(rel="stylesheet", href="css/libs/slick.css")
+	//- link(rel="stylesheet", href="css/libs/tooltipster.bundle.min.css")
+
+block content
+
+	.page
+
+		include blocks/header.jade
+		
+		.content
+
+			// modal
+			form(action="#").modal
+				.modal__container.modal__container--w700
+					.modal__head
+						.title Поиск игры
+						.modal__close
+					.modal__body.modal__body--p0
+						// guide
+						.guide.js_tabs
+							.guide__head
+								ul.guide__triggers#tabs_triggers
+									li.active Игра без ставок
+									li Игра на ставки
+							.guide__scrollWrap
+								.js_scrollbar.scrollbar-inner.guide__scroll
+									.guide__content#tabs_content
+										div.open
+											// search
+											.search
+												.search__head.search__head--center
+													.search__name
+														.search__headText Название игры:
+														.search__input
+															input(type="text" placeholder="Name Game")
+												.search__body
+
+													.search__item.search__item--noRate
+														.search__col
+															span Lorem, ipsum dolor.
+														.search__col
+															.search__photo
+																img(src="img/user_1.jpg", alt="")
+															.search__photo
+																img(src="img/user_1.jpg", alt="")
+															.search__photo
+																img(src="img/user_1.jpg", alt="")
+															.search__photo
+																.search__plus
+																	img(src="img/plus_icon.svg", alt="")
+														.search__col
+															button(type="submit").btn.btn--first
+																span.mobile-hide Присоединиться
+																img(src="img/plus_icon.svg", alt="").mobile-visible
+
+													.search__item.search__item--noRate.active
+														.search__col
+															span Lorem, ipsum dolor.
+														.search__col
+															.search__photo
+																img(src="img/user_1.jpg", alt="")
+															.search__photo
+																img(src="img/user_1.jpg", alt="")
+															.search__photo
+																.search__plus
+																	img(src="img/plus_icon.svg", alt="")
+															.search__photo
+														.search__col
+															button(type="submit").btn.btn--first
+																span.mobile-hide Присоединиться
+																img(src="img/plus_icon.svg", alt="").mobile-visible
+
+													.search__item.search__item--noRate
+														.search__col
+															span Lorem, ipsum dolor.
+														.search__col
+															.search__photo
+																img(src="img/user_1.jpg", alt="")
+															.search__photo
+																img(src="img/user_1.jpg", alt="")
+															.search__photo
+																img(src="img/user_1.jpg", alt="")
+															.search__photo
+																.search__plus
+																	img(src="img/plus_icon.svg", alt="")
+														.search__col
+															button(type="submit").btn.btn--first
+																span.mobile-hide Присоединиться
+																img(src="img/plus_icon.svg", alt="").mobile-visible
+
+													.search__item.search__item--noRate
+														.search__col
+															span Lorem, ipsum dolor.
+														.search__col
+															.search__photo
+																img(src="img/user_1.jpg", alt="")
+															.search__photo
+																img(src="img/user_1.jpg", alt="")
+															.search__photo
+																img(src="img/user_1.jpg", alt="")
+															.search__photo
+																.search__plus
+																	img(src="img/plus_icon.svg", alt="")
+														.search__col
+															button(type="submit").btn.btn--first
+																span.mobile-hide Присоединиться
+																img(src="img/plus_icon.svg", alt="").mobile-visible
+											//	/search
+
+										div
+											// search
+											.search
+												.search__head
+													.search__name
+														.search__headText Название игры:
+														.search__input
+															input(type="text" placeholder="Name Game")
+													.search__rate
+														.search__headText Ставка:
+														.search__rateItems
+															.search__rateItem
+																input#rate_1(type="radio", name="rate" checked)
+																label(for="rate_1")
+																	span 0.000
+																	span eth
+																	span.search__active
+																		img(src="img/cristal_icon.svg", alt="")
+															.search__rateItem
+																input#rate_2(type="radio", name="rate")
+																label(for="rate_2")
+																	span 0.005
+																	span eth
+																	span.search__active
+																		img(src="img/cristal_icon.svg", alt="")
+															.search__rateItem
+																input#rate_3(type="radio", name="rate")
+																label(for="rate_3")
+																	span 0.01
+																	span eth
+																	span.search__active
+																		img(src="img/cristal_icon.svg", alt="")
+															.search__rateItem
+																input#rate_4(type="radio", name="rate")
+																label(for="rate_4")
+																	span 0.05
+																	span eth
+																	span.search__active
+																		img(src="img/cristal_icon.svg", alt="")
+															.search__rateItem
+																input#rate_5(type="radio", name="rate")
+																label(for="rate_5")
+																	span 0.10
+																	span eth
+																	span.search__active
+																		img(src="img/cristal_icon.svg", alt="")
+															.search__rateItem
+																input#rate_6(type="radio", name="rate")
+																label(for="rate_6")
+																	span 1.0
+																	span eth
+																	span.search__active
+																		img(src="img/cristal_icon.svg", alt="")
+												.search__body
+
+													.search__item
+														.search__col
+															span Lorem, ipsum dolor.
+														.search__col
+															.search__photo
+																img(src="img/user_1.jpg", alt="")
+															.search__photo
+																img(src="img/user_1.jpg", alt="")
+															.search__photo
+																img(src="img/user_1.jpg", alt="")
+															.search__photo
+																.search__plus
+																	img(src="img/plus_icon.svg", alt="")
+														.search__col
+															.search__cristal.mobile-hide
+																img(src="img/cristal_icon.svg", alt="")
+															span 0.005 eth
+														.search__col
+															button(type="submit").btn.btn--first
+																span.mobile-hide Присоединиться
+																img(src="img/plus_icon.svg", alt="").mobile-visible
+
+													.search__item.active
+														.search__col
+															span Lorem, ipsum dolor.
+														.search__col
+															.search__photo
+																img(src="img/user_1.jpg", alt="")
+															.search__photo
+																img(src="img/user_1.jpg", alt="")
+															.search__photo
+																.search__plus
+																	img(src="img/plus_icon.svg", alt="")
+															.search__photo
+														.search__col
+															.search__cristal.mobile-hide
+																img(src="img/cristal_icon.svg", alt="")
+															span 0.005 eth
+														.search__col
+															button(type="submit").btn.btn--first
+																span.mobile-hide Присоединиться
+																img(src="img/plus_icon.svg", alt="").mobile-visible
+
+													.search__item
+														.search__col
+															span Lorem, ipsum dolor.
+														.search__col
+															.search__photo
+																img(src="img/user_1.jpg", alt="")
+															.search__photo
+																img(src="img/user_1.jpg", alt="")
+															.search__photo
+																img(src="img/user_1.jpg", alt="")
+															.search__photo
+																.search__plus
+																	img(src="img/plus_icon.svg", alt="")
+														.search__col
+															.search__cristal.mobile-hide
+																img(src="img/cristal_icon.svg", alt="")
+															span 0.005 eth
+														.search__col
+															button(type="submit").btn.btn--first
+																span.mobile-hide Присоединиться
+																img(src="img/plus_icon.svg", alt="").mobile-visible
+
+													.search__item
+														.search__col
+															span Lorem, ipsum dolor.
+														.search__col
+															.search__photo
+																img(src="img/user_1.jpg", alt="")
+															.search__photo
+																img(src="img/user_1.jpg", alt="")
+															.search__photo
+																img(src="img/user_1.jpg", alt="")
+															.search__photo
+																.search__plus
+																	img(src="img/plus_icon.svg", alt="")
+														.search__col
+															.search__cristal.mobile-hide
+																img(src="img/cristal_icon.svg", alt="")
+															span 0.005 eth
+														.search__col
+															button(type="submit").btn.btn--first
+																span.mobile-hide Присоединиться
+																img(src="img/plus_icon.svg", alt="").mobile-visible
+											//	/search
+											
+						//	/guide
+								
+			//	/modal
+			
+		//- include blocks/footer.jade
+
+block js-libs
+	script(src="js/libs/jquery.min.js")
+	//- script(src="js/libs/jquery.fancybox.min.js")
+	//- script(src="js/libs/slick.min.js")
+	//- script(src="js/libs/jquery.matchHeight-min.js")
+	//- script(src="js/libs/jquery.inputmask.min.js")
+	//- script(src="js/libs/autosize.min.js")
+	//- script(src="js/libs/tooltipster.bundle.min.js")
+	//- script(src="js/libs/jquery.mmenu.min.all.js")
+	//- script(src="js/libs/wow.min.js")
+	//- script(src="js/libs/fullpage.min.js")
+	//- script(src="js/libs/jquery.vide.min.js")
+	script(src="js/libs/jquery.scrollbar.min.js")
+	//- script(src="http://api-maps.yandex.ru/2.1/?lang=ru_RU")
+	//- script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDArYzQvxn3CL3pB92Iqn9gaDltBFLfF4Y")
