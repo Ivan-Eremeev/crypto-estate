@@ -2705,7 +2705,8 @@ h1, h2, h3 {
     .form2fa__store img {
       max-width: 150px; }
   .form2fa .btn {
-    padding: 12px 44px; }
+    padding: 12px 44px;
+    font-size: 12px; }
   .form2fa__qr {
     width: 110px;
     height: 110px; }
@@ -2716,6 +2717,10 @@ h1, h2, h3 {
   .form2fa__flex .btn {
     font-size: 11px;
     padding: 10px; } }
+
+@media (max-width: 769px) {
+  .form2fa .btn {
+    font-size: 10px; } }
 
 @media (max-width: 395px) {
   .form2fa__flex {
