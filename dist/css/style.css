@@ -3311,6 +3311,7 @@ input[type=text] {
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
+  margin-bottom: 50px;
   height: 90%;
   font-family: "FuturaFuturisC", sans-serif;
   color: #fff; }
@@ -3408,6 +3409,20 @@ input[type=text] {
       -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
       transform: rotate(180deg); }
+    .field__verticalLeft .field__estate {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      top: 0;
+      bottom: 0;
+      left: -20px;
+      right: auto; }
+    .field__verticalLeft .field__hotel {
+      -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+      transform: rotate(-90deg);
+      margin: 2px; }
   .field__gorizontalBottom {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
@@ -3441,6 +3456,9 @@ input[type=text] {
       .field__gorizontalBottom .field__name--bottom {
         top: auto;
         bottom: 20%; }
+    .field__gorizontalBottom .field__estate {
+      top: auto;
+      bottom: -20px; }
   .field__verticalRight {
     display: grid;
     grid-row: 3 / 12;
@@ -3489,6 +3507,20 @@ input[type=text] {
       top: 0;
       right: auto;
       left: 5%; }
+    .field__verticalRight .field__estate {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      top: 0;
+      bottom: 0;
+      left: auto;
+      right: -20px; }
+    .field__verticalRight .field__hotel {
+      -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      transform: rotate(90deg);
+      margin: 2px 0; }
   .field__item {
     padding: 1px; }
   .field__center {
@@ -3677,7 +3709,145 @@ input[type=text] {
   .field__messageName--green {
     color: #25ab71; }
   .field__text {
+    font-family: "FuturaС", sans-serif;
     color: #818186; }
+  .field .chat__form input {
+    font-size: 14px; }
+  .field__estate {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: absolute;
+    top: -20px;
+    left: 0;
+    right: 0;
+    text-align: center; }
+  .field__hotel {
+    width: 11px;
+    height: 11px;
+    margin: 0 2px;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    fill: #157fd9; }
+    .field__hotel--green {
+      width: 14px;
+      height: 14px;
+      fill: #25c4b7; }
+
+.sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 100%;
+  padding: 24px 11px; }
+  .sidebar__user {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    padding: 16px 32px;
+    margin-bottom: 8px;
+    background-color: #191a24;
+    border: 1px solid #323652; }
+  .sidebar__photo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 72px;
+    height: 72px;
+    margin-right: 28px;
+    border-radius: 100%; }
+    .sidebar__photo img {
+      width: 66px;
+      height: 66px;
+      border-radius: 100%;
+      overflow: hidden;
+      -o-object-fit: cover;
+      object-fit: cover; }
+    .sidebar__photo--blue {
+      background-color: #1376d3; }
+    .sidebar__photo--red {
+      background-color: #960f38; }
+    .sidebar__photo--yellow {
+      background-color: #c09512; }
+    .sidebar__photo--green {
+      background-color: #25ab71; }
+  .sidebar__price {
+    font-size: 24px; }
+  .sidebar__progress {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 8px;
+    background-color: #191a24;
+    border: 1px solid #323652; }
+  .sidebar__btns .btn {
+    font-size: 16px; }
+    .sidebar__btns .btn--gray:hover {
+      background-color: #960f38; }
+  .sidebar__messages {
+    height: 240px;
+    font-size: 12px;
+    line-height: 18px;
+    overflow: hidden;
+    position: relative; }
+    .sidebar__messages:after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 100px;
+      background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, #191a23), to(transparent));
+      background: -o-linear-gradient(bottom, #191a23 10%, transparent);
+      background: linear-gradient(to top, #191a23 10%, transparent); }
+  .sidebar__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    position: absolute;
+    top: 12px;
+    left: 16px;
+    right: 16px; }
+  .sidebar__time {
+    margin-right: 5px; }
+  .sidebar__name {
+    margin-right: 3px; }
+    .sidebar__name--red {
+      color: #b81748; }
+    .sidebar__name--blue {
+      color: #1375d1; }
+    .sidebar__name--green {
+      color: #25ab71; }
 
 @media (max-width: 769px) {
   .mobile-hide {

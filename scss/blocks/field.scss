@@ -79,6 +79,17 @@
       writing-mode: vertical-rl;
       transform: rotate(180deg);
     }
+    .field__estate {
+      flex-direction: column;
+      top: 0;
+      bottom: 0;
+      left: -20px;
+      right: auto;
+    }
+    .field__hotel {
+      transform: rotate(-90deg);
+      margin: 2px;
+    }
   }
   &__gorizontalBottom {
     display: grid;
@@ -118,6 +129,10 @@
         top: auto;
         bottom: 20%;
       }
+    }
+    .field__estate {
+      top: auto;
+      bottom: -20px;
     }
   }
   &__verticalRight {
@@ -162,6 +177,17 @@
       top: 0;
       right: auto;
       left: 5%;
+    }
+    .field__estate {
+      flex-direction: column;
+      top: 0;
+      bottom: 0;
+      left: auto;
+      right: -20px;
+    }
+    .field__hotel {
+      transform: rotate(90deg);
+      margin: 2px 0;
     }
   }
   &__item {
@@ -373,6 +399,33 @@
     }
   }
   &__text {
+    font-family: $firstFont;
     color: $fontDarkColor;
+  }
+  .chat__form {
+    input {
+      font-size: 14px;
+    }
+  }
+  &__estate {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: -20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  &__hotel {
+    width: 11px;
+    height: 11px;
+    margin: 0 2px;
+    flex-shrink: 0;
+    fill: #157fd9;
+    &--green {
+      width: 14px;
+      height: 14px;
+      fill: #25c4b7;
+    }
   }
 }
