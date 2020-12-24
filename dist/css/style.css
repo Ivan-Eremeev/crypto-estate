@@ -3212,6 +3212,346 @@ input[type=text] {
   .createGame__col2 {
     width: 100%; } }
 
+.fieldStats {
+  margin-left: 50px;
+  margin-top: -3px;
+  font-family: "FuturaFuturisC", sans-serif;
+  font-size: 14px;
+  color: #fff; }
+  .fieldStats__item {
+    display: inline-block;
+    margin: 0 15px; }
+  .fieldStats__dark {
+    margin-left: 10px;
+    color: #818186; }
+
+.fieldSettings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: "FuturaFuturisC", sans-serif;
+  color: #fff; }
+  .fieldSettings__col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .fieldSettings__sound {
+    width: 18px;
+    height: 18px;
+    cursor: pointer; }
+    .fieldSettings__sound svg {
+      fill: #3d7f5c; }
+  .fieldSettings__estate {
+    padding: 7px 13px;
+    margin-left: 20px;
+    border-radius: 20px;
+    background-color: #1a1b28; }
+  .fieldSettings__estateRow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: -20px; }
+  .fieldSettings__estateCol {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: 20px; }
+    .fieldSettings__estateCol span {
+      margin-left: 5px; }
+  .fieldSettings__hotel {
+    width: 16px;
+    height: 16px; }
+    .fieldSettings__hotel svg {
+      fill: #157fd9; }
+  .fieldSettings__house {
+    width: 16px;
+    height: 16px; }
+    .fieldSettings__house svg {
+      fill: #25c4b7; }
+  .fieldSettings__btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 115px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 14px 25px;
+    border-radius: 50px;
+    background-color: #282936;
+    color: #fff;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+    .fieldSettings__btn svg {
+      width: 20px;
+      height: 20px;
+      fill: #8c8e9c;
+      margin-right: 10px;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
+    .fieldSettings__btn:hover {
+      background-color: #1376d3; }
+      .fieldSettings__btn:hover svg {
+        fill: #fff; }
+
+.fieldWrapper {
+  max-width: 1236px;
+  padding: 0 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  height: 90%;
+  font-family: "FuturaFuturisC", sans-serif;
+  color: #fff; }
+  .fieldWrapper__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .fieldWrapper__col1 {
+    width: 26%;
+    background-color: #14151f; }
+  .fieldWrapper__col2 {
+    width: 74%;
+    background-color: #21222d; }
+
+.field {
+  height: 100%;
+  padding: 25px;
+  position: relative; }
+  .field:after {
+    content: '';
+    display: block;
+    padding-top: 100%; }
+  .field__grid {
+    display: grid;
+    grid-template-rows: repeat(13, 1fr);
+    grid-template-columns: repeat(13, 1fr);
+    position: absolute;
+    top: 25px;
+    bottom: 25px;
+    left: 25px;
+    right: 25px; }
+  .field__gorizontalTop {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(13, 1fr);
+    grid-row: 1 / 3;
+    grid-column: 1 / 14; }
+    .field__gorizontalTop .field__item {
+      grid-row: 1 / 3; }
+      .field__gorizontalTop .field__item:first-child {
+        grid-row: 1 / 3;
+        grid-column: 1 / 3; }
+      .field__gorizontalTop .field__item:last-child {
+        grid-row: 1 / 3;
+        grid-column: 12 / 14; }
+  .field__verticalLeft {
+    display: grid;
+    grid-row: 3 / 12;
+    grid-column: 1 / 3;
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-columns: repeat(2, 1fr); }
+    .field__verticalLeft .field__item {
+      grid-column: 1 / 3; }
+    .field__verticalLeft .field__title {
+      padding: 0 4%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+      writing-mode: vertical-lr;
+      -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      transform: rotate(180deg); }
+    .field__verticalLeft .field__icons {
+      -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+      writing-mode: vertical-lr;
+      top: 50%;
+      left: 22%;
+      -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+      transform: translate(0, -50%); }
+    .field__verticalLeft .field__icon {
+      margin: 3px 0; }
+      .field__verticalLeft .field__icon:first-child {
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2; }
+      .field__verticalLeft .field__icon svg {
+        -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        transform: rotate(-90deg); }
+    .field__verticalLeft .field__img {
+      top: 50%;
+      left: 58%; }
+    .field__verticalLeft .field__name {
+      top: 0;
+      right: 5%;
+      left: auto;
+      -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+      -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      transform: rotate(180deg); }
+  .field__gorizontalBottom {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(13, 1fr);
+    grid-row: 12 / 14;
+    grid-column: 1 / 14; }
+    .field__gorizontalBottom .field__item {
+      grid-row: 1 / 3; }
+      .field__gorizontalBottom .field__item:first-child {
+        grid-row: 1 / 3;
+        grid-column: 1 / 3; }
+      .field__gorizontalBottom .field__item:last-child {
+        grid-row: 1 / 3;
+        grid-column: 12 / 14; }
+    .field__gorizontalBottom .field__title {
+      width: 100%;
+      position: absolute;
+      bottom: 0; }
+    .field__gorizontalBottom .field__icons {
+      top: auto;
+      bottom: 22%; }
+    .field__gorizontalBottom .field__img {
+      top: auto;
+      bottom: 58%;
+      -webkit-transform: translate(-50%, 50%);
+      -ms-transform: translate(-50%, 50%);
+      transform: translate(-50%, 50%); }
+    .field__gorizontalBottom .field__name {
+      top: 5%;
+      bottom: auto; }
+  .field__verticalRight {
+    display: grid;
+    grid-row: 3 / 12;
+    grid-column: 12 / 14;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-columns: repeat(2, 1fr); }
+    .field__verticalRight .field__item {
+      grid-column: 1 / 3; }
+    .field__verticalRight .field__title {
+      padding: 0 4%;
+      -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0; }
+    .field__verticalRight .field__icons {
+      -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+      top: 50%;
+      right: 22%;
+      -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+      transform: translate(0, -50%); }
+    .field__verticalRight .field__icon {
+      margin: 3px 0; }
+      .field__verticalRight .field__icon svg {
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg); }
+    .field__verticalRight .field__img {
+      left: auto;
+      right: 58%;
+      top: 50%;
+      -webkit-transform: translate(50%, -50%);
+      -ms-transform: translate(50%, -50%);
+      transform: translate(50%, -50%); }
+    .field__verticalRight .field__name {
+      -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+      top: 0;
+      right: auto;
+      left: 5%; }
+  .field__item {
+    padding: 1px; }
+  .field__center {
+    grid-row: 3 / 12;
+    grid-column: 3 / 12;
+    background-color: #14151f; }
+  .field__container {
+    width: 100%;
+    height: 100%;
+    padding: 1px;
+    background-color: #323442; }
+  .field__card {
+    width: 100%;
+    height: 100%;
+    position: relative; }
+  .field__title {
+    padding: 4% 0;
+    background-color: #734225;
+    font-size: 11px;
+    text-align: center; }
+  .field__icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0); }
+  .field__icon {
+    width: 12px;
+    height: 12px;
+    margin: 0 3px; }
+    .field__icon svg {
+      fill: #42434b; }
+  .field__img {
+    max-width: 32px;
+    max-height: 32px;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+    .field__img svg {
+      width: 32px;
+      height: 32px; }
+    .field__img--big {
+      max-width: 45px;
+      max-height: 45px;
+      top: 50%; }
+      .field__img--big svg {
+        width: 45px;
+        height: 45px; }
+  .field__name {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 5%;
+    font-size: 9px;
+    text-align: center;
+    text-transform: uppercase; }
+    .field__name--small {
+      font-size: 8px; }
+
 @media (max-width: 769px) {
   .mobile-hide {
     display: none !important; } }

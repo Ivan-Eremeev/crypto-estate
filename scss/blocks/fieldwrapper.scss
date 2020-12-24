@@ -1,0 +1,21 @@
+.fieldWrapper {
+  max-width: 1236px;
+  padding: 0 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  height: 90%;
+  font-family: $secondFont;
+  color: $fontColor;
+  &__row {
+    display: flex;
+  }
+  &__col1 {
+    width: 26%;
+    background-color: #14151f;
+  }
+  &__col2 {
+    width: 74%;
+    background-color: #21222d;
+  }
+}

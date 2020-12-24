@@ -1,0 +1,15 @@
+.fieldStats {
+  margin-left: 50px;
+  margin-top: -3px;
+  font-family: $secondFont;
+  font-size: 14px;
+  color: $fontColor;
+  &__item {
+    display: inline-block;
+    margin: 0 15px;
+  }
+  &__dark {
+    margin-left: 10px;
+    color: $fontDarkColor;
+  }
+}

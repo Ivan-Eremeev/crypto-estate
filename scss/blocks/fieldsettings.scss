@@ -1,0 +1,73 @@
+.fieldSettings {
+  display: flex;
+  align-items: center;
+  font-family: $secondFont;
+  color: $fontColor;
+  &__col {
+    display: flex;
+    align-items: center;
+  }
+  &__sound {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    svg {
+      fill: #3d7f5c;
+    }
+  }
+  &__estate {
+    padding: 7px 13px;
+    margin-left: 20px;
+    border-radius: 20px;
+    background-color: #1a1b28;
+  }
+  &__estateRow {
+    display: flex;
+    margin-left: -20px;
+  }
+  &__estateCol {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    span {
+      margin-left: 5px;
+    }
+  }
+  &__hotel {
+    width: 16px;
+    height: 16px;
+    svg {
+      fill: #157fd9;
+    }
+  }
+  &__house {
+    width: 16px;
+    height: 16px;
+    svg {
+      fill: #25c4b7;
+    }
+  }
+  &__btn {
+    display: flex;
+    margin-left: 115px;
+    align-items: center;
+    padding: 14px 25px;
+    border-radius: 50px;
+    background-color: $elementColor;
+    color: $fontColor;
+    transition: 0.3s;
+    svg {
+      width: 20px;
+      height: 20px;
+      fill: #8c8e9c;
+      margin-right: 10px;
+      transition: 0.3s;
+    }
+    &:hover {
+      background-color: $secondColor;
+      svg {
+        fill: #fff;
+      }
+    }
+  }
+}

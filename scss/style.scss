@@ -70,6 +70,10 @@ sans-serif;
 @import 'blocks/search';
 @import 'blocks/form2fa';
 @import 'blocks/creategame';
+@import 'blocks/fieldStats';
+@import 'blocks/fieldsettings';
+@import 'blocks/fieldwrapper';
+@import 'blocks/field';
 
 .mobile-hide {
   @media (max-width: $break_sm) {

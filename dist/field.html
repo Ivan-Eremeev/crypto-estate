@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<title>Создать игру</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="page">
+			<!-- header-->
+			<header class="header" id="header">
+				<div class="wrapper">
+					<div class="header__row">
+						<div class="header__col">
+							<!-- logo--><a class="logo" href="#"><img src="img/logo.png" alt=""></a>
+							<!-- /logo-->
+							<!-- fieldStats-->
+							<ul class="fieldStats">
+								<li class="fieldStats__item"><span>Время в игре:</span><span class="fieldStats__dark">00:23:43</span></li>
+								<li class="fieldStats__item"><span>Ход:</span><span class="fieldStats__dark">124</span></li>
+								<li class="fieldStats__item"><span>Ставка:</span><span class="fieldStats__dark">Нет</span></li>
+								<li class="fieldStats__item"><span>Зрителей:</span><span class="fieldStats__dark">24</span></li>
+							</ul>
+							<!--	/fieldStats-->
+						</div>
+						<div class="header__col">
+							<!-- fieldSettings-->
+							<div class="fieldSettings">
+								<div class="fieldSettings__col">
+									<div class="fieldSettings__sound"><img src="img/sound_icon.svg" alt=""></div>
+									<div class="fieldSettings__estate">
+										<div class="fieldSettings__estateRow">
+											<div class="fieldSettings__estateCol">
+												<div class="fieldSettings__hotel"><img src="img/hotel_icon.svg" alt=""></div><span>32</span>
+											</div>
+											<div class="fieldSettings__estateCol">
+												<div class="fieldSettings__house"><img src="img/house_icon.svg" alt=""></div><span>12</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="fieldSettings__col"><a class="fieldSettings__btn" href="#"><img src="img/gear_icon.svg" alt=""><span>Настройки</span></a></div>
+							</div>
+							<!--	/fieldSettings-->
+						</div>
+					</div>
+				</div>
+			</header>
+			<!-- /header-->
+			<div class="content">
+				<!-- fieldWrapper-->
+				<div class="fieldWrapper">
+					<div class="fieldWrapper__row">
+						<div class="fieldWrapper__col1"></div>
+						<div class="fieldWrapper__col2">
+							<!-- field-->
+							<div class="field">
+								<div class="field__grid">
+									<!-- top row-->
+									<div class="field__gorizontalTop">
+										<div class="field__item">
+											<div class="field__container">
+												<div class="field__card">
+													<div class="field__img field__img--big"><img src="img/game_arrow.png" alt=""></div>
+													<div class="field__name"></div>
+												</div>
+											</div>
+										</div>
+										<div class="field__item">
+											<div class="field__container">
+												<div class="field__card">
+													<div class="field__title">120k</div>
+													<div class="field__icons">
+														<div class="field__icon"><img src="img/hotel_icon.svg" alt=""></div>
+														<div class="field__icon"><img src="img/warning_icon.svg" alt=""></div>
+													</div>
+													<div class="field__img"><img src="img/game_bar.png" alt=""></div>
+													<div class="field__name">BAR</div>
+												</div>
+											</div>
+										</div>
+										<div class="field__item">
+											<div class="field__container">
+												<div class="field__card">
+													<div class="field__title">120k</div>
+													<div class="field__icons">
+														<div class="field__icon"><img src="img/hotel_icon.svg" alt=""></div>
+														<div class="field__icon"><img src="img/warning_icon.svg" alt=""></div>
+													</div>
+													<div class="field__img"><img src="img/game_diamond.png" alt=""></div>
+													<div class="field__name">Бонус</div>
+												</div>
+											</div>
+										</div>
+										<div class="field__item">
+											<div class="field__container">
+												<div class="field__card">
+													<div class="field__title">120k</div>
+													<div class="field__icons">
+														<div class="field__icon"><img src="img/hotel_icon.svg" alt=""></div>
+														<div class="field__icon"><img src="img/warning_icon.svg" alt=""></div>
+													</div>
+													<div class="field__img"><img src="img/game_juv.png" alt=""></div>
+													<div class="field__name">JUV</div>
+												</div>
+											</div>
+										</div>
+										<div class="field__item">
+											<div class="field__container">
+												<div class="field__card">
+													<div class="field__title">120k</div>
+													<div class="field__icons">
+														<div class="field__icon"><img src="img/hotel_icon.svg" alt=""></div>
+														<div class="field__icon"><img src="img/warning_icon.svg" alt=""></div>
+													</div>
+													<div class="field__img"><img src="img/game_tax.png" alt=""></div>
+													<div class="field__name">налог</div>
+												</div>
+											</div>
+										</div>
+										<div class="field__item">
+											<div class="field__container">
+												<div class="field__card">
+													<div class="field__title">120k</div>
+													<div class="field__icons">
+														<div class="field__icon"><img src="img/hotel_icon.svg" alt=""></div>
+														<div class="field__icon"><img src="img/warning_icon.svg" alt=""></div>
+													</div>
+													<div class="field__img"><img src="img/game_magnet.png" alt=""></div>
+													<div class="field__name">Майнинг<br>пул</div>
+												</div>
+											</div>
+										</div>
+										<div class="field__item">
+											<div class="field__container">
+												<div class="field__card">
+													<div class="field__title">120k</div>
+													<div class="field__icons">
+														<div class="field__icon"><img src="img/hotel_icon.svg" alt=""></div>
+														<div class="field__icon"><img src="img/warning_icon.svg" alt=""></div>
+													</div>
+													<div class="field__img"><img src="img/game_usdt.png" alt=""></div>
+													<div class="field__name">USDT</div>
+												</div>
+											</div>
+										</div>
+										<div class="field__item">
+											<div class="field__container">
+												<div class="field__card">
+													<div class="field__title">120k</div>
+													<div class="field__icons">
+														<div class="field__icon"><img src="img/hotel_icon.svg" alt=""></div>
+														<div class="field__icon"><img src="img/warning_icon.svg" alt=""></div>
+													</div>
+													<div class="field__img"><img src="img/game_star.png" alt=""></div>
+													<div class="field__name">Шанс</div>
+												</div>
+											</div>
+										</div>
+										<div class="field__item">
+											<div class="field__container">
+												<div class="field__card">
+													<div class="field__title">120k</div>
+													<div class="field__icons">
+														<div class="field__icon"><img src="img/hotel_icon.svg" alt=""></div>
+														<div class="field__icon"><img src="img/warning_icon.svg" alt=""></div>
+													</div>
+													<div class="field__img"><img src="img/game_pax.png" alt=""></div>
+													<div class="field__name">PAX</div>
+												</div>
+											</div>
+										</div>
+										<div class="field__item">
+											<div class="field__container">
+												<div class="field__card">
+													<div class="field__title">120k</div>
+													<div class="field__icons">
+														<div class="field__icon"><img src="img/hotel_icon.svg" alt=""></div>
+														<div class="field__icon"><img src="img/warning_icon.svg" alt=""></div>
+													</div>
+													<div class="field__img"><img src="img/game_usdc.png" alt=""></div>
+													<div class="field__name">USDC</div>
+												</div>
+											</div>
+										</div>
+										<div class="field__item">
+											<div class="field__container">
+												<div class="field__card">
+													<div class="field__img field__img--big"><img src="img/game_handcuffs.png" alt=""></div>
+													<div class="field__name"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- bottom row-->
+									<div class="field__gorizontalBottom">
+										<div class="field__item">
+											<div class="field__container">
+												<div class="field__card">
+													<div class="field__img field__img--big"><img src="img/game_blockchain.png" alt=""></div>
+													<div class="field__name"></div>
+												</div>
+											</div>
+										</div>
+										<div class="field__item">
+											<div class="field__container">
+												<div class="field__card">
+													<div class="field__title">120k</div>
+													<div class="field__icons">
+														<div class="field__icon"><img src="img/hotel_icon.svg" alt=""></div>
+														<div class="field__icon"><img src="img/warning_icon.svg" alt=""></div>
+													</div>
+													<div class="field__img"><img src="img/game_ht.png" alt=""></div>
+													<div class="field__name">HT</div>
+												</div>
+											</div>
+										</div>
+										<div class="field__item">
+											<div class="field__container">
+												<div class="field__card">
+													<div class="field__title">120k</div>
+													<div class="field__icons">
+														<div class="field__icon"><img src="img/hotel_icon.svg" alt=""></div>
+														<div class="field__icon"><img src="img/warning_icon.svg" alt=""></div>
+													</div>
+													<div class="field__img"><img src="img/game_cloud.png" alt=""></div>
+													<div class="field__name"></div>
+												</div>
+											</div>
+										</div>
+										<div class="field__item">
+											<div class="field__container">
+												<div class="field__card">
+													<div class="field__title">120k</div>
+													<div class="field__icons">
+														<div class="field__icon"><img src="img/hotel_icon.svg" alt=""></div>
+														<div class="field__icon"><img src="img/warning_icon.svg" alt=""></div>
+													</div>
+													<div class="field__img"><img src="img/game_okb.png" alt=""></div>
+													<div class="field__name">OKB</div>
+												</div>
+											</div>
+										</div>
+										<div class="field__item">
+											<div class="field__container">
+												<div class="field__card">
+													<div class="field__title">120k</div>
+													<div class="field__icons">
+														<div class="field__icon"><img src="img/hotel_icon.svg" alt=""></div>
+														<div class="field__icon"><img src="img/warning_icon.svg" alt=""></div>
+													</div>
+													<div class="field__img"><img src="img/game_bnb.png" alt=""></div>
+													<div class="field__name">BNB</div>
+												</div>
+											</div>
+										</div>
+										<div class="field__item">
+											<div class="field__container">
+												<div class="field__card">
+													<div class="field__title">120k</div>
+													<div class="field__icons">
+														<div class="field__icon"><img src="img/hotel_icon.svg" alt=""></div>
+														<div class="field__icon"><img src="img/warning_icon.svg" alt=""></div>
+													</div>
+													<div class="field__img"><img src="img/game_magnet.png" alt=""></div>
+													<div class="field__name"> </div>
+												</div>
+											</div>
+										</div>
+										<div class="field__item">
+											<div class="field__container">
+												<div class="field__card">
+													<div class="field__title">120k</div>
+													<div class="field__icons">
+														<div class="field__icon"><img src="img/hotel_icon.svg" alt=""></div>
+														<div class="field__icon"><img src="img/warning_icon.svg" alt=""></div>
+													</div>
+													<div class="field__img"><img src="img/game_matic.png" alt=""></div>
+													<div class="field__name">Matic</div>
+												</div>
+											</div>
+										</div>
+										<div class="field__item">
+											<div class="field__container">
+												<div class="field__card">
+													<div class="field__title">120k</div>
+													<div class="field__icons">
+														<div class="field__icon"><img src="img/hotel_icon.svg" alt=""></div>
+														<div class="field__icon"><img src="img/warning_icon.svg" alt=""></div>
+													</div>
+													<div class="field__img"><img src="img/game_fet.png" alt=""></div>
+													<div class="field__name">FET</div>
+												</div>
+											</div>
+										</div>
+										<div class="field__item">
+											<div class="field__container">
+												<div class="field__card">
+													<div class="field__title">120k</div>
+													<div class="field__icons">
+														<div class="field__icon"><img src="img/hotel_icon.svg" alt=""></div>
+														<div class="field__icon"><img src="img/warning_icon.svg" alt=""></div>
+													</div>
+													<div class="field__img"><img src="img/game_star.png" alt=""></div>
+													<div class="field__name"></div>
+												</div>
+											</div>
+										</div>
+										<div class="field__item">
+											<div class="field__container">
+												<div class="field__card">
+													<div class="field__title">120k</div>
+													<div class="field__icons">
+														<div class="field__icon"><img src="img/hotel_icon.svg" alt=""></div>
+														<div class="field__icon"><img src="img/warning_icon.svg" alt=""></div>
+													</div>
+													<div class="field__img"><img src="img/game_btt.png" alt=""></div>
+													<div class="field__name">BTT</div>
+												</div>
+											</div>
+										</div>
+										<div class="field__item">
+											<div class="field__container">
+												<div class="field__card">
+													<div class="field__img field__img--big"><img src="img/game_blockchain_2.png" alt=""></div>
+													<div class="field__name"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- left row-->
+									<div class="field__verticalLeft">
+										<div class="field__item">
+											<div class="field__container">
+												<div class="field__card">
+													<div class="field__title">120k</div>
+													<div class="field__icons">
+														<div class="field__icon"><img src="img/hotel_icon.svg" alt=""></div>
+														<div class="field__icon"><img src="img/warning_icon.svg" alt=""></div>
+													</div>
+													<div class="field__img"><img src="img/game_yfi.png" alt=""></div>
+													<div class="field__name">YFI</div>
+												</div>
+											</div>
+										</div>
+										<div class="field__item">
+											<div class="field__container">
+												<div class="field__card">
+													<div class="field__title">120k</div>
+													<div class="field__icons">
+														<div class="field__icon"><img src="img/hotel_icon.svg" alt=""></div>
+														<div class="field__icon"><img src="img/warning_icon.svg" alt=""></div>
+													</div>
+													<div class="field__img"><img src="img/game_coins.png" alt=""></div>
+													<div class="field__name field__name--small">Потеря инвестиций</div>
+												</div>
+											</div>
+										</div>
+										<div class="field__item">
+											<div class="field__container">
+												<div class="field__card">
+													<div class="field__title">120k</div>
+													<div class="field__icons">
+														<div class="field__icon"><img src="img/hotel_icon.svg" alt=""></div>
+														<div class="field__icon"><img src="img/warning_icon.svg" alt=""></div>
+													</div>
+													<div class="field__img"><img src="img/game_btc.png" alt=""></div>
+													<div class="field__name">BTC</div>
+												</div>
+											</div>
+										</div>
+										<div class="field__item">
+											<div class="field__container">
+												<div class="field__card">
+													<div class="field__title">120k</div>
+													<div class="field__icons">
+														<div class="field__icon"><img src="img/hotel_icon.svg" alt=""></div>
+														<div class="field__icon"><img src="img/warning_icon.svg" alt=""></div>
+													</div>
+													<div class="field__img"><img src="img/game_star.png" alt=""></div>
+													<div class="field__name">Шанс</div>
+												</div>
+											</div>
+										</div>
+										<div class="field__item">
+											<div class="field__container">
+												<div class="field__card">
+													<div class="field__title">120k</div>
+													<div class="field__icons">
+														<div class="field__icon"><img src="img/hotel_icon.svg" alt=""></div>
+														<div class="field__icon"><img src="img/warning_icon.svg" alt=""></div>
+													</div>
+													<div class="field__img"><img src="img/game_magnet.png" alt=""></div>
+													<div class="field__name">Майнинг пул</div>
+												</div>
+											</div>
+										</div>
+										<div class="field__item">
+											<div class="field__container">
+												<div class="field__card">
+													<div class="field__title">120k</div>
+													<div class="field__icons">
+														<div class="field__icon"><img src="img/hotel_icon.svg" alt=""></div>
+														<div class="field__icon"><img src="img/warning_icon.svg" alt=""></div>
+													</div>
+													<div class="field__img"><img src="img/game_sushi.png" alt=""></div>
+													<div class="field__name">SUSHI</div>
+												</div>
+											</div>
+										</div>
+										<div class="field__item">
+											<div class="field__container">
+												<div class="field__card">
+													<div class="field__title">120k</div>
+													<div class="field__icons">
+														<div class="field__icon"><img src="img/hotel_icon.svg" alt=""></div>
+														<div class="field__icon"><img src="img/warning_icon.svg" alt=""></div>
+													</div>
+													<div class="field__img"><img src="img/game_diamond.png" alt=""></div>
+													<div class="field__name">Бонус</div>
+												</div>
+											</div>
+										</div>
+										<div class="field__item">
+											<div class="field__container">
+												<div class="field__card">
+													<div class="field__title">120k</div>
+													<div class="field__icons">
+														<div class="field__icon"><img src="img/hotel_icon.svg" alt=""></div>
+														<div class="field__icon"><img src="img/warning_icon.svg" alt=""></div>
+													</div>
+													<div class="field__img"><img src="img/game_uni.png" alt=""></div>
+													<div class="field__name">Uni</div>
+												</div>
+											</div>
+										</div>
+										<div class="field__item">
+											<div class="field__container">
+												<div class="field__card">
+													<div class="field__title">120k</div>
+													<div class="field__icons">
+														<div class="field__icon"><img src="img/hotel_icon.svg" alt=""></div>
+														<div class="field__icon"><img src="img/warning_icon.svg" alt=""></div>
+													</div>
+													<div class="field__img"><img src="img/game_comp.png" alt=""></div>
+													<div class="field__name">COMP</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- right row-->
+									<div class="field__verticalRight">
+										<div class="field__item">
+											<div class="field__container">
+												<div class="field__card">
+													<div class="field__title">120k</div>
+													<div class="field__icons">
+														<div class="field__icon"><img src="img/hotel_icon.svg" alt=""></div>
+														<div class="field__icon"><img src="img/warning_icon.svg" alt=""></div>
+													</div>
+													<div class="field__img"><img src="img/game_cristal.png" alt=""></div>
+													<div class="field__name">ETH</div>
+												</div>
+											</div>
+										</div>
+										<div class="field__item">
+											<div class="field__container">
+												<div class="field__card">
+													<div class="field__title">120k</div>
+													<div class="field__icons">
+														<div class="field__icon"><img src="img/hotel_icon.svg" alt=""></div>
+														<div class="field__icon"><img src="img/warning_icon.svg" alt=""></div>
+													</div>
+													<div class="field__img"><img src="img/game_robot.png" alt=""></div>
+													<div class="field__name field__name--small">Торговый робот</div>
+												</div>
+											</div>
+										</div>
+										<div class="field__item">
+											<div class="field__container">
+												<div class="field__card">
+													<div class="field__title">120k</div>
+													<div class="field__icons">
+														<div class="field__icon"><img src="img/hotel_icon.svg" alt=""></div>
+														<div class="field__icon"><img src="img/warning_icon.svg" alt=""></div>
+													</div>
+													<div class="field__img"><img src="img/game_gear.png" alt=""></div>
+													<div class="field__name">LINK</div>
+												</div>
+											</div>
+										</div>
+										<div class="field__item">
+											<div class="field__container">
+												<div class="field__card">
+													<div class="field__title">120k</div>
+													<div class="field__icons">
+														<div class="field__icon"><img src="img/hotel_icon.svg" alt=""></div>
+														<div class="field__icon"><img src="img/warning_icon.svg" alt=""></div>
+													</div>
+													<div class="field__img"><img src="img/game_omg.png" alt=""></div>
+													<div class="field__name">OMG</div>
+												</div>
+											</div>
+										</div>
+										<div class="field__item">
+											<div class="field__container">
+												<div class="field__card">
+													<div class="field__title">120k</div>
+													<div class="field__icons">
+														<div class="field__icon"><img src="img/hotel_icon.svg" alt=""></div>
+														<div class="field__icon"><img src="img/warning_icon.svg" alt=""></div>
+													</div>
+													<div class="field__img"><img src="img/game_magnet.png" alt=""></div>
+													<div class="field__name field__name--small">Майнинг<br>пул</div>
+												</div>
+											</div>
+										</div>
+										<div class="field__item">
+											<div class="field__container">
+												<div class="field__card">
+													<div class="field__title">120k</div>
+													<div class="field__icons">
+														<div class="field__icon"><img src="img/hotel_icon.svg" alt=""></div>
+														<div class="field__icon"><img src="img/warning_icon.svg" alt=""></div>
+													</div>
+													<div class="field__img"><img src="img/game_trx.png" alt=""></div>
+													<div class="field__name">TRX</div>
+												</div>
+											</div>
+										</div>
+										<div class="field__item">
+											<div class="field__container">
+												<div class="field__card">
+													<div class="field__title">120k</div>
+													<div class="field__icons">
+														<div class="field__icon"><img src="img/hotel_icon.svg" alt=""></div>
+														<div class="field__icon"><img src="img/warning_icon.svg" alt=""></div>
+													</div>
+													<div class="field__img"><img src="img/game_diamond.png" alt=""></div>
+													<div class="field__name">Бонус</div>
+												</div>
+											</div>
+										</div>
+										<div class="field__item">
+											<div class="field__container">
+												<div class="field__card">
+													<div class="field__title">120k</div>
+													<div class="field__icons">
+														<div class="field__icon"><img src="img/hotel_icon.svg" alt=""></div>
+														<div class="field__icon"><img src="img/warning_icon.svg" alt=""></div>
+													</div>
+													<div class="field__img"><img src="img/game_sun.png" alt=""></div>
+													<div class="field__name">SUN</div>
+												</div>
+											</div>
+										</div>
+										<div class="field__item">
+											<div class="field__container">
+												<div class="field__card">
+													<div class="field__title">120k</div>
+													<div class="field__icons">
+														<div class="field__icon"><img src="img/hotel_icon.svg" alt=""></div>
+														<div class="field__icon"><img src="img/warning_icon.svg" alt=""></div>
+													</div>
+													<div class="field__img"><img src="img/game_jst.png" alt=""></div>
+													<div class="field__name">JST</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="field__center"></div>
+								</div>
+							</div>
+							<!--	/field-->
+						</div>
+					</div>
+				</div>
+				<!--	/fieldWrapper-->
+			</div>
+		</div>
+		<script src="js/libs/jquery.min.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
