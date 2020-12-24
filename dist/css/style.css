@@ -3628,9 +3628,16 @@ input[type=text] {
     height: 100%;
     padding: 18px; }
   .field__messages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
+    overflow-y: hidden;
     position: relative; }
     .field__messages:after {
       content: '';
@@ -3643,13 +3650,12 @@ input[type=text] {
       background: -o-linear-gradient(top, #14151f, transparent);
       background: linear-gradient(to bottom, #14151f, transparent); }
   .field__message {
-    padding: 15px 25px;
+    padding: 12px 25px;
     margin-bottom: 5px;
     background-color: #1e1f28; }
   .field__messagesContainer {
     width: 100%;
-    position: absolute;
-    bottom: 15px; }
+    padding-bottom: 15px; }
   .field__slogan {
     padding: 14px 0;
     text-align: center; }
@@ -3660,13 +3666,18 @@ input[type=text] {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    font-size: 12px; }
+    font-size: 12px;
+    margin-bottom: 5px; }
+  .field__time {
+    margin-right: 5px; }
   .field__messageName--blue {
     color: #1375d1; }
   .field__messageName--red {
     color: #b81748; }
   .field__messageName--green {
     color: #25ab71; }
+  .field__text {
+    color: #818186; }
 
 @media (max-width: 769px) {
   .mobile-hide {

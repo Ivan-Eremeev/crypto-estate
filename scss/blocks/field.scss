@@ -321,7 +321,10 @@
     padding: 18px;
   }
   &__messages {
+    display: flex;
+    align-items: flex-end;
     flex-grow: 1;
+    overflow-y: hidden;
     position: relative;
     &:after {
       content: '';
@@ -334,14 +337,13 @@
     }
   }
   &__message {
-    padding: 15px 25px;
+    padding: 12px 25px;
     margin-bottom: 5px;
     background-color: #1e1f28;
   }
   &__messagesContainer {
     width: 100%;
-    position: absolute;
-    bottom: 15px;
+    padding-bottom: 15px;
   }
   &__slogan {
     padding: 14px 0;
@@ -354,9 +356,10 @@
   &__messageHead {
     display: flex;
     font-size: 12px;
+    margin-bottom: 5px;
   }
   &__time {
-
+    margin-right: 5px;
   }
   &__messageName {
     &--blue {
@@ -370,6 +373,6 @@
     }
   }
   &__text {
-
+    color: $fontDarkColor;
   }
 }
