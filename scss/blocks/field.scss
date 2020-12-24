@@ -45,7 +45,7 @@
       grid-column: 1 / 3;
     }
     .field__title {
-      padding: 0 4%;
+      padding: 0 5%;
       position: absolute;
       top: 0;
       left: 0;
@@ -114,6 +114,10 @@
     .field__name {
       top: 5%;
       bottom: auto;
+      &--bottom {
+        top: auto;
+        bottom: 20%;
+      }
     }
   }
   &__verticalRight {
@@ -128,7 +132,7 @@
       grid-column: 1 / 3;
     }
     .field__title {
-      padding: 0 4%;
+      padding: 0 5%;
       writing-mode: vertical-rl;
       position: absolute;
       top: 0;
@@ -178,12 +182,51 @@
     width: 100%;
     height: 100%;
     position: relative;
+    &--black {
+      background-color: #191a23;
+    }
+    &--orange {
+      background-color: #2f2402;
+    }
+    &--red {
+      background-color: #310512;
+    }
+    &--green {
+      background-color: #032c1a;
+    }
+    &--blue {
+      background-color: #032b3c;
+    }
   }
   &__title {
-    padding: 4% 0;
-    background-color: #734225;
+    padding: 5% 0;
     font-size: 11px;
     text-align: center;
+    user-select: none;
+    &--orangeGray {
+      background-color: #734225;
+    }
+    &--blueLight {
+      background-color: #157fd9;
+    }
+    &--yellow {
+      background-color: #ce960e;
+    }
+    &--red {
+      background-color: #59061f;
+    }
+    &--blue {
+      background-color: #024686;
+    }
+    &--green {
+      background-color: #0d944d;
+    }
+    &--violet {
+      background-color: #4917bc;
+    }
+    &--orange {
+      background-color: #8e3007;
+    }
   }
   &__icons {
     display: flex;
@@ -230,8 +273,103 @@
     font-size: 9px;
     text-align: center;
     text-transform: uppercase;
+    user-select: none;
     &--small {
       font-size: 8px;
     }
+  }
+  &__nameBig {
+    font-size: 9px;
+    text-transform: uppercase;
+    color: #42434b;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 5%;
+    text-align: center;
+  }
+  &__circle {
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    border-radius: 100%;
+    &--1 {
+      background-color: #1376d3;
+      top: 15px;
+      left: 15px;
+    }
+    &--2 {
+      background-color: #960f38;
+      top: 15px;
+      right: 15px;
+    }
+    &--3 {
+      background-color: #c09512;
+      bottom: 15px;
+      right: 15px;
+    }
+    &--4 {
+      background-color: #25ab71;
+      bottom: 15px;
+      left: 15px;
+    }
+  }
+  &__chat {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 18px;
+  }
+  &__messages {
+    flex-grow: 1;
+    position: relative;
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100px;
+      background: linear-gradient(to bottom, #14151f, transparent);
+    }
+  }
+  &__message {
+    padding: 15px 25px;
+    margin-bottom: 5px;
+    background-color: #1e1f28;
+  }
+  &__messagesContainer {
+    width: 100%;
+    position: absolute;
+    bottom: 15px;
+  }
+  &__slogan {
+    padding: 14px 0;
+    text-align: center;
+    img {
+      max-width: 200px;
+      max-height: 20px;
+    }
+  }
+  &__messageHead {
+    display: flex;
+    font-size: 12px;
+  }
+  &__time {
+
+  }
+  &__messageName {
+    &--blue {
+      color: #1375d1;
+    }
+    &--red {
+      color: #b81748;
+    }
+    &--green {
+      color: #25ab71;
+    }
+  }
+  &__text {
+
   }
 }

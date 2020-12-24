@@ -3365,7 +3365,7 @@ input[type=text] {
     .field__verticalLeft .field__item {
       grid-column: 1 / 3; }
     .field__verticalLeft .field__title {
-      padding: 0 4%;
+      padding: 0 5%;
       position: absolute;
       top: 0;
       left: 0;
@@ -3438,6 +3438,9 @@ input[type=text] {
     .field__gorizontalBottom .field__name {
       top: 5%;
       bottom: auto; }
+      .field__gorizontalBottom .field__name--bottom {
+        top: auto;
+        bottom: 20%; }
   .field__verticalRight {
     display: grid;
     grid-row: 3 / 12;
@@ -3449,7 +3452,7 @@ input[type=text] {
     .field__verticalRight .field__item {
       grid-column: 1 / 3; }
     .field__verticalRight .field__title {
-      padding: 0 4%;
+      padding: 0 5%;
       -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
       writing-mode: vertical-rl;
@@ -3501,11 +3504,40 @@ input[type=text] {
     width: 100%;
     height: 100%;
     position: relative; }
+    .field__card--black {
+      background-color: #191a23; }
+    .field__card--orange {
+      background-color: #2f2402; }
+    .field__card--red {
+      background-color: #310512; }
+    .field__card--green {
+      background-color: #032c1a; }
+    .field__card--blue {
+      background-color: #032b3c; }
   .field__title {
-    padding: 4% 0;
-    background-color: #734225;
+    padding: 5% 0;
     font-size: 11px;
-    text-align: center; }
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+    .field__title--orangeGray {
+      background-color: #734225; }
+    .field__title--blueLight {
+      background-color: #157fd9; }
+    .field__title--yellow {
+      background-color: #ce960e; }
+    .field__title--red {
+      background-color: #59061f; }
+    .field__title--blue {
+      background-color: #024686; }
+    .field__title--green {
+      background-color: #0d944d; }
+    .field__title--violet {
+      background-color: #4917bc; }
+    .field__title--orange {
+      background-color: #8e3007; }
   .field__icons {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3548,9 +3580,93 @@ input[type=text] {
     bottom: 5%;
     font-size: 9px;
     text-align: center;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
     .field__name--small {
       font-size: 8px; }
+  .field__nameBig {
+    font-size: 9px;
+    text-transform: uppercase;
+    color: #42434b;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 5%;
+    text-align: center; }
+  .field__circle {
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    border-radius: 100%; }
+    .field__circle--1 {
+      background-color: #1376d3;
+      top: 15px;
+      left: 15px; }
+    .field__circle--2 {
+      background-color: #960f38;
+      top: 15px;
+      right: 15px; }
+    .field__circle--3 {
+      background-color: #c09512;
+      bottom: 15px;
+      right: 15px; }
+    .field__circle--4 {
+      background-color: #25ab71;
+      bottom: 15px;
+      left: 15px; }
+  .field__chat {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
+    padding: 18px; }
+  .field__messages {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    position: relative; }
+    .field__messages:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100px;
+      background: -webkit-gradient(linear, left top, left bottom, from(#14151f), to(transparent));
+      background: -o-linear-gradient(top, #14151f, transparent);
+      background: linear-gradient(to bottom, #14151f, transparent); }
+  .field__message {
+    padding: 15px 25px;
+    margin-bottom: 5px;
+    background-color: #1e1f28; }
+  .field__messagesContainer {
+    width: 100%;
+    position: absolute;
+    bottom: 15px; }
+  .field__slogan {
+    padding: 14px 0;
+    text-align: center; }
+    .field__slogan img {
+      max-width: 200px;
+      max-height: 20px; }
+  .field__messageHead {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 12px; }
+  .field__messageName--blue {
+    color: #1375d1; }
+  .field__messageName--red {
+    color: #b81748; }
+  .field__messageName--green {
+    color: #25ab71; }
 
 @media (max-width: 769px) {
   .mobile-hide {
