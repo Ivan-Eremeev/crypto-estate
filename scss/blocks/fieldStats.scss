@@ -12,4 +12,11 @@
     margin-left: 10px;
     color: $fontDarkColor;
   }
+  @media (max-width: $break_xl) {
+    font-size: 10px;
+    margin-left: 36px;
+    &__item {
+      margin: 0 12px;
+    }
+  }
 }

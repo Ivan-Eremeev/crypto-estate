@@ -266,6 +266,7 @@
     height: 12px;
     margin: 0 3px;
     svg {
+      display: block;
       fill: #42434b;
     }
   }
@@ -426,6 +427,91 @@
       width: 14px;
       height: 14px;
       fill: #25c4b7;
+    }
+    svg {
+      display: block;
+    }
+  }
+  @media (max-width: $break_xl) {
+    padding: 18px;
+    &__img {
+      max-width: 22px;
+      max-height: 22px;
+      &--big {
+        max-width: 30px;
+        max-height: 30px;
+      }
+      &--ht {
+        max-width: 16px;
+      }
+    }
+    &__icon {
+      width: 8px;
+      height: 8px;
+    }
+    &__title {
+      font-size: 8px;
+    }
+    &__name {
+      font-size: 8px;
+      &--small {
+        font-size: 6px;
+      }
+    }
+    &__hotel {
+      width: 8px;
+      height: 8px;
+      &--green {
+        width: 10px;
+        height: 10px;
+      }
+    }
+    &__circle {
+      width: 18px;
+      height: 18px;
+      &--1 {
+        top: 10px;
+        left: 10px;
+      }
+      &--2 {
+        top: 10px;
+        right: 10px;
+      }
+      &--3 {
+        bottom: 10px;
+        right: 10px;
+      }
+      &--4 {
+        bottom: 10px;
+        left: 10px;
+      }
+    }
+    &__nameBig {
+      font-size: 7px;
+    }
+    &__grid {
+      top: 18px;
+      bottom: 18px;
+      left: 18px;
+      right: 18px;
+    }
+  }
+  &__estate {
+    top: -15px;
+  }
+  &__verticalLeft {
+    .field__estate {
+      left: -16px;
+    }
+  }
+  &__verticalRight {
+    .field__estate {
+      right: -15px;
+    }
+  }
+  &__gorizontalBottom {
+    .field__estate {
+      bottom: -15px;
     }
   }
 }

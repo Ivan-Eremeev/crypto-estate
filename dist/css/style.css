@@ -3224,6 +3224,12 @@ input[type=text] {
   .fieldStats__dark {
     margin-left: 10px;
     color: #818186; }
+  @media (max-width: 1440px) {
+    .fieldStats {
+      font-size: 10px;
+      margin-left: 36px; }
+      .fieldStats__item {
+        margin: 0 12px; } }
 
 .fieldSettings {
   display: -webkit-box;
@@ -3304,6 +3310,25 @@ input[type=text] {
       background-color: #1376d3; }
       .fieldSettings__btn:hover svg {
         fill: #fff; }
+  @media (max-width: 1440px) {
+    .fieldSettings {
+      font-size: 10px; }
+      .fieldSettings__hotel {
+        width: 11px;
+        height: 11px; }
+      .fieldSettings__house {
+        width: 11px;
+        height: 11px; }
+      .fieldSettings__sound {
+        width: 14px;
+        height: 14px; }
+      .fieldSettings__btn {
+        padding: 12px 18px;
+        margin-left: 84px;
+        font-size: 12px; }
+        .fieldSettings__btn svg {
+          width: 14px;
+          height: 14px; } }
 
 .fieldWrapper {
   max-width: 1236px;
@@ -3325,6 +3350,11 @@ input[type=text] {
   .fieldWrapper__col2 {
     width: 74%;
     background-color: #21222d; }
+  @media (max-width: 1440px) {
+    .fieldWrapper {
+      max-width: 940px;
+      margin-top: 35px;
+      margin-bottom: 35px; } }
 
 .field {
   height: 100%;
@@ -3585,6 +3615,7 @@ input[type=text] {
     height: 12px;
     margin: 0 3px; }
     .field__icon svg {
+      display: block;
       fill: #42434b; }
   .field__img {
     max-width: 32px;
@@ -3736,6 +3767,64 @@ input[type=text] {
       width: 14px;
       height: 14px;
       fill: #25c4b7; }
+    .field__hotel svg {
+      display: block; }
+  @media (max-width: 1440px) {
+    .field {
+      padding: 18px; }
+      .field__img {
+        max-width: 22px;
+        max-height: 22px; }
+        .field__img--big {
+          max-width: 30px;
+          max-height: 30px; }
+        .field__img--ht {
+          max-width: 16px; }
+      .field__icon {
+        width: 8px;
+        height: 8px; }
+      .field__title {
+        font-size: 8px; }
+      .field__name {
+        font-size: 8px; }
+        .field__name--small {
+          font-size: 6px; }
+      .field__hotel {
+        width: 8px;
+        height: 8px; }
+        .field__hotel--green {
+          width: 10px;
+          height: 10px; }
+      .field__circle {
+        width: 18px;
+        height: 18px; }
+        .field__circle--1 {
+          top: 10px;
+          left: 10px; }
+        .field__circle--2 {
+          top: 10px;
+          right: 10px; }
+        .field__circle--3 {
+          bottom: 10px;
+          right: 10px; }
+        .field__circle--4 {
+          bottom: 10px;
+          left: 10px; }
+      .field__nameBig {
+        font-size: 7px; }
+      .field__grid {
+        top: 18px;
+        bottom: 18px;
+        left: 18px;
+        right: 18px; } }
+  .field__estate {
+    top: -15px; }
+  .field__verticalLeft .field__estate {
+    left: -16px; }
+  .field__verticalRight .field__estate {
+    right: -15px; }
+  .field__gorizontalBottom .field__estate {
+    bottom: -15px; }
 
 .sidebar {
   display: -webkit-box;
@@ -3773,6 +3862,8 @@ input[type=text] {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
     width: 72px;
     height: 72px;
     margin-right: 28px;
@@ -3848,6 +3939,32 @@ input[type=text] {
       color: #1375d1; }
     .sidebar__name--green {
       color: #25ab71; }
+  @media (max-width: 1440px) {
+    .sidebar {
+      padding: 18px 10px; }
+      .sidebar__photo {
+        width: 54px;
+        height: 54px;
+        margin-right: 22px; }
+        .sidebar__photo img {
+          width: 48px;
+          height: 48px; }
+      .sidebar__name {
+        font-size: 10px; }
+      .sidebar__price {
+        font-size: 18px; }
+      .sidebar__user {
+        padding: 10px 20px; }
+      .sidebar__messages {
+        height: 174px; }
+      .sidebar__btns .btn {
+        font-size: 12px; }
+      .sidebar__progress {
+        padding: 6px; }
+      .sidebar__container {
+        top: 8px;
+        left: 10px;
+        right: 10px; } }
 
 @media (max-width: 769px) {
   .mobile-hide {

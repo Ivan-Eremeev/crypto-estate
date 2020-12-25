@@ -70,4 +70,28 @@
       }
     }
   }
+  @media (max-width: $break_xl) {
+    font-size: 10px;
+    &__hotel {
+      width: 11px;
+      height: 11px;
+    }
+    &__house {
+      width: 11px;
+      height: 11px;
+    }
+    &__sound {
+      width: 14px;
+      height: 14px;
+    }
+    &__btn {
+      padding: 12px 18px;
+      margin-left: 84px;
+      font-size: 12px;
+      svg {
+        width: 14px;
+        height: 14px;
+      }
+    }
+  }
 }

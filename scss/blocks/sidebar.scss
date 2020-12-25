@@ -20,6 +20,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-shrink: 0;
     width: 72px;
     height: 72px;
     margin-right: 28px;
@@ -115,5 +116,42 @@
   }
   &__text {
 
+  }
+  @media (max-width: $break_xl) {
+    padding: 18px 10px;
+    &__photo {
+      width: 54px;
+      height: 54px;
+      margin-right: 22px;
+      img {
+        width: 48px;
+        height: 48px;
+      }
+    }
+    &__name {
+      font-size: 10px;
+    }
+    &__price {
+      font-size: 18px;
+    }
+    &__user {
+      padding: 10px 20px;
+    }
+    &__messages {
+      height: 174px;
+    }
+    &__btns {
+      .btn {
+        font-size: 12px;
+      }
+    }
+    &__progress {
+      padding: 6px;
+    }
+    &__container {
+      top: 8px;
+      left: 10px;
+      right: 10px;
+    }
   }
 }

@@ -19,4 +19,9 @@
     width: 74%;
     background-color: #21222d;
   }
+  @media (max-width: $break_xl) {
+    max-width: 940px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
 }
