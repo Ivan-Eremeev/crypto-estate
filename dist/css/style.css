@@ -3816,15 +3816,15 @@ input[type=text] {
         top: 18px;
         bottom: 18px;
         left: 18px;
-        right: 18px; } }
-  .field__estate {
-    top: -15px; }
-  .field__verticalLeft .field__estate {
-    left: -16px; }
-  .field__verticalRight .field__estate {
-    right: -15px; }
-  .field__gorizontalBottom .field__estate {
-    bottom: -15px; }
+        right: 18px; }
+      .field__estate {
+        top: -15px; }
+      .field__verticalLeft .field__estate {
+        left: -16px; }
+      .field__verticalRight .field__estate {
+        right: -15px; }
+      .field__gorizontalBottom .field__estate {
+        bottom: -15px; } }
 
 .sidebar {
   display: -webkit-box;

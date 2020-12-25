@@ -495,23 +495,23 @@
       left: 18px;
       right: 18px;
     }
-  }
-  &__estate {
-    top: -15px;
-  }
-  &__verticalLeft {
-    .field__estate {
-      left: -16px;
+    &__estate {
+      top: -15px;
     }
-  }
-  &__verticalRight {
-    .field__estate {
-      right: -15px;
+    &__verticalLeft {
+      .field__estate {
+        left: -16px;
+      }
     }
-  }
-  &__gorizontalBottom {
-    .field__estate {
-      bottom: -15px;
+    &__verticalRight {
+      .field__estate {
+        right: -15px;
+      }
+    }
+    &__gorizontalBottom {
+      .field__estate {
+        bottom: -15px;
+      }
     }
   }
 }
