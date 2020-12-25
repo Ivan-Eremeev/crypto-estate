@@ -15,6 +15,56 @@
     margin-bottom: 8px;
     background-color: #191a24;
     border: 1px solid #323652;
+    position: relative;
+    user-select: none;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+      background-color: #073c6e;
+    }
+    &.active {
+      background-color: #073c6e;
+      .sidebar__price {
+        display: none;
+      }
+      .sidebar__btn {
+        display: flex;
+      }
+    }
+  }
+  &__btn {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 43px 5px 15px;
+    margin-top: 2px;
+    background-color: #25ab71;
+    position: relative;
+  }
+  &__cross {
+    display: block;
+    width: 28px;
+    height: 100%;
+    background-color: #15945d;
+    position: absolute;
+    top: 0;
+    right: 0;
+    &:after,&:before {
+      content: '';
+      display: block;
+      width: 40%;
+      height: 1px;
+      background-color: #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+    }
+    &:after {
+      transform: translate(-50%,-50%) rotate(45deg);
+    }
+    &:before {
+      transform: translate(-50%,-50%) rotate(-45deg);
+    }
   }
   &__photo {
     display: flex;
@@ -64,15 +114,10 @@
   &__btns {
     .btn {
       font-size: 16px;
-      &--gray {
-        &:hover {
-          background-color: #960f38;
-        }
-      }
     }  
   }
   &__messages {
-    height: 240px;
+    height: 248px;
     font-size: 12px;
     line-height: 18px;
     overflow: hidden;
@@ -117,6 +162,12 @@
   &__text {
 
   }
+  &__timer {
+    width: 29px;
+    position: absolute;
+    top: 18px;
+    left: 28px;
+  }
   @media (max-width: $break_xl) {
     padding: 18px 10px;
     &__photo {
@@ -152,6 +203,14 @@
       top: 8px;
       left: 10px;
       right: 10px;
+    }
+    &__timer {
+      width: 24px;
+      top: 12px;
+      left: 20px;
+    }
+    &__btn {
+      font-size: 11px;
     }
   }
 }

@@ -181,6 +181,16 @@ $(document).ready(function () {
 	}
 	switcher($('.js_switcher'));
 
+	// Присваивание класса при клике
+	function clickToggle(block) {
+		if (block.length) {
+			block.on('click', function () {
+				$(this).toggleClass('active');
+			});
+		}
+	}
+	clickToggle($('.sidebar__user'));
+
 	// // Аккордеон
 	// function accordeon(accordeon, mobile) {
 	// 	var trigger = accordeon.find('.accordeon_trigger'),

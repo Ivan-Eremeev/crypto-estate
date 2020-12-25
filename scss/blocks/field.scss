@@ -197,6 +197,7 @@
     grid-row: 3 / 12;
     grid-column: 3 / 12;
     background-color: #14151f;
+    position: relative;
   }
   &__container {
     width: 100%;
@@ -272,23 +273,16 @@
   }
   &__img {
     max-width: 32px;
-    max-height: 32px;
     position: absolute;
     top: 58%;
     left: 50%;
     transform: translate(-50%,-50%);
-    svg {
-      width: 32px;
-      height: 32px;
+    img {
+      display: block;
     }
     &--big {
       max-width: 45px;
-      max-height: 45px;
       top: 50%;
-      svg {
-        width: 45px;
-        height: 45px;
-      }
     }
   }
   &__name {
@@ -436,13 +430,14 @@
     padding: 18px;
     &__img {
       max-width: 22px;
-      max-height: 22px;
       &--big {
         max-width: 30px;
-        max-height: 30px;
       }
       &--ht {
         max-width: 16px;
+      }
+      &--cristal {
+        max-width: 14px;
       }
     }
     &__icon {
@@ -511,6 +506,34 @@
     &__gorizontalBottom {
       .field__estate {
         bottom: -15px;
+      }
+    }
+    &__slogan {
+      img {
+        max-width: 142px;
+        max-height: 15px;
+      }
+    }
+    &__messageHead {
+      font-size: 9px;
+      margin-bottom: 2px;
+    }
+    &__text {
+      font-size: 9px;
+    }
+    &__message {
+      padding: 9px 17px;
+    }
+    &__messagesContainer {
+      padding-bottom: 8px;
+    }
+    &__chat {
+      padding: 14px;
+      .chat__form {
+        input {
+          padding: 0 17px;
+          font-size: 11px;
+        }
       }
     }
   }

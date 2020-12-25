@@ -1,0 +1,257 @@
+.popup {
+  padding: 10px;
+  background-color: rgba(19,20,29,.9);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  &__container {
+    width: 100%;
+    max-width: 390px;
+    border: 1px solid #323652;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow-y: auto;
+  }
+  &__head {
+    padding: 12px 16px;
+    background-color: $secondColor;
+  }
+  &__title {
+    
+  }
+  &__desc {
+    font-size: 12px;
+    opacity: 0.4;
+  }
+  &__close {
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    cursor: pointer;
+    &:after,&:before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%
+    }
+    &:after {
+      transform: translate(-50%,-50%) rotate(45deg);
+      }
+    &:before {
+      transform: translate(-50%,-50%) rotate(-45deg);
+    }     
+  }
+  &__body {
+    padding: 16px;
+    background-color: #191a24;
+    font-size: 11px;
+  }
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -40px;
+    margin-bottom: 30px;
+  }
+  &__col {
+    width: 50%;
+    padding-left: 40px;
+  }
+  &__btns {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -4px;
+  }
+  &__btn {
+    width: 33.33%;
+    padding-left: 4px;
+    .btn {
+      padding: 10px;
+      font-size: 12px;
+    }
+  }
+  &__subtitle {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #282936;
+    line-height: 1.5;
+  }
+  &__string {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+    &.active {
+      .popup__hotel {
+        svg {
+          fill: $secondColor;
+        }
+      }
+      .popup__price {
+        color: $secondColor;
+      }
+    }
+  }
+  &__price {
+    color: $fontDarkColor;
+    &--big {
+      font-size: 13px;
+      color: #a2a2a7;
+    }
+  }
+  &__estate {
+    display: flex;
+  }
+  &__hotel {
+    width: 12px;
+    margin: 0 2px;
+    svg {
+      display: block;
+      width: 12px;
+      height: 12px;
+      fill:#5b5b62;
+    }
+    &--green {
+      width: 16px;
+      svg {
+        width: 13px;
+        height: 16px;
+        fill: $mainColor;
+      }
+    }
+  }
+  &__change {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #282936;
+    .btn {
+      padding: 7px 20px;
+      font-size: 10px;
+    }
+  }
+  &__controls {
+    display: flex;
+    margin-right: 15px;
+  }
+  &__control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+    &--plus {
+      background-color: #399273;
+      &:hover {
+        background-color: #4ca586;
+      }
+      position: relative;
+      &:after,&:before {
+        content: '';
+        display: block;
+        width: 6px;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        top: 50%;
+       left: 50%
+      }
+      &:after {
+        transform: translate(-50%,-50%);
+      }
+      &:before {
+        transform: translate(-50%,-50%) rotate(90deg);
+      }
+    }
+    &--minus {
+      background-color: #59061f;
+      &:hover {
+        background-color: #6d1a33;
+      }
+      &:after {
+        content: '';
+        display: block;
+        width: 6px;
+        height: 2px;
+        background-color: #fff;
+      }
+    }
+  }
+  @media (max-width: $break_xl) {
+    &__container {
+      width: 290px;
+    }
+    &__string {
+      margin-bottom: 2px;
+    }
+    &__title {
+      font-size: 11px;
+    }
+    &__desc {
+      font-size: 9px;
+    }
+    &__body {
+      font-size: 8px;
+    }
+    &__hotel {
+      width: 8px;
+      margin: 0 1px;
+      svg {
+        width: 8px;
+        height: 8px;
+      }
+      &--green {
+        width: 9px;
+        svg {
+          width: 9px;
+          height: 11px;
+        }
+      }
+    }
+    &__price {
+      &--big {
+        font-size: 10px;
+      }
+    }
+    &__change {
+      .btn {
+        padding: 5px 13px;
+        font-size: 9px;
+      }
+    }
+    &__controls {
+      margin-right: 10px;
+    }
+    &__control {
+      width: 22px;
+      &:after,&:before {
+        width: 4px;
+        height: 1px;
+      }
+    }
+    &__head {
+      padding: 7px 13px;
+    }
+    &__btn {
+      .btn {
+        padding: 7px;
+        font-size: 9px;
+      }
+    }
+    &__row {
+      margin-bottom: 20px;
+    }
+  }
+}

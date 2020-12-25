@@ -75,6 +75,7 @@ sans-serif;
 @import 'blocks/fieldwrapper';
 @import 'blocks/field';
 @import 'blocks/sidebar';
+@import 'blocks/popup';
 
 .mobile-hide {
   @media (max-width: $break_sm) {
