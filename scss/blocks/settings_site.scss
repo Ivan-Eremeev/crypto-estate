@@ -67,6 +67,12 @@ input:-webkit-autofill {
 }
 .content {
   flex-grow: 1;
+  @media (max-width: $break_sm) {
+    &--field {
+      display: flex;
+      align-items: center;
+    }
+  }
 }
 .title {
   font-family: $secondFont;

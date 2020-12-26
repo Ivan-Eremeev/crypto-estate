@@ -7,6 +7,8 @@
   left: 0;
   right: 0;
   z-index: 3;
+  font-family: $secondFont;
+  color: $fontColor;
   &__container {
     width: 100%;
     max-width: 390px;
@@ -22,7 +24,9 @@
     background-color: $secondColor;
   }
   &__title {
-    
+    &--center {
+      text-align: center;
+    }
   }
   &__desc {
     font-size: 12px;
@@ -191,7 +195,10 @@
   }
   @media (max-width: $break_xl) {
     &__container {
-      width: 290px;
+      max-width: 290px;
+      &--deal {
+        max-width: 310px;
+      }
     }
     &__string {
       margin-bottom: 2px;

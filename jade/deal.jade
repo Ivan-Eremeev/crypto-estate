@@ -20,7 +20,7 @@ block content
 
 		include blocks/header_field.jade
 		
-		.content.content--field
+		.content
 
 			// fieldWrapper
 			.fieldWrapper
@@ -71,27 +71,6 @@ block content
 										.sidebar__btn
 											span Сделка
 											span.sidebar__cross
-
-							// fieldSettings
-							.fieldSettings
-								.fieldSettings__col
-									.fieldSettings__sound
-										img(src="img/sound_icon.svg", alt="")
-									.fieldSettings__estate
-										.fieldSettings__estateRow
-											.fieldSettings__estateCol
-												.fieldSettings__hotel
-													img(src="img/hotel_icon.svg", alt="")
-												span 32
-											.fieldSettings__estateCol
-												.fieldSettings__house
-													img(src="img/house_icon.svg", alt="")
-												span 12
-							.fieldSettings__col
-								a(href="#").fieldSettings__btn
-									img(src="img/gear_icon.svg", alt="")
-									span Настройки
-							//	/fieldSettings
 										
 							.sidebar__progress
 								.sidebar__messages
@@ -213,7 +192,7 @@ block content
 											.field__card
 												.field__img
 													img(src="img/game_magnet.png", alt="")
-												.field__name.field__name--small Майнинг<br>пул
+												.field__name Майнинг<br>пул
 
 									.field__item
 										.field__container
@@ -368,7 +347,7 @@ block content
 											.field__card
 												.field__img
 													img(src="img/game_star.png", alt="")
-												.field__name.field__name--bottom Шанс
+												.field__name.field__name--small.field__name--bottom Шанс
 
 									.field__item
 										.field__container
@@ -617,78 +596,115 @@ block content
 								.field__center
 									.field__chat
 										.field__slogan
-											.field__timerMob
-												img(src="img/timer.png", alt="")
 											img(src="img/slogan_field.png", alt="")
-											.field__nameMob Ilon Mask
 										.field__messages
 											.field__messagesContainer
 												.field__message
-													.field__messageHead.field__messageHead--blue
+													.field__messageHead
 														.field__time 19.21
-														.field__messageName Nikol
+														.field__messageName.field__messageName--blue Nikol
 													.field__text
 														p Друзья, мне кажется или я лидирую?
 												.field__message
-													.field__messageHead.field__messageHead--red
+													.field__messageHead
 														.field__time 19.21
-														.field__messageName Ilon Mask
+														.field__messageName.field__messageName--red Ilon Mask
 													.field__text
 														p Не говори гоп, пока не перепрыгнешь
 												.field__message
-													.field__messageHead.field__messageHead--blue
+													.field__messageHead
 														.field__time 19.21
-														.field__messageName Nikol
+														.field__messageName.field__messageName--blue Nikol
 													.field__text
 														p Хорошо, проверим
 												.field__message
-													.field__messageHead.field__messageHead--red
+													.field__messageHead
 														.field__time 19.22
-														.field__messageName Ilon Mask
+														.field__messageName.field__messageName--red Ilon Mask
 													.field__text
 														p Победить должен я, это моя стихия))))
 												.field__message
-													.field__messageHead.field__messageHead--green
+													.field__messageHead
 														.field__time 19.22
-														.field__messageName Arnold
+														.field__messageName.field__messageName--green Arnold
 													.field__text
 														p Я играю в первый раз. Проиграть мне простительно.
 												.field__message
-													.field__messageHead.field__messageHead--green
+													.field__messageHead
 														.field__time 19.22
-														.field__messageName Arnold
+														.field__messageName.field__messageName--green Arnold
 													.field__text
 														p Пусть заблуждаются дальше. Эта игра точно за мной.
 										form(action="").chat__form
 											input(type="text", name="chat")
 											button(type="submit").chat__btn
 												img(src="img/chat_icon.svg", alt="")
+									// popup
+									.popup
+										.popup__container.popup__container--deal
+											.popup__head
+												.popup__title.popup__title--center Договор сделки
+												.popup__close
+											.popup__body
+												// deal
+												form(action="").deal
+													.deal__row
+													
+														.deal__col.deal__col--1
+															.deal__head
+																.deal__photo.deal__photo--red
+																	img(src="img/user_1.jpg", alt="")
+																.deal__content
+																	.deal__name Вы
+																	.deal__desc Предлагаете
+															.deal__string
+																.deal__icon
+																	img(src="img/portmone_icon.svg", alt="")
+																.deal__text
+																	.deal__price
+																		input(type="text" value="3500k")
+																		.deal__edit
+																			img(src="img/edit_icon.svg", alt="")
+																	.deal__p Наличные
+															.deal__string
+																.deal__icon
+																	img(src="img/game_juv.png", alt="")
+																.deal__text
+																	.deal__price 1500k
+																	.deal__p JUV
+
+														.deal__col.deal__col--2
+															.deal__head
+																.deal__content
+																	.deal__name Nikol
+																	.deal__desc Отдает
+																.deal__photo.deal__photo--blue
+																	img(src="img/user_1.jpg", alt="")
+															.deal__string
+																.deal__text
+																	.deal__price
+																		input(type="text" value="3500k")
+																		.deal__edit
+																			img(src="img/edit_icon.svg", alt="")
+																	.deal__p Наличные
+																.deal__icon
+																	img(src="img/portmone_icon.svg", alt="")
+															.deal__string
+																.deal__text
+																	.deal__price 1500k
+																	.deal__p LINK
+																.deal__icon
+																	img(src="img/game_gear.png", alt="")
+
+													.deal__result
+														.deal__priceResult 5000k
+														.deal__p Общая сумма
+														.deal__priceResult 4000k
+													.deal__center
+														button(type="submit").btn.btn--first Предложить
+												//	/deal
+									//	/popup
 						//	/field
-					.fieldWrapper__col3
-
-						.btn.btn--second Бросить кубики
-						.btn.btn--third Сдаться
-
-						form(action="").chat__form
-							input(type="text", name="chat")
-							button(type="submit").chat__btn
-								img(src="img/chat_icon.svg", alt="")
-
-						// fieldStats
-						ul.fieldStats
-							li.fieldStats__item
-								span Время в игре:
-								span.fieldStats__dark 00:23:43
-							li.fieldStats__item
-								span Ход:
-								span.fieldStats__dark 124
-							li.fieldStats__item
-								span Ставка:
-								span.fieldStats__dark Нет
-							li.fieldStats__item
-								span Зрителей:
-								span.fieldStats__dark 24
-						//	/fieldStats
 			//	/fieldWrapper
 			
 		//- include blocks/footer.jade

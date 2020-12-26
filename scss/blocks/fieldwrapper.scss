@@ -19,9 +19,58 @@
     width: 74%;
     background-color: #21222d;
   }
+  &__col3 {
+    display: none;
+  }
   @media (max-width: $break_xl) {
     max-width: 940px;
     margin-top: 35px;
     margin-bottom: 35px;
+  }
+  @media (max-width: $break_sm) {
+    width: 100%;
+    margin: 0;
+    padding: 0 15px;
+    &__col1 {
+      width: 20%;
+      background-color: transparent;
+    }
+    &__col2 {
+      width: 58%;
+      background-color: transparent;
+    }
+    &__col3 {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      width: 22%;
+      padding: 11px 1px;
+      .chat__form {
+        height: 24px;
+        margin: 20px 0;
+      }
+      .chat__btn {
+        width: 24px;
+        svg {
+          width: 10px;
+          height: 10px;
+        }
+      }
+      .fieldStats {
+        margin-left: -5px;
+        font-size: 7px;
+        &__item {
+          margin-left: 5px;
+          margin-bottom: 5px;
+        }
+        &__dark {
+          margin-left: 5px;
+        }
+      }
+      .btn {
+        padding: 10px;
+        font-size: 10px;
+      }
+    }
   }
 }

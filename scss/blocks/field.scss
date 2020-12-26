@@ -378,20 +378,48 @@
     display: flex;
     font-size: 12px;
     margin-bottom: 5px;
+    padding-left: 15px;
+    position: relative;
+    &:after {
+      content: '';
+      display: block;
+      width: 7px;
+      height: 7px;
+      border-radius: 100%;
+      position: absolute;
+      left: 0;
+      top: 3px;
+    }
+    &--blue {
+      .field__messageName {
+        color: #1375d1;
+      }
+      &:after {
+        background-color: #1375d1;
+      }
+    }
+    &--red {
+      .field__messageName {
+        color: #b81748;
+      }
+      &:after {
+        background-color: #b81748;
+      }
+    }
+    &--green {
+      .field__messageName {
+         color: #25ab71;
+      }
+      &:after {
+        background-color: #25ab71;
+      }
+    }
   }
   &__time {
     margin-right: 5px;
   }
   &__messageName {
-    &--blue {
-      color: #1375d1;
-    }
-    &--red {
-      color: #b81748;
-    }
-    &--green {
-      color: #25ab71;
-    }
+    
   }
   &__text {
     font-family: $firstFont;
@@ -425,6 +453,12 @@
     svg {
       display: block;
     }
+  }
+  &__timerMob {
+    display: none;
+  }
+  &__nameMob {
+    display: none;
   }
   @media (max-width: $break_xl) {
     padding: 18px;
@@ -517,6 +551,11 @@
     &__messageHead {
       font-size: 9px;
       margin-bottom: 2px;
+      padding-left: 10px;
+      &:after {
+        width: 5px;
+        height: 5px;
+      }
     }
     &__text {
       font-size: 9px;
@@ -535,6 +574,185 @@
           font-size: 11px;
         }
       }
+    }
+  }
+  @media (max-width: $break_sm) {
+    &:after {
+      padding-top: 85%;
+    }
+    &__name {
+      font-size: 5px;
+      &--small {
+        font-size: 3px;
+      }
+    }
+    &__nameBig {
+      font-size: 5px;
+    }
+    &__title {
+      font-size: 7px;
+      padding: 0;
+      line-height: 1.1;
+    }
+    &__icon {
+      width: 5px;
+      height: 5px;
+      margin: 0 1px;
+      svg {
+        width: 5px;
+        height: 5px;
+      }
+    }
+    &__img {
+      width: 12px;
+      &--big {
+        width: 22px;
+      }
+      &--cristal {
+        max-width: 9px;
+      }
+      &--ht {
+        max-width: 8px;
+      }
+    }
+    &__circle {
+      width: 8px;
+      height: 8px;
+      &--1 {
+        top: 5px;
+        left: 5px;
+      }
+      &--2 {
+        top: 5px;
+        right: 5px;
+      }
+      &--3 {
+        bottom: 5px;
+        right: 5px;
+      }
+      &--4 {
+        bottom: 5px;
+        left: 5px;
+      }
+    }
+    &__hotel {
+      width: 5px;
+      height: 5px;
+      svg {
+        width: 5px;
+        height: 5px;
+      }
+    }
+    &__gorizontalTop {
+      .field__estate {
+        top: -8px;
+      }
+      .field__hotel {
+        margin: 0 1px;
+      }
+      .field__title {
+        padding: 0;
+      }
+    }
+    &__gorizontalBottom {
+      .field__estate {
+        bottom: -8px;
+      }
+      .field__hotel {
+        margin: 0 1px;
+      }
+      .field__title {
+        padding: 0;
+      }
+    }
+    &__verticalLeft {
+      .field__estate {
+        left: -8px;
+      }
+      .field__hotel {
+        margin: 1px 0;
+      }
+      .field__title {
+        padding: 0;
+      }
+      .field__icon {
+        margin: 1px 0;
+      }
+    }
+    &__verticalRight {
+      .field__estate {
+        right: -8px;
+      }
+      .field__hotel {
+        margin: 1px 0;
+      }
+      .field__title {
+        padding: 0;
+      }
+      .field__icon {
+        margin: 1px 0;
+      }
+    }
+    &__grid {
+      top: 10px;
+      bottom: 10px;
+      left: 10px;
+      right: 10px;
+    }
+    &__messages {
+      &:after {
+        height: 50px;
+      }
+    }
+    &__message {
+      display: flex;
+      padding: 0;
+      margin-bottom: 0;
+      background-color: transparent;
+    }
+    &__messageHead {
+      margin-right: 5px;
+      font-size: 8px;
+      padding-left: 7px;
+      &:after {
+        width: 3px;
+        height: 3px;
+      }
+    }
+    &__text {
+      font-size: 8px;
+    }
+    &__slogan {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0;
+      img {
+        max-width: 80px;
+        max-height: 8px;
+      }
+    }
+    &__chat {
+      padding: 10px 20px;
+    }
+    .chat__form {
+      display: none;
+    }
+    &__timerMob {
+      margin-right: auto;
+      display: block;
+      width: 22px;
+      height: 22px;
+      z-index: 3;
+      img {
+        max-height: none;
+      }
+    }
+    &__nameMob {
+       margin-left: auto;
+      display: block;
+      color: #e74063;
+      font-size: 7px;
     }
   }
 }
