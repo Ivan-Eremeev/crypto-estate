@@ -1,7 +1,7 @@
 extends blocks/base.jade
 
 block title 
-	title Создать игру
+	title Игровое поле
 
 block style-libs
 	//- link(rel="stylesheet", href="css/libs/animate.min.css")
@@ -73,7 +73,7 @@ block content
 											span.sidebar__cross
 
 							// fieldSettings
-							.fieldSettings
+							.fieldSettings.mobile-visible
 								.fieldSettings__col
 									.fieldSettings__sound
 										img(src="img/sound_icon.svg", alt="")
@@ -87,7 +87,8 @@ block content
 												.fieldSettings__house
 													img(src="img/house_icon.svg", alt="")
 												span 12
-							.fieldSettings__col
+												
+							.fieldSettings__col.mobile-visible
 								a(href="#").fieldSettings__btn
 									img(src="img/gear_icon.svg", alt="")
 									span Настройки

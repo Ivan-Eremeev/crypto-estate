@@ -1,7 +1,7 @@
 extends blocks/base.jade
 
 block title 
-	title Создать игру
+	title Попап детальной карточки
 
 block style-libs
 	//- link(rel="stylesheet", href="css/libs/animate.min.css")
@@ -640,7 +640,823 @@ block content
 											button(type="submit").chat__btn
 												img(src="img/chat_icon.svg", alt="")
 									// popup
+									.popupextends blocks/base.jade
+
+block title 
+	title Создать игру
+
+block style-libs
+	//- link(rel="stylesheet", href="css/libs/animate.min.css")
+	//- link(rel="stylesheet", href="css/libs/bootstrap-grid.min.css")
+	//- link(rel="stylesheet", href="css/libs/fullpage.css")
+	//- link(rel="stylesheet", href="css/libs/hamburgers.min.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.fancybox.min.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.mmenu.all.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.scrollbar.css")
+	//- link(rel="stylesheet", href="css/libs/slick.css")
+	//- link(rel="stylesheet", href="css/libs/tooltipster.bundle.min.css")
+
+block content
+
+	.page
+
+		include blocks/header_field.jade
+		
+		.content.content--field
+
+			// fieldWrapper
+			.fieldWrapper
+				.fieldWrapper__row
+					.fieldWrapper__col1
+						// sidebar
+						.sidebar
+							.sidebar__users
+							
+								.sidebar__user
+									.sidebar__photo.sidebar__photo--blue
+										img(src="img/user_1.jpg", alt="")
+									.sidebar__content
+										.sidebar__name Nikol
+										.sidebar__price $ 23,467
+										.sidebar__btn
+											span Сделка
+											span.sidebar__cross
+									.sidebar__timer
+										img(src="img/timer.png", alt="")
+								
+								.sidebar__user
+									.sidebar__photo.sidebar__photo--red
+										img(src="img/user_1.jpg", alt="")
+									.sidebar__content
+										.sidebar__name Ilon Mask
+										.sidebar__price $ 23,467
+										.sidebar__btn
+											span Сделка
+											span.sidebar__cross
+
+								.sidebar__user
+									.sidebar__photo.sidebar__photo--yellow
+										img(src="img/user_1.jpg", alt="")
+									.sidebar__content
+										.sidebar__name Sheron
+										.sidebar__price $ 23,467
+										.sidebar__btn
+											span Сделка
+											span.sidebar__cross
+
+								.sidebar__user
+									.sidebar__photo.sidebar__photo--green
+										img(src="img/user_1.jpg", alt="")
+									.sidebar__content
+										.sidebar__name Arnold
+										.sidebar__price $ 23,467
+										.sidebar__btn
+											span Сделка
+											span.sidebar__cross
+
+							// fieldSettings
+							.fieldSettings.mobile-visible
+								.fieldSettings__col
+									.fieldSettings__sound
+										img(src="img/sound_icon.svg", alt="")
+									.fieldSettings__estate
+										.fieldSettings__estateRow
+											.fieldSettings__estateCol
+												.fieldSettings__hotel
+													img(src="img/hotel_icon.svg", alt="")
+												span 32
+											.fieldSettings__estateCol
+												.fieldSettings__house
+													img(src="img/house_icon.svg", alt="")
+												span 12
+
+							.fieldSettings__col.mobile-visible
+								a(href="#").fieldSettings__btn
+									img(src="img/gear_icon.svg", alt="")
+									span Настройки
+							//	/fieldSettings
+										
+							.sidebar__progress
+								.sidebar__messages
+									.sidebar__container
+
+										.sidebar__message
+											span.sidebar__time 19:21
+											span.sidebar__name.sidebar__name--red Ilon Mask
+											span.sidebar__text попадает на USDT и задумывается о покупке
+
+										.sidebar__message
+											span.sidebar__time 19:21
+											span.sidebar__name.sidebar__name--blue Nikol
+											span.sidebar__text попадает на Binance
+
+										.sidebar__message
+											span.sidebar__time 19:21
+											span.sidebar__name.sidebar__name--blue Nikol
+											span.sidebar__text выбрасывает 5:1
+
+										.sidebar__message
+											span.sidebar__time 19:21
+											span.sidebar__name.sidebar__name--red Ilon Mask
+											span.sidebar__text покупает USDT за 120 000
+
+										.sidebar__message
+											span.sidebar__time 19:21
+											span.sidebar__name.sidebar__name--red Ilon Mask
+											span.sidebar__text попадает на USDT и задумывается о покупке
+
+										.sidebar__message
+											span.sidebar__time 19:21
+											span.sidebar__name.sidebar__name--red Ilon Mask
+											span.sidebar__text выбрасывает 3:1
+
+										.sidebar__message
+											span.sidebar__time 19:21
+											span.sidebar__name.sidebar__name--blue Nikol
+											span.sidebar__text покупает Binance за 120 000
+
+										.sidebar__message
+											span.sidebar__time 19:21
+											span.sidebar__name.sidebar__name--blue Nikol
+											span.sidebar__text попадает на Binance и задумывается о покупке
+
+										.sidebar__message
+											span.sidebar__time 19:21
+											span.sidebar__name.sidebar__name--blue Nikol
+											span.sidebar__text выбрасывает 5:1
+										
+								.sidebar__btns
+									.btn.btn--second Бросить кубики
+									.btn.btn--third Сдаться
+						//	/sidebar
+					.fieldWrapper__col2
+						// field
+						.field
+							.field__grid
+
+								// top row
+								.field__gorizontalTop
+
+									.field__item
+										.field__container
+											.field__card.field__card--black
+												.field__img.field__img--big
+													img(src="img/game_arrow.png", alt="")
+												.field__nameBig Вперед
+												.field__circle.field__circle--1
+												.field__circle.field__circle--2
+												.field__circle.field__circle--3
+												.field__circle.field__circle--4
+
+									.field__item
+										.field__container
+											.field__card.field__card--orange
+												.field__title.field__title--orangeGray 120k
+												.field__icons
+													.field__icon
+														img(src="img/hotel_icon.svg", alt="")
+													.field__icon
+														img(src="img/warning_icon.svg", alt="")
+												.field__img
+													img(src="img/game_bar.png", alt="")
+												.field__name BAR
+
+									.field__item
+										.field__container
+											.field__card
+												.field__img
+													img(src="img/game_diamond.png", alt="")
+												.field__name Бонус
+
+									.field__item
+										.field__container
+											.field__card.field__card--red
+												.field__title.field__title--orangeGray 120k
+												.field__icons
+													.field__icon
+														img(src="img/hotel_icon.svg", alt="")
+													.field__icon
+														img(src="img/warning_icon.svg", alt="")
+												.field__img
+													img(src="img/game_juv.png", alt="")
+												.field__name JUV
+												.field__estate
+													.field__hotel
+														img(src="img/hotel_icon.svg", alt="")
+
+									.field__item
+										.field__container
+											.field__card
+												.field__img
+													img(src="img/game_tax.png", alt="")
+												.field__name налог
+
+									.field__item
+										.field__container
+											.field__card
+												.field__img
+													img(src="img/game_magnet.png", alt="")
+												.field__name.field__name--small Майнинг<br>пул
+
+									.field__item
+										.field__container
+											.field__card.field__card--green
+												.field__title.field__title--blueLight 120k
+												.field__icons
+													.field__icon
+														img(src="img/hotel_icon.svg", alt="")
+													.field__icon
+														img(src="img/warning_icon.svg", alt="")
+												.field__img
+													img(src="img/game_usdt.png", alt="")
+												.field__name USDT
+
+									.field__item
+										.field__container
+											.field__card
+												.field__img
+													img(src="img/game_star.png", alt="")
+												.field__name Шанс
+
+									.field__item
+										.field__container
+											.field__card.field__card--blue
+												.field__title.field__title--blueLight 120k
+												.field__icons
+													.field__icon
+														img(src="img/hotel_icon.svg", alt="")
+													.field__icon
+														img(src="img/warning_icon.svg", alt="")
+												.field__img
+													img(src="img/game_pax.png", alt="")
+												.field__name PAX
+												.field__estate
+													.field__hotel.field__hotel--green
+														img(src="img/house_icon.svg", alt="")
+
+									.field__item
+										.field__container
+											.field__card.field__card--black
+												.field__title.field__title--blueLight 120k
+												.field__icons
+													.field__icon
+														img(src="img/hotel_icon.svg", alt="")
+													.field__icon
+														img(src="img/warning_icon.svg", alt="")
+												.field__img
+													img(src="img/game_usdc.png", alt="")
+												.field__name USDC
+
+									.field__item
+										.field__container
+											.field__card.field__card--black
+												.field__img.field__img--big
+													img(src="img/game_handcuffs.png", alt="")
+												.field__nameBig В бегах от SEC
+
+								// bottom row
+								.field__gorizontalBottom
+
+									.field__item
+										.field__container
+											.field__card.field__card--black
+												.field__img.field__img--big
+													img(src="img/game_blockchain.png", alt="")
+												.field__nameBig Проблемы с SEC
+
+									.field__item
+										.field__container
+											.field__card.field__card--black
+												.field__title.field__title--yellow 120k
+												.field__icons
+													.field__icon
+														img(src="img/hotel_icon.svg", alt="")
+													.field__icon
+														img(src="img/warning_icon.svg", alt="")
+												.field__img.field__img--ht
+													img(src="img/game_ht.png", alt="")
+												.field__name HT
+
+									.field__item
+										.field__container
+											.field__card
+												.field__img
+													img(src="img/game_cloud.png", alt="")
+												.field__name.field__name--small.field__name--bottom Облачный<br>майнинг
+
+									.field__item
+										.field__container
+											.field__card.field__card--black
+												.field__title.field__title--yellow 120k
+												.field__icons
+													.field__icon
+														img(src="img/hotel_icon.svg", alt="")
+													.field__icon
+														img(src="img/warning_icon.svg", alt="")
+												.field__img
+													img(src="img/game_okb.png", alt="")
+												.field__name OKB
+
+									.field__item
+										.field__container
+											.field__card.field__card--black
+												.field__title.field__title--yellow 120k
+												.field__icons
+													.field__icon
+														img(src="img/hotel_icon.svg", alt="")
+													.field__icon
+														img(src="img/warning_icon.svg", alt="")
+												.field__img
+													img(src="img/game_bnb.png", alt="")
+												.field__name BNB
+
+									.field__item
+										.field__container
+											.field__card
+												.field__img
+													img(src="img/game_magnet.png", alt="")
+												.field__name.field__name--small.field__name--bottom Майнинг<br>пул
+
+									.field__item
+										.field__container
+											.field__card.field__card--black
+												.field__title.field__title--red 120k
+												.field__icons
+													.field__icon
+														img(src="img/hotel_icon.svg", alt="")
+													.field__icon
+														img(src="img/warning_icon.svg", alt="")
+												.field__img
+													img(src="img/game_matic.png", alt="")
+												.field__name Matic
+
+									.field__item
+										.field__container
+											.field__card.field__card--black
+												.field__title.field__title--red 120k
+												.field__icons
+													.field__icon
+														img(src="img/hotel_icon.svg", alt="")
+													.field__icon
+														img(src="img/warning_icon.svg", alt="")
+												.field__img
+													img(src="img/game_fet.png", alt="")
+												.field__name FET
+												.field__estate
+													.field__hotel
+														img(src="img/hotel_icon.svg", alt="")
+
+									.field__item
+										.field__container
+											.field__card
+												.field__img
+													img(src="img/game_star.png", alt="")
+												.field__name.field__name--bottom Шанс
+
+									.field__item
+										.field__container
+											.field__card.field__card--black
+												.field__title.field__title--red 120k
+												.field__icons
+													.field__icon
+														img(src="img/hotel_icon.svg", alt="")
+													.field__icon
+														img(src="img/warning_icon.svg", alt="")
+												.field__img
+													img(src="img/game_btt.png", alt="")
+												.field__name BTT
+												.field__estate
+													.field__hotel
+														img(src="img/hotel_icon.svg", alt="")
+													.field__hotel
+														img(src="img/hotel_icon.svg", alt="")
+													.field__hotel
+														img(src="img/hotel_icon.svg", alt="")
+
+									.field__item
+										.field__container
+											.field__card.field__card--black
+												.field__img.field__img--big
+													img(src="img/game_blockchain_2.png", alt="")
+												.field__nameBig Курс ушел во flat
+
+								// left row
+								.field__verticalLeft
+
+									.field__item
+										.field__container
+											.field__card.field__card--black
+												.field__title.field__title--blue 120k
+												.field__icons
+													.field__icon
+														img(src="img/hotel_icon.svg", alt="")
+													.field__icon
+														img(src="img/warning_icon.svg", alt="")
+												.field__img
+													img(src="img/game_yfi.png", alt="")
+												.field__name YFI
+												.field__estate
+													.field__hotel
+														img(src="img/hotel_icon.svg", alt="")
+
+									.field__item
+										.field__container
+											.field__card
+												.field__img
+													img(src="img/game_coins.png", alt="")
+												.field__name.field__name--small Потеря инвестиций
+
+									.field__item
+										.field__container
+											.field__card.field__card--black
+												.field__title.field__title--blue 120k
+												.field__icons
+													.field__icon
+														img(src="img/hotel_icon.svg", alt="")
+													.field__icon
+														img(src="img/warning_icon.svg", alt="")
+												.field__img
+													img(src="img/game_btc.png", alt="")
+												.field__name BTC
+
+									.field__item
+										.field__container
+											.field__card
+												.field__img
+													img(src="img/game_star.png", alt="")
+												.field__name.field__name--small Шанс
+
+									.field__item
+										.field__container
+											.field__card
+												.field__img
+													img(src="img/game_magnet.png", alt="")
+												.field__name.field__name--small Майнинг<br>пул
+
+									.field__item
+										.field__container
+											.field__card.field__card--black
+												.field__title.field__title--green 120k
+												.field__icons
+													.field__icon
+														img(src="img/hotel_icon.svg", alt="")
+													.field__icon
+														img(src="img/warning_icon.svg", alt="")
+												.field__img
+													img(src="img/game_sushi.png", alt="")
+												.field__name SUSHI
+												.field__estate
+													.field__hotel.field__hotel--green
+														img(src="img/house_icon.svg", alt="")
+
+									.field__item
+										.field__container
+											.field__card
+												.field__img
+													img(src="img/game_diamond.png", alt="")
+												.field__name.field__name--small Бонус
+
+									.field__item
+										.field__container
+											.field__card.field__card--black
+												.field__title.field__title--green 120k
+												.field__icons
+													.field__icon
+														img(src="img/hotel_icon.svg", alt="")
+													.field__icon
+														img(src="img/warning_icon.svg", alt="")
+												.field__img
+													img(src="img/game_uni.png", alt="")
+												.field__name Uni
+
+									.field__item
+										.field__container
+											.field__card.field__card--black
+												.field__title.field__title--green 120k
+												.field__icons
+													.field__icon
+														img(src="img/hotel_icon.svg", alt="")
+													.field__icon
+														img(src="img/warning_icon.svg", alt="")
+												.field__img
+													img(src="img/game_comp.png", alt="")
+												.field__name COMP
+
+								// right row
+								.field__verticalRight
+
+									.field__item
+										.field__container
+											.field__card.field__card--black
+												.field__title.field__title--violet 120k
+												.field__icons
+													.field__icon
+														img(src="img/hotel_icon.svg", alt="")
+													.field__icon
+														img(src="img/warning_icon.svg", alt="")
+												.field__img.field__img--cristal
+													img(src="img/game_cristal.png", alt="")
+												.field__name ETH
+												.field__estate
+													.field__hotel
+														img(src="img/hotel_icon.svg", alt="")
+													.field__hotel
+														img(src="img/hotel_icon.svg", alt="")
+													.field__hotel
+														img(src="img/hotel_icon.svg", alt="")
+													.field__hotel
+														img(src="img/hotel_icon.svg", alt="")
+
+									.field__item
+										.field__container
+											.field__card
+												.field__img
+													img(src="img/game_robot.png", alt="")
+												.field__name.field__name--small Торговый робот
+
+									.field__item
+										.field__container
+											.field__card.field__card--black
+												.field__title.field__title--violet 120k
+												.field__icons
+													.field__icon
+														img(src="img/hotel_icon.svg", alt="")
+													.field__icon
+														img(src="img/warning_icon.svg", alt="")
+												.field__img
+													img(src="img/game_gear.png", alt="")
+												.field__name LINK
+
+									.field__item
+										.field__container
+											.field__card.field__card--black
+												.field__title.field__title--violet 120k
+												.field__icons
+													.field__icon
+														img(src="img/hotel_icon.svg", alt="")
+													.field__icon
+														img(src="img/warning_icon.svg", alt="")
+												.field__img
+													img(src="img/game_omg.png", alt="")
+												.field__name OMG
+
+									.field__item
+										.field__container
+											.field__card
+												.field__img
+													img(src="img/game_magnet.png", alt="")
+												.field__name.field__name--small Майнинг<br>пул
+
+									.field__item
+										.field__container
+											.field__card.field__card--black
+												.field__title 120k
+												.field__icons
+													.field__icon
+														img(src="img/hotel_icon.svg", alt="")
+													.field__icon
+														img(src="img/warning_icon.svg", alt="")
+												.field__img
+													img(src="img/game_trx.png", alt="")
+												.field__name TRX
+												.field__estate
+													.field__hotel.field__hotel--green
+														img(src="img/house_icon.svg", alt="")
+
+									.field__item
+										.field__container
+											.field__card
+												.field__img
+													img(src="img/game_diamond.png", alt="")
+												.field__name Бонус
+
+									.field__item
+										.field__container
+											.field__card.field__card--black
+												.field__title.field__title--orange 120k
+												.field__icons
+													.field__icon
+														img(src="img/hotel_icon.svg", alt="")
+													.field__icon
+														img(src="img/warning_icon.svg", alt="")
+												.field__img
+													img(src="img/game_sun.png", alt="")
+												.field__name SUN
+
+									.field__item
+										.field__container
+											.field__card.field__card--black
+												.field__title.field__title--orange 120k
+												.field__icons
+													.field__icon
+														img(src="img/hotel_icon.svg", alt="")
+													.field__icon
+														img(src="img/warning_icon.svg", alt="")
+												.field__img
+													img(src="img/game_jst.png", alt="")
+												.field__name JST
+											
+								// center
+								.field__center
+									.field__chat
+										.field__slogan
+											.field__timerMob
+												img(src="img/timer.png", alt="")
+											img(src="img/slogan_field.png", alt="")
+											.field__nameMob Ilon Mask
+										.field__messages
+											.field__messagesContainer
+												.field__message
+													.field__messageHead.field__messageHead--blue
+														.field__time 19.21
+														.field__messageName Nikol
+													.field__text
+														p Друзья, мне кажется или я лидирую?
+												.field__message
+													.field__messageHead.field__messageHead--red
+														.field__time 19.21
+														.field__messageName Ilon Mask
+													.field__text
+														p Не говори гоп, пока не перепрыгнешь
+												.field__message
+													.field__messageHead.field__messageHead--blue
+														.field__time 19.21
+														.field__messageName Nikol
+													.field__text
+														p Хорошо, проверим
+												.field__message
+													.field__messageHead.field__messageHead--red
+														.field__time 19.22
+														.field__messageName Ilon Mask
+													.field__text
+														p Победить должен я, это моя стихия))))
+												.field__message
+													.field__messageHead.field__messageHead--green
+														.field__time 19.22
+														.field__messageName Arnold
+													.field__text
+														p Я играю в первый раз. Проиграть мне простительно.
+												.field__message
+													.field__messageHead.field__messageHead--green
+														.field__time 19.22
+														.field__messageName Arnold
+													.field__text
+														p Пусть заблуждаются дальше. Эта игра точно за мной.
+										form(action="").chat__form
+											input(type="text", name="chat")
+											button(type="submit").chat__btn
+												img(src="img/chat_icon.svg", alt="")
+
+									// popup
 									.popup
+										.popup__container
+											.popup__head
+												.popup__title LINK
+												.popup__desc Название категории
+												.popup__close
+											.popup__body
+												.popup__row
+													.popup__col
+
+														.popup__subtitle Стройте филиалы, чтобы увеличить ренту
+
+														.popup__string
+															p Стоимость поля
+															.popup__price 205k
+
+														.popup__string
+															p Залог поля
+															.popup__price 400k
+
+														.popup__string
+															p Выкуп поля
+															.popup__price 500k
+															
+														.popup__string
+															p Покупка филиала
+															.popup__price 600k
+
+													.popup__col
+
+														.popup__string
+															p Базовая рента
+															.popup__price 205k
+
+														.popup__string.active
+															.popup__estate
+																.popup__hotel
+																	img(src="img/hotel_icon.svg", alt="")
+															.popup__price 400k
+
+														.popup__string
+															.popup__estate
+																.popup__hotel
+																	img(src="img/hotel_icon.svg", alt="")
+																.popup__hotel
+																	img(src="img/hotel_icon.svg", alt="")
+															.popup__price 500k
+
+														.popup__string
+															.popup__estate
+																.popup__hotel
+																	img(src="img/hotel_icon.svg", alt="")
+																.popup__hotel
+																	img(src="img/hotel_icon.svg", alt="")
+																.popup__hotel
+																	img(src="img/hotel_icon.svg", alt="")
+															.popup__price 600k
+
+														.popup__string
+															.popup__estate
+																.popup__hotel
+																	img(src="img/hotel_icon.svg", alt="")
+																.popup__hotel
+																	img(src="img/hotel_icon.svg", alt="")
+																.popup__hotel
+																	img(src="img/hotel_icon.svg", alt="")
+																.popup__hotel
+																	img(src="img/hotel_icon.svg", alt="")
+															.popup__price 700k
+
+														.popup__string
+															.popup__estate
+																.popup__hotel
+																	img(src="img/hotel_icon.svg", alt="")
+																.popup__hotel
+																	img(src="img/hotel_icon.svg", alt="")
+																.popup__hotel
+																	img(src="img/hotel_icon.svg", alt="")
+																.popup__hotel
+																	img(src="img/hotel_icon.svg", alt="")
+																.popup__hotel
+																	img(src="img/hotel_icon.svg", alt="")
+															.popup__price 800k
+
+														.popup__string
+															.popup__estate
+																.popup__hotel.popup__hotel--green
+																	img(src="img/house_icon.svg", alt="")
+															.popup__price.popup__price--big 800k
+
+												.popup__change
+													.popup__controls
+														.popup__control.popup__control--plus
+														.popup__control.popup__control--minus
+													.btn.btn--gray Сохранить
+
+												.popup__btns
+													.popup__btn
+														.btn.btn--first Купить
+													.popup__btn
+														.btn.btn--second Аукцион
+													.popup__btn
+														.btn.btn--third Пропустить
+									//	/popup
+						//	/field
+					.fieldWrapper__col3
+
+						.btn.btn--second Бросить кубики
+						.btn.btn--third Сдаться
+
+						form(action="").chat__form
+							input(type="text", name="chat")
+							button(type="submit").chat__btn
+								img(src="img/chat_icon.svg", alt="")
+
+						// fieldStats
+						ul.fieldStats
+							li.fieldStats__item
+								span Время в игре:
+								span.fieldStats__dark 00:23:43
+							li.fieldStats__item
+								span Ход:
+								span.fieldStats__dark 124
+							li.fieldStats__item
+								span Ставка:
+								span.fieldStats__dark Нет
+							li.fieldStats__item
+								span Зрителей:
+								span.fieldStats__dark 24
+						//	/fieldStats
+			//	/fieldWrapper
+			
+		//- include blocks/footer.jade
+
+block js-libs
+	script(src="js/libs/jquery.min.js")
+	//- script(src="js/libs/jquery.fancybox.min.js")
+	//- script(src="js/libs/slick.min.js")
+	//- script(src="js/libs/jquery.matchHeight-min.js")
+	//- script(src="js/libs/jquery.inputmask.min.js")
+	//- script(src="js/libs/autosize.min.js")
+	//- script(src="js/libs/tooltipster.bundle.min.js")
+	//- script(src="js/libs/jquery.mmenu.min.all.js")
+	//- script(src="js/libs/wow.min.js")
+	//- script(src="js/libs/fullpage.min.js")
+	//- script(src="js/libs/jquery.vide.min.js")
+	//- script(src="js/libs/jquery.scrollbar.min.js")
+	//- script(src="http://api-maps.yandex.ru/2.1/?lang=ru_RU")
+	//- script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDArYzQvxn3CL3pB92Iqn9gaDltBFLfF4Y")
 										.popup__container
 											.popup__head
 												.popup__title LINK
