@@ -191,8 +191,9 @@ $(document).ready(function () {
 	}
 	clickToggle($('.sidebar__user'));
 
-	var width = window.innerWidth;
-	alert(width);
+	var width = window.innerWidth,
+			height = window.innerHeight;
+	alert('Ширина - ' + width + ' Высота - ' + height);
 
 	// // Аккордеон
 	// function accordeon(accordeon, mobile) {
