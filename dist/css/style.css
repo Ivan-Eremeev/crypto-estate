@@ -4295,7 +4295,12 @@ input[type=text] {
         display: none; }
       .sidebar__user {
         padding: 7px 5px 7px 15px;
-        margin-bottom: 2px; } }
+        margin-bottom: 2px; }
+      .sidebar__btn {
+        padding: 3px 21px 3px 10px;
+        font-size: 5px; }
+      .sidebar__cross {
+        width: 12px; } }
 
 .popup {
   padding: 10px;
