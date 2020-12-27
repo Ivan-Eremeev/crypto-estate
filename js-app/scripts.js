@@ -191,6 +191,9 @@ $(document).ready(function () {
 	}
 	clickToggle($('.sidebar__user'));
 
+	var width = window.innerWidth;
+	alert(width);
+
 	// // Аккордеон
 	// function accordeon(accordeon, mobile) {
 	// 	var trigger = accordeon.find('.accordeon_trigger'),
