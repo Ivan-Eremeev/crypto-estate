@@ -76,4 +76,7 @@
   @media (device-aspect-ratio: 9/19) {
     padding: 0 60px;
   }
+  @media (orientation: portrait) {
+    display: none;
+  }
 }

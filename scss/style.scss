@@ -77,6 +77,7 @@ sans-serif;
 @import 'blocks/sidebar';
 @import 'blocks/popup';
 @import 'blocks/deal';
+@import 'blocks/orientation';
 
 .mobile-hide {
   @media (max-width: $break_sm) {
