@@ -15,7 +15,7 @@
   }
   &__text {
   }
-  @media (orientation: portrait) {
+  @media (max-width: $break_sm) and (orientation: portrait) {
     display: flex;
     flex-direction: column;
     justify-content: center;

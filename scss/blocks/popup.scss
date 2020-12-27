@@ -193,6 +193,9 @@
       }
     }
   }
+  &__dice {
+    text-align: center;
+  }
   @media (max-width: $break_xl) {
     &__container {
       max-width: 290px;
@@ -259,6 +262,70 @@
     }
     &__row {
       margin-bottom: 20px;
+    }
+  }
+  @media (max-width: $break_sm) {
+    position: fixed;
+    &__container {
+      max-width: 400px;
+    }
+    &__body {
+      font-size: 12px;
+    }
+    &__title {
+      font-size: 14px;
+    }
+    &__desc {
+      font-size: 12px;
+    }
+    &__change {
+      .btn {
+        font-size: 10px;
+      }
+    }
+    &__btn {
+      .btn {
+        font-size: 12px;
+      }
+    }
+    &__control {
+      width: 24px;
+    }
+    &__hotel {
+      width: 11px;
+      margin: 0 2px;
+      svg {
+        width: 11px;
+        height: 11px;
+      }
+      &--green {
+        width: 13px;
+        svg {
+          width: 13px;
+          height: 15px;
+        }
+      }
+    }
+    &__string {
+      margin-bottom: 5px;
+    }
+    &__price {
+      font-size: 10px;
+      &--big {
+        font-size: 14px;
+      }
+    }
+    &__row {
+      margin-bottom: 10px;
+    }
+    &__close {
+      width: 24px;
+      height: 24px;
+      top: 5px;
+      right: 5px;
+      &:after,&:before {
+        width: 30%;
+      }
     }
   }
 }

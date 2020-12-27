@@ -155,10 +155,10 @@ body {
   padding-right: 30px;
   margin-left: auto;
   margin-right: auto; }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 820px) {
     .wrapper {
       padding-left: 15px; } }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 820px) {
     .wrapper {
       padding-right: 15px; } }
   @media (max-width: 1440px) {
@@ -202,7 +202,7 @@ input:-webkit-autofill {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1; }
-  @media (max-width: 800px) {
+  @media (max-width: 820px) {
     .content--field {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -396,7 +396,7 @@ input[type=text] {
   @media (max-width: 1050px) {
     .header__col--logo {
       width: auto; } }
-  @media (max-width: 800px) {
+  @media (max-width: 820px) {
     .header .wrapper {
       padding-top: 10px;
       padding-bottom: 10px; } }
@@ -807,7 +807,7 @@ input[type=text] {
     .head__btn {
       padding: 16px 10px;
       font-size: 12px; } }
-  @media (max-width: 800px) {
+  @media (max-width: 820px) {
     .head__item {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1069,7 +1069,7 @@ input[type=text] {
   @media (max-width: 1050px) {
     .statistics .wrapper:after {
       width: 100%; } }
-  @media (max-width: 800px) {
+  @media (max-width: 820px) {
     .statistics {
       margin-bottom: 30px; }
       .statistics__btns {
@@ -1282,7 +1282,7 @@ input[type=text] {
     .gameList__rate svg {
       width: 15px;
       height: 15px; } }
-  @media (max-width: 800px) {
+  @media (max-width: 820px) {
     .gameList__head {
       font-size: 13px; }
     .gameList__item {
@@ -1442,7 +1442,7 @@ input[type=text] {
       .chat__btn svg {
         width: 20px;
         height: 18px; } }
-  @media (max-width: 800px) {
+  @media (max-width: 820px) {
     .chat {
       margin-bottom: 46px; }
       .chat__contentInner {
@@ -1593,7 +1593,7 @@ input[type=text] {
         margin-bottom: 6px; }
       .persona__desc {
         font-size: 10px; } }
-  @media (max-width: 800px) {
+  @media (max-width: 820px) {
     .persona {
       margin-bottom: 28px; }
       .persona .wrapper {
@@ -1678,7 +1678,7 @@ input[type=text] {
       padding-left: 12px; }
     .personaItems__back {
       max-width: 210px; } }
-  @media (max-width: 800px) {
+  @media (max-width: 820px) {
     .personaItems .row {
       margin-bottom: 20px; }
     .personaItems__col {
@@ -1857,7 +1857,7 @@ input[type=text] {
       padding-bottom: 15px; }
     .modal__flex .btn {
       height: 37px; } }
-  @media (max-width: 800px) {
+  @media (max-width: 820px) {
     .modal__input--center input {
       font-size: 15px !important; } }
   @media (max-width: 395px) {
@@ -1960,7 +1960,7 @@ input[type=text] {
     width: 13px;
     height: 13px; } }
 
-@media (max-width: 800px) {
+@media (max-width: 820px) {
   .balance__titleMob {
     color: #818186;
     margin-bottom: 5px; }
@@ -2108,7 +2108,7 @@ input[type=text] {
         margin-bottom: 25px; }
       .confirm__btns .btn {
         font-size: 12px; } }
-  @media (max-width: 800px) {
+  @media (max-width: 820px) {
     .confirm__btns .btn {
       font-size: 10px; } }
 
@@ -2326,7 +2326,7 @@ input[type=text] {
   .guide__col {
     padding: 0 15px; } }
 
-@media (max-width: 800px) {
+@media (max-width: 820px) {
   .guide__head {
     padding: 25px 15px; }
   .guide__triggers:after {
@@ -2476,7 +2476,7 @@ input[type=text] {
         padding-left: 35px; }
       .settings__btn {
         margin-top: 45px; } }
-  @media (max-width: 800px) {
+  @media (max-width: 820px) {
     .settings {
       font-size: 15px; }
       .settings__row {
@@ -2818,7 +2818,7 @@ input[type=text] {
     width: 19px;
     height: 19px; } }
 
-@media (max-width: 800px) {
+@media (max-width: 820px) {
   .search__head {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -3026,7 +3026,7 @@ input[type=text] {
     font-size: 11px;
     padding: 10px; } }
 
-@media (max-width: 800px) {
+@media (max-width: 820px) {
   .form2fa .btn {
     font-size: 10px; } }
 
@@ -3337,7 +3337,7 @@ input[type=text] {
         .fieldSettings__btn svg {
           width: 14px;
           height: 14px; } }
-  @media (max-width: 800px) {
+  @media (max-width: 820px) {
     .fieldSettings {
       -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
@@ -3383,7 +3383,7 @@ input[type=text] {
       max-width: 940px;
       margin-top: 35px;
       margin-bottom: 35px; } }
-  @media (max-width: 800px) {
+  @media (max-width: 820px) {
     .fieldWrapper {
       width: 100%;
       margin: 0;
@@ -3429,7 +3429,7 @@ input[type=text] {
   @media (device-aspect-ratio: 9 / 19) {
     .fieldWrapper {
       padding: 0 60px; } }
-  @media (orientation: portrait) {
+  @media (max-width: 820px) and (orientation: portrait) {
     .fieldWrapper {
       display: none; } }
 
@@ -3939,7 +3939,7 @@ input[type=text] {
         .field__chat .chat__form input {
           padding: 0 17px;
           font-size: 11px; } }
-  @media (max-width: 800px) {
+  @media (max-width: 820px) {
     .field:after {
       padding-top: 85%; }
     .field__name {
@@ -4185,7 +4185,8 @@ input[type=text] {
     .sidebar__photo--green {
       background-color: #25ab71; }
   .sidebar__price {
-    font-size: 24px; }
+    font-size: 24px;
+    white-space: nowrap; }
   .sidebar__progress {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4275,7 +4276,7 @@ input[type=text] {
         left: 20px; }
       .sidebar__btn {
         font-size: 11px; } }
-  @media (max-width: 800px) {
+  @media (max-width: 820px) {
     .sidebar {
       padding: 11px 0; }
       .sidebar__progress {
@@ -4283,7 +4284,7 @@ input[type=text] {
       .sidebar__name {
         font-size: 7px; }
       .sidebar__price {
-        font-size: 12px; }
+        font-size: 10px; }
       .sidebar__photo {
         width: 38px;
         height: 38px;
@@ -4490,6 +4491,8 @@ input[type=text] {
         width: 6px;
         height: 2px;
         background-color: #fff; }
+  .popup__dice {
+    text-align: center; }
   @media (max-width: 1440px) {
     .popup__container {
       max-width: 290px; }
@@ -4533,6 +4536,49 @@ input[type=text] {
       font-size: 9px; }
     .popup__row {
       margin-bottom: 20px; } }
+  @media (max-width: 820px) {
+    .popup {
+      position: fixed; }
+      .popup__container {
+        max-width: 400px; }
+      .popup__body {
+        font-size: 12px; }
+      .popup__title {
+        font-size: 14px; }
+      .popup__desc {
+        font-size: 12px; }
+      .popup__change .btn {
+        font-size: 10px; }
+      .popup__btn .btn {
+        font-size: 12px; }
+      .popup__control {
+        width: 24px; }
+      .popup__hotel {
+        width: 11px;
+        margin: 0 2px; }
+        .popup__hotel svg {
+          width: 11px;
+          height: 11px; }
+        .popup__hotel--green {
+          width: 13px; }
+          .popup__hotel--green svg {
+            width: 13px;
+            height: 15px; }
+      .popup__string {
+        margin-bottom: 5px; }
+      .popup__price {
+        font-size: 10px; }
+        .popup__price--big {
+          font-size: 14px; }
+      .popup__row {
+        margin-bottom: 10px; }
+      .popup__close {
+        width: 24px;
+        height: 24px;
+        top: 5px;
+        right: 5px; }
+        .popup__close:after, .popup__close:before {
+          width: 30%; } }
 
 .deal__row {
   display: -webkit-box;
@@ -4733,6 +4779,36 @@ input[type=text] {
   .deal__result {
     margin-bottom: 10px; } }
 
+@media (max-width: 820px) {
+  .deal__photo {
+    width: 50px;
+    height: 50px; }
+    .deal__photo img {
+      width: 44px;
+      height: 44px; }
+  .deal__name {
+    font-size: 11px; }
+  .deal__desc {
+    font-size: 10px; }
+  .deal__price {
+    width: 58px;
+    font-size: 13px; }
+    .deal__price input {
+      font-size: 13px; }
+  .deal__p {
+    font-size: 12px; }
+  .deal__edit {
+    width: 12px; }
+    .deal__edit svg {
+      width: 12px;
+      height: 12px; }
+  .deal__priceResult {
+    font-size: 12px; }
+  .deal__center .btn {
+    font-size: 12px; }
+  .deal__row {
+    padding-bottom: 20px; } }
+
 .orientation {
   display: none;
   padding: 20px;
@@ -4747,7 +4823,7 @@ input[type=text] {
   right: 0; }
   .orientation__img {
     margin-bottom: 50px; }
-  @media (orientation: portrait) {
+  @media (max-width: 820px) and (orientation: portrait) {
     .orientation {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -4763,11 +4839,11 @@ input[type=text] {
       -ms-flex-align: center;
       align-items: center; } }
 
-@media (max-width: 800px) {
+@media (max-width: 820px) {
   .mobile-hide {
     display: none !important; } }
 
-@media (min-width: 801px) {
+@media (min-width: 821px) {
   .mobile-visible {
     display: none !important; } }
 

@@ -1,7 +1,7 @@
 extends blocks/base.jade
 
 block title 
-	title Сделка
+	title Кубики
 
 block style-libs
 	//- link(rel="stylesheet", href="css/libs/animate.min.css")
@@ -666,68 +666,10 @@ block content
 												img(src="img/chat_icon.svg", alt="")
 									// popup
 									.popup
-										.popup__container.popup__container--deal
-											.popup__head
-												.popup__title.popup__title--center Договор сделки
-												.popup__close
+										.popup__container
 											.popup__body
-												// deal
-												form(action="").deal
-													.deal__row
-													
-														.deal__col.deal__col--1
-															.deal__head
-																.deal__photo.deal__photo--red
-																	img(src="img/user_1.jpg", alt="")
-																.deal__content
-																	.deal__name Вы
-																	.deal__desc Предлагаете
-															.deal__string
-																.deal__icon
-																	img(src="img/portmone_icon.svg", alt="")
-																.deal__text
-																	.deal__price
-																		input(type="text" value="3500k")
-																		.deal__edit
-																			img(src="img/edit_icon.svg", alt="")
-																	.deal__p Наличные
-															.deal__string
-																.deal__icon
-																	img(src="img/game_juv.png", alt="")
-																.deal__text
-																	.deal__price 1500k
-																	.deal__p JUV
-
-														.deal__col.deal__col--2
-															.deal__head
-																.deal__content
-																	.deal__name Nikol
-																	.deal__desc Отдает
-																.deal__photo.deal__photo--blue
-																	img(src="img/user_1.jpg", alt="")
-															.deal__string
-																.deal__text
-																	.deal__price
-																		input(type="text" value="3500k")
-																		.deal__edit
-																			img(src="img/edit_icon.svg", alt="")
-																	.deal__p Наличные
-																.deal__icon
-																	img(src="img/portmone_icon.svg", alt="")
-															.deal__string
-																.deal__text
-																	.deal__price 1500k
-																	.deal__p LINK
-																.deal__icon
-																	img(src="img/game_gear.png", alt="")
-
-													.deal__result
-														.deal__priceResult 5000k
-														.deal__p Общая сумма
-														.deal__priceResult 4000k
-													.deal__center
-														button(type="submit").btn.btn--first Предложить
-												//	/deal
+												.popup__dice
+													img(src="img/dice.png", alt="")
 									//	/popup
 						//	/field
 					.fieldWrapper__col3

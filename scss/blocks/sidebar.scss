@@ -103,6 +103,7 @@
   }
   &__price {
     font-size: 24px;
+    white-space: nowrap;
   }
   &__progress {
     display: flex;
@@ -222,7 +223,7 @@
       font-size: 7px;
     }
     &__price {
-      font-size: 12px;
+      font-size: 10px;
     }
     &__photo {
       width: 38px;
