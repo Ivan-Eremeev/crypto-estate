@@ -60,13 +60,19 @@
   margin-left: 57px;
   font-family: $secondFont;
   font-size: 16px;
-  color: $fontDarkColor;
+  a {
+    color: $fontDarkColor;
+    &:hover {
+      color: #fff;
+    }
+  }
   .active {
     color: #c1c1c1;
   }
   &__slash {
     margin: 0 5px;
     font-size: 20px;
+    color: $fontDarkColor;
   }
   @media (max-width: $break_xl) {
     font-size: 12px;

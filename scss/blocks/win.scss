@@ -1,5 +1,5 @@
 .win {
-  padding: 225px 20px 20px;
+  padding: 140px 20px 20px;
   background-image: url(../img/win.png);
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -26,6 +26,17 @@
       object-fit: cover;
     }
   }
+  &__title {
+    font-size: 35px;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #d6b274 33%, #fee5a5 66%, #a07f48);
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 15px;
+    &--loss {
+      letter-spacing: 0.2em;
+    }
+  }
   &__name {
     font-size: 26px;
   }
@@ -43,7 +54,7 @@
     margin-top: 40px;
   }
   @media (max-width: $break_xl) {
-    padding: 170px 20px 20px;
+    padding: 105px 20px 20px;
     &__img {
       width: 90px;
       height: 90px;
@@ -52,6 +63,9 @@
         width: 84px;
         height: 84px;
       }
+    }
+    &__title {
+      font-size: 25px;
     }
     &__name {
       font-size: 22px;

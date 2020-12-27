@@ -147,6 +147,27 @@
         display: none;
       }
     }
+    &--first {
+      span {
+        background: linear-gradient(to right, #c5a062, #fde4a4, #c5a062);
+        background-clip: text;
+        color: transparent;
+      }
+    }
+    &--second {
+      span {
+        background: linear-gradient(to right, #8e8e8e, #ffffff, #8e8e8e);
+        background-clip: text;
+        color: transparent;
+      }
+    }
+    &--third {
+      span {
+        background: linear-gradient(to right, #9c5416, #f7e5aa, #9c5416);
+        background-clip: text;
+        color: transparent;
+      }
+    }
   }
   &__crystal {
     width: 17px;
