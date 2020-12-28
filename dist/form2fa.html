@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="keywords" content="">
 		<meta name="description" content="">
+		<link rel="stylesheet" href="css/libs/slick.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
@@ -67,69 +68,71 @@
 							<div class="modal__close"></div>
 						</div>
 						<div class="modal__body">
-							<!-- form2fa step 1-->
-							<div class="form2fa">
-								<div class="form2fa__steps">
-									<div class="form2fa__step">Шаг 1</div>
-									<div class="form2fa__stepCount">1/4</div>
+							<div class="js_form2faSlider">
+								<!-- form2fa step 1-->
+								<div class="form2fa">
+									<div class="form2fa__steps">
+										<div class="form2fa__step">Шаг 1</div>
+										<div class="form2fa__stepCount">1/4</div>
+									</div>
+									<div class="subtitle">Скачайте и установите приложение "Google Аuthenticator"</div>
+									<div class="form2fa__stores"><a class="form2fa__store" href="#"><img src="img/google_play.png" alt=""></a><a class="form2fa__store" href="#"><img src="img/app_store.png" alt=""></a></div>
+									<div class="form2fa__btn">
+										<div class="js_ form2faNextBtn btn btn--second">Далее</div>
+									</div>
 								</div>
-								<div class="subtitle">Скачайте и установите приложение "Google Аuthenticator"</div>
-								<div class="form2fa__stores"><a class="form2fa__store" href="#"><img src="img/google_play.png" alt=""></a><a class="form2fa__store" href="#"><img src="img/app_store.png" alt=""></a></div>
-								<div class="form2fa__btn">
-									<div class="btn btn--second">Далее</div>
+								<!--	/form2fa step 1-->
+								<!-- form2fa step 2-->
+								<div class="form2fa">
+									<div class="form2fa__steps">
+										<div class="form2fa__step">Шаг 2</div>
+										<div class="form2fa__stepCount">2/4</div>
+									</div>
+									<div class="subtitle">Отсканируйте этот QR-код в приложении "Google Аuthenticator"</div>
+									<div class="form2fa__qr"><img src="img/qr_code.svg" alt=""></div>
+									<div class="form2fa__btn">
+										<div class="js_ form2faNextBtn btn btn--second">Далее</div>
+									</div>
 								</div>
-							</div>
-							<!--	/form2fa step 1-->
-							<!-- form2fa step 2-->
-							<div class="form2fa">
-								<div class="form2fa__steps">
-									<div class="form2fa__step">Шаг 2</div>
-									<div class="form2fa__stepCount">2/4</div>
+								<!--	/form2fa step 2-->
+								<!-- form2fa step 3-->
+								<div class="form2fa">
+									<div class="form2fa__steps">
+										<div class="form2fa__step">Шаг 3</div>
+										<div class="form2fa__stepCount">3/4</div>
+									</div>
+									<div class="subtitle">
+										<p>Пожалуйста, сохраните этот ключ на бумаге. </p>
+										<p>Этот ключ поможет Вам восстановить Ваш "Google Аuthenticator"<br>в случае потери телефона.</p>
+									</div>
+									<div class="form2fa__desc form2fa__desc--maw500">Сброс Вашей аутентификации Google требует открытия заявки в службу поддержки и занимает не менее 7 дней для обработки.</div>
+									<div class="form2fa__flex">
+										<div class="form2fa__input">
+											<input type="text">
+										</div>
+										<div class="btn btn--first">Скопировать код</div>
+									</div>
+									<div class="form2fa__btn">
+										<div class="js_ form2faNextBtn btn btn--second">Далее</div>
+									</div>
 								</div>
-								<div class="subtitle">Отсканируйте этот QR-код в приложении "Google Аuthenticator"</div>
-								<div class="form2fa__qr"><img src="img/qr_code.svg" alt=""></div>
-								<div class="form2fa__btn">
-									<div class="btn btn--second">Далее</div>
-								</div>
-							</div>
-							<!--	/form2fa step 2-->
-							<!-- form2fa step 3-->
-							<div class="form2fa">
-								<div class="form2fa__steps">
-									<div class="form2fa__step">Шаг 3</div>
-									<div class="form2fa__stepCount">3/4</div>
-								</div>
-								<div class="subtitle">
-									<p>Пожалуйста, сохраните этот ключ на бумаге. </p>
-									<p>Этот ключ поможет Вам восстановить Ваш "Google Аuthenticator"<br>в случае потери телефона.</p>
-								</div>
-								<div class="form2fa__desc form2fa__desc--maw500">Сброс Вашей аутентификации Google требует открытия заявки в службу поддержки и занимает не менее 7 дней для обработки.</div>
-								<div class="form2fa__flex">
-									<div class="form2fa__input">
+								<!--	/form2fa step 3-->
+								<!-- form2fa step 4-->
+								<div class="form2fa">
+									<div class="form2fa__steps">
+										<div class="form2fa__step">Шаг 4</div>
+										<div class="form2fa__stepCount">4/4</div>
+									</div>
+									<div class="subtitle">Включить "Google Аuthenticator"</div>
+									<div class="form2fa__input form2fa__input--maw460 form2fa__input--center">
 										<input type="text">
 									</div>
-									<div class="btn btn--first">Скопировать код</div>
+									<div class="form2fa__btn">
+										<button class="btn btn--second" type="submit">Подтвердить</button>
+									</div>
 								</div>
-								<div class="form2fa__btn">
-									<div class="btn btn--second">Далее</div>
-								</div>
+								<!--	/form2fa step 4-->
 							</div>
-							<!--	/form2fa step 3-->
-							<!-- form2fa step 4-->
-							<div class="form2fa">
-								<div class="form2fa__steps">
-									<div class="form2fa__step">Шаг 4</div>
-									<div class="form2fa__stepCount">4/4</div>
-								</div>
-								<div class="subtitle">Включить "Google Аuthenticator"</div>
-								<div class="form2fa__input form2fa__input--maw460 form2fa__input--center">
-									<input type="text">
-								</div>
-								<div class="form2fa__btn">
-									<div class="btn btn--second">Подтвердить</div>
-								</div>
-							</div>
-							<!--	/form2fa step 4-->
 						</div>
 					</div>
 				</form>
@@ -137,6 +140,7 @@
 			</div>
 		</div>
 		<script src="js/libs/jquery.min.js"></script>
+		<script src="js/libs/slick.min.js"></script>
 		<script src="js/scripts.js"></script>
 	</body>
 </html>

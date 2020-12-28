@@ -12,6 +12,9 @@ $(document).ready(function () {
 			breakSm = 769,
 			breakXs = 500;
 
+	// Подключение файлов. Использовать "//=" перед строкой пути
+	//= libs-settings/slick_settings.js
+
 	// Запрет перехода по ссылкам
 	$('a[href="#"]').click(function(e) {
 		e.preventDefault();
@@ -146,5 +149,18 @@ $(document).ready(function () {
 			$img.replaceWith($svg);
 		}, 'xml');
 	});
+
+	// Создать игру. Кол-во игроков
+	function CounterGamers() {
+		if ($('.createGame__players')) {
+			var inputs = $('.createGame__player input'),
+					input = false;
+			inputs.change(function (e) { 
+				input = $('.createGame__player input:checked').length;
+				$('.createGame__num').text(input);
+			});
+		}
+	}
+	CounterGamers();
 	
 });
