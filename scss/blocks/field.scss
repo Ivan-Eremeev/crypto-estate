@@ -2,20 +2,21 @@
   height: 100%;
   padding: 25px;
   position: relative;
-  &:after {
-    content: '';
-    display: block;
-    padding-top: 100%;
-  }
+  // &:after {
+  //   content: '';
+  //   display: block;
+  //   padding-top: 100%;
+  // }
   &__grid {
+    height: 100%;
     display: grid;
     grid-template-rows: repeat(13, 1fr);
     grid-template-columns: repeat(13, 1fr);
-    position: absolute;
-    top: 25px;
-    bottom: 25px;
-    left: 25px;
-    right: 25px;
+    // position: absolute;
+    // top: 25px;
+    // bottom: 25px;
+    // left: 25px;
+    // right: 25px;
   }
   &__gorizontalTop {
     display: grid;
@@ -523,10 +524,10 @@
       font-size: 7px;
     }
     &__grid {
-      top: 18px;
-      bottom: 18px;
-      left: 18px;
-      right: 18px;
+      // top: 18px;
+      // bottom: 18px;
+      // left: 18px;
+      // right: 18px;
     }
     &__estate {
       top: -15px;
@@ -698,10 +699,10 @@
       }
     }
     &__grid {
-      top: 10px;
-      bottom: 10px;
-      left: 10px;
-      right: 10px;
+      // top: 10px;
+      // bottom: 10px;
+      // left: 10px;
+      // right: 10px;
     }
     &__messages {
       &:after {
