@@ -4,6 +4,7 @@
   font-family: $secondFont;
   font-size: 14px;
   color: $fontColor;
+  position: relative;
   &__item {
     display: inline-block;
     margin: 0 15px;
@@ -12,11 +13,31 @@
     margin-left: 10px;
     color: $fontDarkColor;
   }
+  &__btn {
+    width: 14px;
+    height: 14px;
+    fill: #fff;
+    animation: pulse 1.5s infinite;
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+  }
   @media (max-width: $break_xl) {
     font-size: 10px;
     margin-left: 36px;
     &__item {
       margin: 0 12px;
     }
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
   }
 }

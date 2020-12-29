@@ -363,38 +363,6 @@ input[type=text], input[type=password] {
   padding: 25px;
   white-space: pre-line; }
 
-.fullScreen {
-  text-align: right;
-  margin-top: 10px; }
-  .fullScreen__btn {
-    width: 20px;
-    height: 20px;
-    fill: #fff;
-    -webkit-animation: pulse 1.5s infinite;
-    animation: pulse 1.5s infinite; }
-
-@-webkit-keyframes pulse {
-  0% {
-    -webkit-transform: scale(1);
-    transform: scale(1); }
-  50% {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1); }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1); } }
-
-@keyframes pulse {
-  0% {
-    -webkit-transform: scale(1);
-    transform: scale(1); }
-  50% {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1); }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1); } }
-
 /* /settings site */
 .header {
   background-color: #14151f; }
@@ -3313,19 +3281,51 @@ input[type=text], input[type=password] {
   margin-top: -3px;
   font-family: "FuturaFuturisC", sans-serif;
   font-size: 14px;
-  color: #fff; }
+  color: #fff;
+  position: relative; }
   .fieldStats__item {
     display: inline-block;
     margin: 0 15px; }
   .fieldStats__dark {
     margin-left: 10px;
     color: #818186; }
+  .fieldStats__btn {
+    width: 14px;
+    height: 14px;
+    fill: #fff;
+    -webkit-animation: pulse 1.5s infinite;
+    animation: pulse 1.5s infinite;
+    position: absolute;
+    right: 0;
+    bottom: 5px; }
   @media (max-width: 1920px) {
     .fieldStats {
       font-size: 10px;
       margin-left: 36px; }
       .fieldStats__item {
         margin: 0 12px; } }
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
 
 .fieldSettings {
   display: -webkit-box;

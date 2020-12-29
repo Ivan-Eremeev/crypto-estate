@@ -237,25 +237,4 @@ input[type=text], input[type=password] {
   padding: 25px;
   white-space: pre-line;
 }
-.fullScreen {
-  text-align: right;
-  margin-top: 10px;
-  &__btn {
-    width: 20px;
-    height: 20px;
-    fill: #fff;
-    animation: pulse 1.5s infinite;
-  }
-}
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 /* /settings site */
