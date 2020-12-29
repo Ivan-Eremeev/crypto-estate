@@ -10,6 +10,7 @@
   &__sound {
     width: 18px;
     height: 18px;
+    flex-shrink: 0;
     cursor: pointer;
     svg {
       fill: #3d7f5c;
@@ -36,6 +37,7 @@
   &__hotel {
     width: 16px;
     height: 16px;
+    flex-shrink: 0;
     svg {
       fill: #157fd9;
     }
@@ -57,6 +59,7 @@
     color: $fontColor;
     transition: 0.3s;
     svg {
+      flex-shrink: 0;
       width: 20px;
       height: 20px;
       fill: #8c8e9c;
@@ -97,10 +100,15 @@
   @media (max-width: $break_sm) {
     flex-wrap: wrap;
     &__estate {
+      padding: 4px 10px;
+      margin-left: 5px;
       background-color: #20202b;
     }
     &__col {
-      width: 100%; 
+      width: 100%;
+      padding: 3px 0;
+      display: flex;
+      justify-content: space-between;
     }
     &__btn {
       display: flex;
@@ -108,6 +116,24 @@
       width: 100%;
       margin-left: 0;
       border-radius: 8px;
+    }
+    &__sound {
+      width: 12px;
+      height: 12px;
+    }
+    &__hotel {
+      width: 9px;
+      height: 9px;
+    }
+    &__house {
+      width: 8px;
+      height: 10px;
+    }
+    &__estateRow {
+      margin-left: -8px;
+    }
+    &__estateCol {
+      margin-left: 8px;
     }
   }
 }

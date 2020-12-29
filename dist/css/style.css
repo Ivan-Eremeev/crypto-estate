@@ -3317,6 +3317,8 @@ input[type=text], input[type=password] {
   .fieldSettings__sound {
     width: 18px;
     height: 18px;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
     cursor: pointer; }
     .fieldSettings__sound svg {
       fill: #3d7f5c; }
@@ -3342,7 +3344,9 @@ input[type=text], input[type=password] {
       margin-left: 5px; }
   .fieldSettings__hotel {
     width: 16px;
-    height: 16px; }
+    height: 16px;
+    -ms-flex-negative: 0;
+    flex-shrink: 0; }
     .fieldSettings__hotel svg {
       fill: #157fd9; }
   .fieldSettings__house {
@@ -3366,6 +3370,8 @@ input[type=text], input[type=password] {
     -o-transition: 0.3s;
     transition: 0.3s; }
     .fieldSettings__btn svg {
+      -ms-flex-negative: 0;
+      flex-shrink: 0;
       width: 20px;
       height: 20px;
       fill: #8c8e9c;
@@ -3401,9 +3407,18 @@ input[type=text], input[type=password] {
       -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
       .fieldSettings__estate {
+        padding: 4px 10px;
+        margin-left: 5px;
         background-color: #20202b; }
       .fieldSettings__col {
-        width: 100%; }
+        width: 100%;
+        padding: 3px 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between; }
       .fieldSettings__btn {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -3413,7 +3428,20 @@ input[type=text], input[type=password] {
         justify-content: center;
         width: 100%;
         margin-left: 0;
-        border-radius: 8px; } }
+        border-radius: 8px; }
+      .fieldSettings__sound {
+        width: 12px;
+        height: 12px; }
+      .fieldSettings__hotel {
+        width: 9px;
+        height: 9px; }
+      .fieldSettings__house {
+        width: 8px;
+        height: 10px; }
+      .fieldSettings__estateRow {
+        margin-left: -8px; }
+      .fieldSettings__estateCol {
+        margin-left: 8px; } }
 
 .fieldWrapper {
   max-width: 1236px;
@@ -3882,6 +3910,8 @@ input[type=text], input[type=password] {
       background-color: #25ab71; }
   .field__time {
     margin-right: 5px; }
+  .field__messageName {
+    white-space: nowrap; }
   .field__text {
     font-family: "FuturaС", sans-serif;
     color: #818186; }
@@ -3996,11 +4026,11 @@ input[type=text], input[type=password] {
       .field__name--small {
         font-size: 3px; }
     .field__nameBig {
-      font-size: 5px; }
+      font-size: 4px; }
     .field__title {
-      font-size: 7px;
+      font-size: 5px;
       padding: 0;
-      line-height: 1.1; }
+      line-height: 1.2; }
     .field__icon {
       width: 5px;
       height: 5px;
@@ -4009,9 +4039,9 @@ input[type=text], input[type=password] {
         width: 5px;
         height: 5px; }
     .field__img {
-      width: 12px; }
+      width: 11px; }
       .field__img--big {
-        width: 22px; }
+        width: 16px; }
       .field__img--cristal {
         max-width: 9px; }
       .field__img--ht {
@@ -4098,7 +4128,7 @@ input[type=text], input[type=password] {
         max-width: 80px;
         max-height: 8px; }
     .field__chat {
-      padding: 10px 20px; }
+      padding: 10px; }
     .field .chat__form {
       display: none; }
     .field__timerMob {
@@ -4339,7 +4369,7 @@ input[type=text], input[type=password] {
       .sidebar__timer {
         display: none; }
       .sidebar__user {
-        padding: 7px 5px 7px 15px;
+        padding: 7px 5px 7px 10px;
         margin-bottom: 2px; }
       .sidebar__btn {
         padding: 3px 21px 3px 10px;
@@ -4650,6 +4680,8 @@ input[type=text], input[type=password] {
     margin-right: 15px; }
   .deal__col--1 .deal__photo {
     margin-right: 15px; }
+  .deal__col--1 .deal__price input {
+    padding: 0 10px 0 0; }
   .deal__col--2 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4670,7 +4702,8 @@ input[type=text], input[type=password] {
       right: auto;
       left: -5px; }
     .deal__col--2 .deal__price input {
-      text-align: right; }
+      text-align: right;
+      padding: 0 0 0 10px; }
 
 .deal__head {
   display: -webkit-box;
@@ -4739,7 +4772,6 @@ input[type=text], input[type=password] {
   font-size: 13px;
   position: relative; }
   .deal__price input {
-    padding: 0;
     font-size: 13px;
     color: #fff;
     background-color: transparent; }
@@ -4782,6 +4814,10 @@ input[type=text], input[type=password] {
     font-size: 12px; }
 
 @media (max-width: 1920px) {
+  .deal__col--1 .deal__price input {
+    padding: 0 10px 0 0; }
+  .deal__col--2 .deal__price input {
+    padding: 0 0 0 10px; }
   .deal__row {
     padding-bottom: 40px;
     margin-bottom: 10px; }
@@ -4794,7 +4830,6 @@ input[type=text], input[type=password] {
   .deal__price {
     font-size: 10px; }
     .deal__price input {
-      padding: 0;
       font-size: 10px; }
   .deal__p {
     font-size: 10px; }
@@ -4839,12 +4874,13 @@ input[type=text], input[type=password] {
     width: 58px;
     font-size: 13px; }
     .deal__price input {
-      padding: 0;
+      padding: 0 10px 0 0;
       font-size: 13px; }
   .deal__p {
     font-size: 12px; }
   .deal__edit {
-    width: 12px; }
+    width: 12px;
+    top: 1px; }
     .deal__edit svg {
       width: 12px;
       height: 12px; }
