@@ -2089,11 +2089,7 @@ input[type=text], input[type=password] {
     display: block;
     font-size: 35px;
     text-transform: uppercase;
-    background: -o-linear-gradient(45deg, #d6b274 33%, #fee5a5 66%, #a07f48);
-    background: linear-gradient(45deg, #d6b274 33%, #fee5a5 66%, #a07f48);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: #fee5a5;
     margin-bottom: 15px; }
     .win__title--loss {
       letter-spacing: 0.2em; }
