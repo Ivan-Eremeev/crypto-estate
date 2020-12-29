@@ -359,7 +359,7 @@
       top: 0;
       width: 100%;
       height: 100px;
-      background: linear-gradient(to bottom, #14151f, transparent);
+      background: linear-gradient(to bottom, #14151f 20%, transparent);
     }
   }
   &__message {
@@ -370,6 +370,8 @@
   &__messagesContainer {
     width: 100%;
     padding-bottom: 15px;
+    position: absolute;
+    bottom: 0;
   }
   &__slogan {
     padding: 14px 0;

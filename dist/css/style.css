@@ -363,6 +363,38 @@ input[type=text], input[type=password] {
   padding: 25px;
   white-space: pre-line; }
 
+.fullScreen {
+  text-align: right;
+  margin-top: 10px; }
+  .fullScreen__btn {
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+    -webkit-animation: pulse 1.5s infinite;
+    animation: pulse 1.5s infinite; }
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
 /* /settings site */
 .header {
   background-color: #14151f; }
@@ -2054,6 +2086,7 @@ input[type=text], input[type=password] {
       -o-object-fit: cover;
       object-fit: cover; }
   .win__title {
+    display: block;
     font-size: 35px;
     text-transform: uppercase;
     background: -o-linear-gradient(45deg, #d6b274 33%, #fee5a5 66%, #a07f48);
@@ -3863,16 +3896,18 @@ input[type=text], input[type=password] {
       top: 0;
       width: 100%;
       height: 100px;
-      background: -webkit-gradient(linear, left top, left bottom, from(#14151f), to(transparent));
-      background: -o-linear-gradient(top, #14151f, transparent);
-      background: linear-gradient(to bottom, #14151f, transparent); }
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #14151f), to(transparent));
+      background: -o-linear-gradient(top, #14151f 20%, transparent);
+      background: linear-gradient(to bottom, #14151f 20%, transparent); }
   .field__message {
     padding: 12px 25px;
     margin-bottom: 5px;
     background-color: #1e1f28; }
   .field__messagesContainer {
     width: 100%;
-    padding-bottom: 15px; }
+    padding-bottom: 15px;
+    position: absolute;
+    bottom: 0; }
   .field__slogan {
     padding: 14px 0;
     text-align: center; }

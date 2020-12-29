@@ -27,6 +27,7 @@
     }
   }
   &__title {
+    display: block;
     font-size: 35px;
     text-transform: uppercase;
     background: linear-gradient(45deg, #d6b274 33%, #fee5a5 66%, #a07f48);
