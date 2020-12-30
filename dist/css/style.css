@@ -1060,7 +1060,7 @@ input[type=text], input[type=password] {
       .statistics__item {
         padding: 3px 10px;
         margin-left: 10px;
-        font-size: 10px; }
+        font-size: 9px; }
       .statistics__iconItem {
         font-size: 10px; }
       .statistics__icon {
@@ -3581,7 +3581,6 @@ input[type=text], input[type=password] {
     .field__verticalLeft .field__item {
       grid-column: 1 / 3; }
     .field__verticalLeft .field__title {
-      padding: 0 5%;
       position: absolute;
       top: 0;
       left: 0;
@@ -3591,7 +3590,8 @@ input[type=text], input[type=password] {
       writing-mode: vertical-lr;
       -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
-      transform: rotate(180deg); }
+      transform: rotate(180deg);
+      line-height: 2; }
     .field__verticalLeft .field__icons {
       -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
@@ -3685,14 +3685,14 @@ input[type=text], input[type=password] {
     .field__verticalRight .field__item {
       grid-column: 1 / 3; }
     .field__verticalRight .field__title {
-      padding: 0 5%;
       -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
       writing-mode: vertical-rl;
       position: absolute;
       top: 0;
       bottom: 0;
-      right: 0; }
+      right: 0;
+      line-height: 2; }
     .field__verticalRight .field__icons {
       -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
@@ -3766,13 +3766,13 @@ input[type=text], input[type=password] {
     .field__card:hover {
       background-color: #073c6e; }
   .field__title {
-    padding: 5% 0;
     font-size: 11px;
     text-align: center;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none; }
+    user-select: none;
+    line-height: 2; }
     .field__title--orangeGray {
       background-color: #734225; }
     .field__title--blueLight {
@@ -4060,8 +4060,7 @@ input[type=text], input[type=password] {
       font-size: 4px; }
     .field__title {
       font-size: 5px;
-      padding: 0;
-      line-height: 1.2; }
+      line-height: 1.3; }
     .field__icon {
       width: 5px;
       height: 5px;
@@ -4102,20 +4101,16 @@ input[type=text], input[type=password] {
       top: -8px; }
     .field__gorizontalTop .field__hotel {
       margin: 0 1px; }
-    .field__gorizontalTop .field__title {
-      padding: 0; }
     .field__gorizontalBottom .field__estate {
       bottom: -8px; }
     .field__gorizontalBottom .field__hotel {
       margin: 0 1px; }
-    .field__gorizontalBottom .field__title {
-      padding: 0; }
     .field__verticalLeft .field__estate {
       left: -8px; }
     .field__verticalLeft .field__hotel {
       margin: 1px 0; }
     .field__verticalLeft .field__title {
-      padding: 0; }
+      line-height: 1.3; }
     .field__verticalLeft .field__icon {
       margin: 1px 0; }
     .field__verticalRight .field__estate {
@@ -4123,7 +4118,7 @@ input[type=text], input[type=password] {
     .field__verticalRight .field__hotel {
       margin: 1px 0; }
     .field__verticalRight .field__title {
-      padding: 0; }
+      line-height: 1.3; }
     .field__verticalRight .field__icon {
       margin: 1px 0; }
     .field__messages:after {
