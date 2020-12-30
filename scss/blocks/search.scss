@@ -130,7 +130,7 @@
     width: 21px;
     height: 21px;
     position: absolute;
-    top: -15px;
+    top: -17px;
     left: 50%;
     z-index: 3;
     transform: translate(-50%,0);
@@ -263,7 +263,7 @@
     &__active {
       width: 16px;
       height: 16px;
-      top: -11px;
+      top: -13px;
     }
     &__item {
       font-size: 10px;
@@ -352,9 +352,6 @@
       margin-bottom: 30px;
       &--createGame {
         margin-bottom: 0;
-        .search__active {
-          top: -11px;
-        }
       }
     }
     &__rateItems {
@@ -371,11 +368,6 @@
         padding-top: 8px;
         font-size: 11px;
       }
-    }
-    &__active {
-      width: 22px;
-      height: 22px;
-      top: -15px;
     }
     &__col {
       height: 50px;

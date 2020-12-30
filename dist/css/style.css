@@ -2719,7 +2719,7 @@ input[type=text], input[type=password] {
   width: 21px;
   height: 21px;
   position: absolute;
-  top: -15px;
+  top: -17px;
   left: 50%;
   z-index: 3;
   -webkit-transform: translate(-50%, 0);
@@ -2852,7 +2852,7 @@ input[type=text], input[type=password] {
   .search__active {
     width: 16px;
     height: 16px;
-    top: -11px; }
+    top: -13px; }
   .search__item {
     font-size: 10px; }
   .search .btn {
@@ -2913,8 +2913,6 @@ input[type=text], input[type=password] {
     margin-bottom: 30px; }
     .search__rate--createGame {
       margin-bottom: 0; }
-      .search__rate--createGame .search__active {
-        top: -11px; }
   .search__rateItems {
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
@@ -2931,10 +2929,6 @@ input[type=text], input[type=password] {
       height: 37px;
       padding-top: 8px;
       font-size: 11px; }
-  .search__active {
-    width: 22px;
-    height: 22px;
-    top: -15px; }
   .search__col {
     height: 50px; }
     .search__col:nth-child(1) {
