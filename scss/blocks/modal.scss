@@ -12,6 +12,12 @@
 	font-family: $secondFont;
 	color: $fontColor;
 	overflow-y: auto;
+	&.open {
+		.modal__container {
+			opacity: 1;
+			transform: translate(-50%,-50%);
+		}
+	}
 	&__container {
 		width: 100%;
 		max-width: 500px;
@@ -21,8 +27,13 @@
 		top: 50%;
 		transform: translate(-50%,-50%);
 		position: relative;
+		transition: 0.5s;
 		&--w700 {
 			max-width: 700px;
+		}
+		&--animate {
+			opacity: 0;
+			transform: translate(-50%,0);
 		}
 	}
 	&__head {
@@ -224,4 +235,8 @@
 			flex-wrap: wrap;
 		}
 	}
+}
+
+.js-modal {
+	display: none;
 }

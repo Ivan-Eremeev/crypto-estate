@@ -1,7 +1,7 @@
 extends blocks/base.jade
 
 block title 
-	title Навигация по страницам
+	title Кубики
 
 block style-libs
 	//- link(rel="stylesheet", href="css/libs/animate.min.css")
@@ -18,56 +18,30 @@ block content
 
 	.page
 
-		include blocks/header.jade
+		include blocks/header_field.jade
 		
-		main.content
-			.wrapper
+		.content
 
-				// pageNav
-				.pageNav
-					.title Навигация по страницам
-					ul.pageNav__list
-						li
-							a(href="home.html") Главная
-						li
-							a(href="lk.html") Личный кабинет
-						li
-							a(href="password_recovery.html") Восстановление пароля
-						li
-							a(href="autorization.html") Авторизация
-						li
-							a(href="balance.html") Баланс
-						li
-							a(href="registration.html") Регистрация
-						li
-							a(href="win.html") Победа
-						li
-							a(href="loss.html") Поражение
-						li
-							a(href="confirm.html") Подтвердить
-						li
-							a(href="guide.html") Правила
-						li
-							a(href="rating.html") Рейтинг
-						li
-							a(href="settings.html") Настройки
-						li
-							a(href="search.html") Поиск игры
-						li
-							a(href="form2fa.html") Форма 2FA
-						li
-							a(href="creategame.html") Создать игру
-						li
-							a(href="field.html") Игровое поле
-						li
-							a(href="popup.html")  Попап детальной карточки
-						li
-							a(href="deal.html")  Сделка
-						li
-							a(href="dice.html")  Кубики
-						li
-							a(href="table.html")  Таблица
-				// /pageNav
+			// table
+			.table
+				.wrapper
+					.title Билеты криптолотереи
+					.table__body
+						.row.table__head
+							.table__col Номер билета
+							.table__col ID Игры
+							.table__col Статус
+						.row
+							.table__col 45
+							.table__col 45641
+							.table__col Активен
+							.table__col 79
+							.table__col 32400
+							.table__col Активен
+							.table__col 44
+							.table__col 68566
+							.table__col Активен
+			//	/table
 			
 		//- include blocks/footer.jade
 

@@ -193,7 +193,7 @@ block content
 											span 0.005 eth
 									.gameList__col.gameList__col--4
 										.gameList__btn
-											a(href="#").btn.btn--first
+											.btn.btn--first.modal-trigger(data-modal="#modal-1")
 												span.mobile-hide Присоедениться
 												img(src="img/plus_icon.svg", alt="").mobile-visible
 
@@ -216,7 +216,7 @@ block content
 											span 0.005 eth
 									.gameList__col.gameList__col--4
 										.gameList__btn
-											a(href="#").btn.btn--first
+											.btn.btn--first.modal-trigger(data-modal="#modal-1")
 												span.mobile-hide Присоедениться
 												img(src="img/plus_icon.svg", alt="").mobile-visible
 
@@ -239,7 +239,7 @@ block content
 											span 0.005 eth
 									.gameList__col.gameList__col--4
 										.gameList__btn
-											a(href="#").btn.btn--first
+											.btn.btn--first.modal-trigger(data-modal="#modal-1")
 												span.mobile-hide Присоедениться
 												img(src="img/plus_icon.svg", alt="").mobile-visible
 
@@ -262,7 +262,7 @@ block content
 											span 0.005 eth
 									.gameList__col.gameList__col--4
 										.gameList__btn
-											a(href="#").btn.btn--first
+											.btn.btn--first.modal-trigger(data-modal="#modal-1")
 												span.mobile-hide Присоедениться
 												img(src="img/plus_icon.svg", alt="").mobile-visible
 
@@ -285,7 +285,7 @@ block content
 											span 0.005 eth
 									.gameList__col.gameList__col--4
 										.gameList__btn
-											a(href="#").btn.btn--first
+											.btn.btn--first.modal-trigger(data-modal="#modal-1")
 												span.mobile-hide Присоедениться
 												img(src="img/plus_icon.svg", alt="").mobile-visible
 
@@ -308,7 +308,7 @@ block content
 											span 0.005 eth
 									.gameList__col.gameList__col--4
 										.gameList__btn
-											a(href="#").btn.btn--first
+											.btn.btn--first.modal-trigger(data-modal="#modal-1")
 												span.mobile-hide Присоедениться
 												img(src="img/plus_icon.svg", alt="").mobile-visible
 
@@ -352,6 +352,24 @@ block content
 								img(src="img/chat_icon.svg", alt="")
 			
 			//	/chat
+
+			// modal
+			form(action="#").modal.js-modal#modal-1
+				.modal__container.modal__container--animate
+					.modal__body.modal__body--noHead
+
+						.modal__row
+							.modal__hint Введите пароль
+							.modal__input.modal__input--white
+								input(type="password")
+
+						.modal__row.modal__row--center
+								button(type="submit").btn.btn--second Подтвердить
+
+					.modal__close
+
+									
+			//	/modal
 			
 		//- include blocks/footer.jade
 

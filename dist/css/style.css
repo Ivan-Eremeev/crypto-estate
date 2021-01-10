@@ -1714,6 +1714,11 @@ input[type=text], input[type=password] {
   font-family: "FuturaFuturisC", sans-serif;
   color: #fff;
   overflow-y: auto; }
+  .modal.open .modal__container {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
   .modal__container {
     width: 100%;
     max-width: 500px;
@@ -1724,9 +1729,17 @@ input[type=text], input[type=password] {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    position: relative; }
+    position: relative;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s; }
     .modal__container--w700 {
       max-width: 700px; }
+    .modal__container--animate {
+      opacity: 0;
+      -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+      transform: translate(-50%, 0); }
   .modal__head {
     padding: 30px 60px 30px 35px;
     background-color: #1c1d26; }
@@ -1873,6 +1886,9 @@ input[type=text], input[type=password] {
     .modal__flex {
       -ms-flex-wrap: wrap;
       flex-wrap: wrap; } }
+
+.js-modal {
+  display: none; }
 
 .balance .modal__hint {
   font-size: 16px;
@@ -4940,6 +4956,25 @@ input[type=text], input[type=password] {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center; } }
+
+.table {
+  padding: 50px 0;
+  color: #fff; }
+  .table .title {
+    text-align: center;
+    margin-bottom: 20px; }
+  .table__body {
+    overflow-x: auto; }
+  .table__head {
+    margin-bottom: 10px;
+    font-size: 20px; }
+  .table__col {
+    width: 33.33%;
+    text-align: center;
+    margin-bottom: 10px; }
+  @media (max-width: 820px) {
+    .table__head {
+      font-size: 15px; } }
 
 @media (max-width: 820px) {
   .mobile-hide {

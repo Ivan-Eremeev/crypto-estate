@@ -1,0 +1,25 @@
+.table {
+  padding: 50px 0;
+  color: $fontColor;
+  .title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  &__body {
+    overflow-x: auto;
+  }
+  &__head {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  &__col {
+    width: 33.33%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  @media (max-width: $break_sm) {
+    &__head {
+      font-size: 15px;
+    }
+  }
+}
