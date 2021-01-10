@@ -164,10 +164,13 @@
 
   }
   &__timer {
-    width: 29px;
     position: absolute;
     top: 18px;
     left: 28px;
+    .circles-wrp {
+      background-color: #282b46;
+      border-radius: 100%;
+    }
   }
   @media (max-width: $break_xl) {
     padding: 20px 10px;
@@ -206,7 +209,6 @@
       right: 10px;
     }
     &__timer {
-      width: 24px;
       top: 12px;
       left: 20px;
     }

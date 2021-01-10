@@ -4170,14 +4170,10 @@ input[type=text], input[type=password] {
     .field__timerMob {
       margin-right: auto;
       display: block;
-      width: 22px;
-      height: 22px;
       z-index: 3; }
-      .field__timerMob img {
-        max-height: none; }
     .field__nameMob {
       margin-left: auto;
-      display: block;
+      display: block !important;
       color: #e74063;
       font-size: 7px; } }
 
@@ -4350,10 +4346,12 @@ input[type=text], input[type=password] {
     .sidebar__name--green {
       color: #25ab71; }
   .sidebar__timer {
-    width: 29px;
     position: absolute;
     top: 18px;
     left: 28px; }
+    .sidebar__timer .circles-wrp {
+      background-color: #282b46;
+      border-radius: 100%; }
   @media (max-width: 1920px) {
     .sidebar {
       padding: 20px 10px; }
@@ -4381,7 +4379,6 @@ input[type=text], input[type=password] {
         left: 10px;
         right: 10px; }
       .sidebar__timer {
-        width: 24px;
         top: 12px;
         left: 20px; }
       .sidebar__btn {

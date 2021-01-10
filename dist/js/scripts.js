@@ -6,11 +6,11 @@
 $(document).ready(function () {
 
 	// Брэйкпоинты js
-	var	breakXl = 1400,
+	var	breakXl = 1920,
 			breakLg = 1200,
-			breakMd = 1025,
-			breakSm = 769,
-			breakXs = 500;
+			breakMd = 1050,
+			breakSm = 820,
+			breakXs = 395;
 
 	// Подключение файлов. Использовать "//=" перед строкой пути
 	// Slick Slider
@@ -218,5 +218,34 @@ $(document).ready(function () {
 		html.removeClass('lock').css('padding-right',0);
 	};
 	modal();
-	
+
+	// Circles | Круговой счетчик
+	function circleTimer(timer) {
+		var val = timer.data('value'),
+				duration = val * 1000,
+				$id = timer.attr('id');
+		var $id = Circles.create({
+			id: $id,
+			radius:	14,
+			value: val,
+			maxValue: val,
+			width: 2,
+			text: function (value) { return parseInt(value); },
+			colors: ['#323442', '#25ab71'],
+			duration: duration,
+		});
+		$(window).resize(function () {
+			if ($(window).width() >= breakXl) {
+				$id.updateRadius(14);
+			}else {
+				$id.updateRadius(10);
+			}
+		})
+	}
+	circleTimer($('#circle-1'));
+	circleTimer($('#circle-2'));
+	circleTimer($('#circle-3'));
+	circleTimer($('#circle-4'));
+	circleTimer($('#circle-5'));
+
 });
