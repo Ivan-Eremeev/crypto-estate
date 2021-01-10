@@ -18,7 +18,7 @@ block content
 
 	.page
 
-		include blocks/header_field.jade
+		include blocks/header.jade
 		
 		.content
 
@@ -26,21 +26,23 @@ block content
 			.table
 				.wrapper
 					.title Билеты криптолотереи
-					.table__body
-						.row.table__head
-							.table__col Номер билета
-							.table__col ID Игры
-							.table__col Статус
-						.row
-							.table__col 45
-							.table__col 45641
-							.table__col Активен
-							.table__col 79
-							.table__col 32400
-							.table__col Активен
-							.table__col 44
-							.table__col 68566
-							.table__col Активен
+					table
+						tr
+							th Номер билета
+							th ID Игры
+							th Статус
+						tr
+							td 45
+							td 45641
+							td Активен
+						tr
+							td 78
+							td 64563
+							td Активен
+						tr
+							td 87
+							td 52578
+							td Активен
 			//	/table
 			
 		//- include blocks/footer.jade
