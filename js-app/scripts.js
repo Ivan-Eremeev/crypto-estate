@@ -203,26 +203,28 @@ $(document).ready(function () {
 
 	// Circles | Круговой счетчик
 	function circleTimer(timer) {
-		var val = timer.data('value'),
+		if (timer.length) {
+			var val = timer.data('value'),
 				duration = val * 1000,
 				$id = timer.attr('id');
-		var $id = Circles.create({
-			id: $id,
-			radius:	14,
-			value: val,
-			maxValue: val,
-			width: 2,
-			text: function (value) { return parseInt(value); },
-			colors: ['#323442', '#25ab71'],
-			duration: duration,
-		});
-		$(window).resize(function () {
-			if ($(window).width() >= breakXl) {
-				$id.updateRadius(14);
-			}else {
-				$id.updateRadius(10);
-			}
-		})
+			var $id = Circles.create({
+				id: $id,
+				radius: 14,
+				value: val,
+				maxValue: val,
+				width: 2,
+				text: function (value) { return parseInt(value); },
+				colors: ['#323442', '#25ab71'],
+				duration: duration,
+			});
+			$(window).resize(function () {
+				if ($(window).width() >= breakXl) {
+					$id.updateRadius(14);
+				} else {
+					$id.updateRadius(10);
+				}
+			})
+		}
 	}
 	circleTimer($('#circle-1'));
 	circleTimer($('#circle-2'));
