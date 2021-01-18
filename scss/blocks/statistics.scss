@@ -190,7 +190,6 @@
     &__photo {
       width: 87px;
       height: 87px;
-      margin-right: 5px;
       img {
         width: 76px;
         height: 76px;
@@ -247,6 +246,9 @@
       padding: 8px 18px;
       font-size: 10px;
     }
+    &__items {
+      flex-grow: 1;
+    }
     &__item {
       font-size: 8px;
     }
@@ -256,6 +258,12 @@
     }
     &__name {
       margin-right: 8px;
+    }
+  }
+  @media (max-width: $break_xs) {
+    &__item {
+      padding: 3px 5px;
+      font-size: 6px;
     }
   }
 }

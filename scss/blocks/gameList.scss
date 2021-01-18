@@ -71,6 +71,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-shrink: 0;
     padding: 0 5px;
     border-right: 1px solid #404152;
     &:last-child {
@@ -96,6 +97,8 @@
   }
   &__icons {
     display: flex;
+    width: 100%;
+    max-width: 216px;
   }
   &__icon {
     display: flex;
@@ -167,6 +170,9 @@
     &__item {
       padding: 7px 10px;
       font-size: 12px;
+    }
+    &__icons {
+      max-width: 160px;
     }
     &__icon {
       width: 36px;
@@ -241,7 +247,7 @@
     }
     &__col {
       &--1 {
-        width: 36%;
+        width: 30%;
       }
       &--2 {
         // width: 41%;
