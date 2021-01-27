@@ -201,35 +201,30 @@ $(document).ready(function () {
 	};
 	modal();
 
-	// Circles | Круговой счетчик
+	// // Circles | Круговой счетчик
+
 	function circleTimer(timer) {
 		if (timer.length) {
-			var val = timer.data('value'),
-				duration = val * 1000,
-				$id = timer.attr('id');
-			var $id = Circles.create({
-				id: $id,
-				radius: 14,
-				value: val,
-				maxValue: val,
-				width: 2,
-				text: function (value) { return parseInt(value); },
-				colors: ['#323442', '#25ab71'],
-				duration: duration,
-			});
-			$(window).resize(function () {
-				if ($(window).width() >= breakXl) {
-					$id.updateRadius(14);
-				} else {
-					$id.updateRadius(10);
-				}
+			timer.each(function () {
+				var $this = $(this),
+						val = $this.data('value'),
+						$duration = val * 1000;
+				$this.circleProgress({
+					animationStartValue: 1,
+					// startAngle: 2,
+					value: 0,
+					size: 30,
+					emptyFill: '#323442',
+					fill: '#25ab71',
+					thickness: 2,
+					animation: { duration: $duration },
+					// reverse: true,
+				}).on('circle-animation-progress', function (event, progress, stepValue) {
+					$(this).find('span').html(Math.round(val * stepValue));
+				});
 			})
 		}
 	}
-	circleTimer($('#circle-1'));
-	circleTimer($('#circle-2'));
-	circleTimer($('#circle-3'));
-	circleTimer($('#circle-4'));
-	circleTimer($('#circle-5'));
+	circleTimer($('.js-circle'));
 
 });

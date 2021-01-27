@@ -39,8 +39,8 @@ block content
 										.sidebar__btn
 											span Сделка
 											span.sidebar__cross
-									.sidebar__timer
-										#circle-1.circle(data-value="10")
+									.sidebar__timer.js-circle(data-value="10")
+											span 10
 								
 								.sidebar__user
 									.sidebar__photo.sidebar__photo--red
@@ -51,8 +51,8 @@ block content
 										.sidebar__btn
 											span Сделка
 											span.sidebar__cross
-									.sidebar__timer
-										#circle-2.circle(data-value="20")
+									.sidebar__timer.js-circle(data-value="20")
+											span 20
 
 								.sidebar__user
 									.sidebar__photo.sidebar__photo--yellow
@@ -63,8 +63,8 @@ block content
 										.sidebar__btn
 											span Сделка
 											span.sidebar__cross
-									.sidebar__timer
-										#circle-3.circle(data-value="30")
+									.sidebar__timer.js-circle(data-value="30")
+											span 30
 
 								.sidebar__user
 									.sidebar__photo.sidebar__photo--green
@@ -75,8 +75,8 @@ block content
 										.sidebar__btn
 											span Сделка
 											span.sidebar__cross
-									.sidebar__timer
-										#circle-4.circle(data-value="40")
+									.sidebar__timer.js-circle(data-value="40")
+											span 40
 
 							// fieldSettings
 							.fieldSettings.mobile-visible
@@ -624,7 +624,8 @@ block content
 								.field__center
 									.field__chat
 										.field__slogan
-											.field__timerMob.circle#circle-5(data-value="20")
+											.field__timerMob.circle.js-circle(data-value="20")
+												span 20
 											img(src="img/slogan_field.png", alt="")
 											.field__nameMob Ilon Mask
 										.field__messages
@@ -757,6 +758,7 @@ block js-libs
 	//- script(src="js/libs/fullpage.min.js")
 	//- script(src="js/libs/jquery.vide.min.js")
 	//- script(src="js/libs/jquery.scrollbar.min.js")
-	script(src="js/libs/circles.min.js")
+	//- script(src="js/libs/circles.min.js")
+	script(src="js/libs/circle-progress.min.js")
 	//- script(src="http://api-maps.yandex.ru/2.1/?lang=ru_RU")
 	//- script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDArYzQvxn3CL3pB92Iqn9gaDltBFLfF4Y")
