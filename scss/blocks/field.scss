@@ -229,6 +229,30 @@
     &:hover {
       background-color: #073c6e;
     }
+    &--start {
+      .field__circle {
+        &--1 {
+          top: 15px;
+          left: 15px;
+          transform: translate(0,0);
+        }
+        &--2 {
+          top: 15px;
+          right: 15px;
+          transform: translate(0,0);
+        }
+        &--3 {
+          bottom: 15px;
+          right: 15px;
+          transform: translate(0,0);
+        }
+        &--4 {
+          bottom: 15px;
+          left: 15px;
+          transform: translate(0,0);
+        }
+      }
+    }
   }
   &__title {
     font-size: 11px;
@@ -319,25 +343,30 @@
     height: 23px;
     position: absolute;
     border-radius: 100%;
-    &--1 {
-      background-color: #1376d3;
-      top: 15px;
-      left: 15px;
+    &--1 {      
+      background-color: #960f38;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -90%);
     }
     &--2 {
-      background-color: #960f38;
-      top: 15px;
-      right: 15px;
+      background-color: #25ab71;
+      top: 50%;
+      right: 50%;
+      transform: translate(-10%, 0);
     }
     &--3 {
       background-color: #c09512;
-      bottom: 15px;
-      right: 15px;
+      bottom: 50%;
+      right: 50%;
+      transform: translate(110%, 100%);
     }
     &--4 {
-      background-color: #25ab71;
-      bottom: 15px;
-      left: 15px;
+      background-color: #1376d3;
+      bottom: 50%;
+      left: 50%;
+      transform: translate(10%, 100%);
+      transform: translate(-50%, 190%);
     }
   }
   &__chat {
@@ -505,22 +534,6 @@
     &__circle {
       width: 18px;
       height: 18px;
-      &--1 {
-        top: 10px;
-        left: 10px;
-      }
-      &--2 {
-        top: 10px;
-        right: 10px;
-      }
-      &--3 {
-        bottom: 10px;
-        right: 10px;
-      }
-      &--4 {
-        bottom: 10px;
-        left: 10px;
-      }
     }
     &__nameBig {
       font-size: 7px;
@@ -582,6 +595,28 @@
         }
       }
     }
+    &__card {
+      &--start {
+        .field__circle {
+          &--1 {
+            top: 10px;
+            left: 10px;
+          }
+          &--2 {
+            top: 10px;
+            right: 10px;
+          }
+          &--3 {
+            bottom: 10px;
+            right: 10px;
+          }
+          &--4 {
+            bottom: 10px;
+            left: 10px;
+          }
+        }
+      }
+    }
   }
   @media (max-width: $break_sm) {
     &:after {
@@ -624,22 +659,7 @@
     &__circle {
       width: 8px;
       height: 8px;
-      &--1 {
-        top: 5px;
-        left: 5px;
-      }
-      &--2 {
-        top: 5px;
-        right: 5px;
-      }
-      &--3 {
-        bottom: 5px;
-        right: 5px;
-      }
-      &--4 {
-        bottom: 5px;
-        left: 5px;
-      }
+      
     }
     &__hotel {
       width: 5px;
@@ -769,6 +789,28 @@
       display: block !important;
       color: #e74063;
       font-size: 7px;
+    }
+    &__card {
+      &--start {
+        .field__circle {
+          &--1 {
+            top: 5px;
+            left: 5px;
+          }
+          &--2 {
+            top: 5px;
+            right: 5px;
+          }
+          &--3 {
+            bottom: 5px;
+            right: 5px;
+          }
+          &--4 {
+            bottom: 5px;
+            left: 5px;
+          }
+        }
+      }
     }
   }
 }

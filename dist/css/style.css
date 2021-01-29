@@ -3662,6 +3662,38 @@ input[type=password] {
   background-color: #073c6e;
 }
 
+.field__card--start .field__circle--1 {
+  top: 15px;
+  left: 15px;
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+.field__card--start .field__circle--2 {
+  top: 15px;
+  right: 15px;
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+.field__card--start .field__circle--3 {
+  bottom: 15px;
+  right: 15px;
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+.field__card--start .field__circle--4 {
+  bottom: 15px;
+  left: 15px;
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
 .field__title {
   font-size: 11px;
   text-align: center;
@@ -3783,27 +3815,42 @@ input[type=password] {
 }
 
 .field__circle--1 {
-  background-color: #1376d3;
-  top: 15px;
-  left: 15px;
+  background-color: #960f38;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -90%);
+  -ms-transform: translate(-50%, -90%);
+  transform: translate(-50%, -90%);
 }
 
 .field__circle--2 {
-  background-color: #960f38;
-  top: 15px;
-  right: 15px;
+  background-color: #25ab71;
+  top: 50%;
+  right: 50%;
+  -webkit-transform: translate(-10%, 0);
+  -ms-transform: translate(-10%, 0);
+  transform: translate(-10%, 0);
 }
 
 .field__circle--3 {
   background-color: #c09512;
-  bottom: 15px;
-  right: 15px;
+  bottom: 50%;
+  right: 50%;
+  -webkit-transform: translate(110%, 100%);
+  -ms-transform: translate(110%, 100%);
+  transform: translate(110%, 100%);
 }
 
 .field__circle--4 {
-  background-color: #25ab71;
-  bottom: 15px;
-  left: 15px;
+  background-color: #1376d3;
+  bottom: 50%;
+  left: 50%;
+  -webkit-transform: translate(10%, 100%);
+  -ms-transform: translate(10%, 100%);
+  transform: translate(10%, 100%);
+  -webkit-transform: translate(-50%, 190%);
+  -ms-transform: translate(-50%, 190%);
+  transform: translate(-50%, 190%);
 }
 
 .field__chat {
@@ -5564,26 +5611,6 @@ input[type=password] {
     height: 18px;
   }
 
-  .field__circle--1 {
-    top: 10px;
-    left: 10px;
-  }
-
-  .field__circle--2 {
-    top: 10px;
-    right: 10px;
-  }
-
-  .field__circle--3 {
-    bottom: 10px;
-    right: 10px;
-  }
-
-  .field__circle--4 {
-    bottom: 10px;
-    left: 10px;
-  }
-
   .field__nameBig {
     font-size: 7px;
   }
@@ -5639,6 +5666,26 @@ input[type=password] {
   .field__chat .chat__form input {
     padding: 0 17px;
     font-size: 11px;
+  }
+
+  .field__card--start .field__circle--1 {
+    top: 10px;
+    left: 10px;
+  }
+
+  .field__card--start .field__circle--2 {
+    top: 10px;
+    right: 10px;
+  }
+
+  .field__card--start .field__circle--3 {
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .field__card--start .field__circle--4 {
+    bottom: 10px;
+    left: 10px;
   }
 
   .sidebar {
@@ -6764,26 +6811,6 @@ input[type=password] {
     height: 8px;
   }
 
-  .field__circle--1 {
-    top: 5px;
-    left: 5px;
-  }
-
-  .field__circle--2 {
-    top: 5px;
-    right: 5px;
-  }
-
-  .field__circle--3 {
-    bottom: 5px;
-    right: 5px;
-  }
-
-  .field__circle--4 {
-    bottom: 5px;
-    left: 5px;
-  }
-
   .field__hotel {
     width: 5px;
     height: 5px;
@@ -6928,6 +6955,26 @@ input[type=password] {
     display: block !important;
     color: #e74063;
     font-size: 7px;
+  }
+
+  .field__card--start .field__circle--1 {
+    top: 5px;
+    left: 5px;
+  }
+
+  .field__card--start .field__circle--2 {
+    top: 5px;
+    right: 5px;
+  }
+
+  .field__card--start .field__circle--3 {
+    bottom: 5px;
+    right: 5px;
+  }
+
+  .field__card--start .field__circle--4 {
+    bottom: 5px;
+    left: 5px;
   }
 
   .sidebar {
