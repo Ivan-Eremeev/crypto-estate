@@ -3475,6 +3475,14 @@ input[type=password] {
   margin: 2px;
 }
 
+.field__verticalLeft .field__circles {
+  top: 50%;
+  left: 58%;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
 .field__gorizontalBottom {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
@@ -3529,6 +3537,10 @@ input[type=password] {
 .field__gorizontalBottom .field__estate {
   top: auto;
   bottom: -20px;
+}
+
+.field__gorizontalBottom .field__circles {
+  top: 40%;
 }
 
 .field__verticalRight {
@@ -3613,6 +3625,14 @@ input[type=password] {
   margin: 2px 0;
 }
 
+.field__verticalRight .field__circles {
+  top: 50%;
+  left: 40%;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
 .field__item {
   padding: 1px;
 }
@@ -3692,6 +3712,10 @@ input[type=password] {
   -webkit-transform: translate(0, 0);
   -ms-transform: translate(0, 0);
   transform: translate(0, 0);
+}
+
+.field__card--big .field__circles {
+  top: 50%;
 }
 
 .field__title {
@@ -3807,6 +3831,12 @@ input[type=password] {
   text-align: center;
 }
 
+.field__circles {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+}
+
 .field__circle {
   width: 23px;
   height: 23px;
@@ -3818,27 +3848,27 @@ input[type=password] {
   background-color: #960f38;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -90%);
-  -ms-transform: translate(-50%, -90%);
-  transform: translate(-50%, -90%);
+  -webkit-transform: translate(-50%, -140%);
+  -ms-transform: translate(-50%, -140%);
+  transform: translate(-50%, -140%);
 }
 
 .field__circle--2 {
   background-color: #25ab71;
   top: 50%;
   right: 50%;
-  -webkit-transform: translate(-10%, 0);
-  -ms-transform: translate(-10%, 0);
-  transform: translate(-10%, 0);
+  -webkit-transform: translate(-10%, -50%);
+  -ms-transform: translate(-10%, -50%);
+  transform: translate(-10%, -50%);
 }
 
 .field__circle--3 {
   background-color: #c09512;
   bottom: 50%;
   right: 50%;
-  -webkit-transform: translate(110%, 100%);
-  -ms-transform: translate(110%, 100%);
-  transform: translate(110%, 100%);
+  -webkit-transform: translate(110%, 50%);
+  -ms-transform: translate(110%, 50%);
+  transform: translate(110%, 50%);
 }
 
 .field__circle--4 {
@@ -3848,9 +3878,9 @@ input[type=password] {
   -webkit-transform: translate(10%, 100%);
   -ms-transform: translate(10%, 100%);
   transform: translate(10%, 100%);
-  -webkit-transform: translate(-50%, 190%);
-  -ms-transform: translate(-50%, 190%);
-  transform: translate(-50%, 190%);
+  -webkit-transform: translate(-50%, 140%);
+  -ms-transform: translate(-50%, 140%);
+  transform: translate(-50%, 140%);
 }
 
 .field__chat {

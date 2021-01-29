@@ -91,6 +91,11 @@
       transform: rotate(-90deg);
       margin: 2px;
     }
+    .field__circles {
+      top: 50%;
+      left: 58%;
+      transform: rotate(-90deg);
+    }
   }
   &__gorizontalBottom {
     display: grid;
@@ -134,6 +139,9 @@
     .field__estate {
       top: auto;
       bottom: -20px;
+    }
+    .field__circles {
+      top: 40%;
     }
   }
   &__verticalRight {
@@ -189,6 +197,11 @@
     .field__hotel {
       transform: rotate(90deg);
       margin: 2px 0;
+    }
+    .field__circles {
+      top: 50%;
+      left: 40%;
+      transform: rotate(90deg);
     }
   }
   &__item {
@@ -251,6 +264,11 @@
           left: 15px;
           transform: translate(0,0);
         }
+      }
+    }
+    &--big {
+      .field__circles {
+        top: 50%;
       }
     }
   }
@@ -338,6 +356,11 @@
     bottom: 5%;
     text-align: center;
   }
+  &__circles {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+  }
   &__circle {
     width: 23px;
     height: 23px;
@@ -347,26 +370,27 @@
       background-color: #960f38;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -90%);
+      transform: translate(-50%, -140%);
     }
     &--2 {
       background-color: #25ab71;
       top: 50%;
       right: 50%;
-      transform: translate(-10%, 0);
+      transform: translate(-10%, -50%);
     }
     &--3 {
       background-color: #c09512;
       bottom: 50%;
       right: 50%;
-      transform: translate(110%, 100%);
+      transform: translate(110%, 50%);
     }
     &--4 {
       background-color: #1376d3;
       bottom: 50%;
       left: 50%;
       transform: translate(10%, 100%);
-      transform: translate(-50%, 190%);
+      transform: translate(-50%, 140%);
+
     }
   }
   &__chat {
