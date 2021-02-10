@@ -13,6 +13,8 @@
   }
   &__col {
     &--content {
+      display: flex;
+      align-items: center;
       width: 270px;
       flex-shrink: 0;
       padding-top: 12px;
@@ -30,7 +32,7 @@
   }
   &__num {
     font-size: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     &--1 {
       color: #19cabf;
     }
@@ -47,7 +49,7 @@
   &__price {
     font-size: 20px;
     color: #1c96e6;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
   &__btn {
     display: block;
