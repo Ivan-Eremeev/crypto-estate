@@ -444,7 +444,7 @@ block content
 											.field__card
 												.field__img
 													img(src="img/game_coins.png", alt="")
-												.field__name.field__name--small Потеря инвестиций
+												.field__name.field__name--small Потеря инвест-й
 
 									.field__item
 										.field__container
@@ -748,7 +748,8 @@ block content
 								li.fieldStats__item
 									span Зрителей:
 									span.fieldStats__dark 24
-							img(src="img/fullscreen.svg", alt="").fieldStats__btn
+							.fieldStats__btn#fullscreenButton
+								img(src="img/fullscreen.svg", alt="")
 						//	/fieldStats
 			//	/fieldWrapper
 
@@ -776,5 +777,6 @@ block js-libs
 	//- script(src="js/libs/jquery.scrollbar.min.js")
 	//- script(src="js/libs/circles.min.js")
 	script(src="js/libs/circle-progress.min.js")
+	script(src="js/libs/jquery.fullscreen-min.js")
 	//- script(src="http://api-maps.yandex.ru/2.1/?lang=ru_RU")
 	//- script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDArYzQvxn3CL3pB92Iqn9gaDltBFLfF4Y")

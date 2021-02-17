@@ -31,12 +31,17 @@
     width: 100%;
     margin: 0;
     padding: 0 15px;
+    &__row {
+      justify-content: center;
+    }
     &__col1 {
       width: 20%;
       background-color: transparent;
     }
     &__col2 {
-      width: 58%;
+      width: 320px;
+      height: 320px;
+      // width: 58%;
       background-color: transparent;
     }
     &__col3 {

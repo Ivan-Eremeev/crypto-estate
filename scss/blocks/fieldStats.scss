@@ -21,6 +21,9 @@
     position: absolute;
     right: 0;
     bottom: 5px;
+    &.active {
+      animation: none;
+    }
   }
   @media (max-width: $break_xl) {
     font-size: 10px;

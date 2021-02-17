@@ -245,4 +245,10 @@ $(document).ready(function () {
 	}
 	circleTimer($('.js-circle'));
 
+	// JQueryFullscreen || Включение полноэкранного режима
+	$('#fullscreenButton').on('click', function () {
+		$(document).toggleFullScreen();
+		$(this).toggleClass('active');
+	})
+
 });
