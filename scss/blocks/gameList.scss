@@ -298,4 +298,15 @@
       }
     }
   }
+  @media (max-width: $break_xs) {
+    &__item {
+      padding: 12px 10px;
+      justify-content: space-between;
+    }
+    &__col {
+      &--4 {
+        display: none;
+      }
+    }
+  }
 }

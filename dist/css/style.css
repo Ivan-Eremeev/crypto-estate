@@ -7271,6 +7271,17 @@ input[type=password] {
     font-size: 6px;
   }
 
+  .gameList__item {
+    padding: 12px 10px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .gameList__col--4 {
+    display: none;
+  }
+
   .modal__flex {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
