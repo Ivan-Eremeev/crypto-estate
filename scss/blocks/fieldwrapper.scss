@@ -16,7 +16,7 @@
     background-color: #14151f;
   }
   &__col2 {
-    width: 74%;
+    width: 70%;
     background-color: #21222d;
   }
   &__col3 {
@@ -29,6 +29,7 @@
   }
   @media (max-width: $break_sm) {
     width: 100%;
+    min-width: 560px;
     margin: 0;
     padding: 0 15px;
     &__row {
