@@ -3870,11 +3870,11 @@ input[type=password] {
   border-radius: 100%;
 }
 
-.field__circle--1 {
+.field__circle--2 {
   background-color: #960f38;
 }
 
-.field__circle--2 {
+.field__circle--4 {
   background-color: #25ab71;
 }
 
@@ -3882,7 +3882,7 @@ input[type=password] {
   background-color: #c09512;
 }
 
-.field__circle--4 {
+.field__circle--1 {
   background-color: #1376d3;
 }
 
